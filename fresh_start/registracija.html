@@ -126,7 +126,7 @@
 						<h2>REGISTRACIJA
                         
                         </h2>
-						<form name='mojaforma' action="#">
+                        <form name='mojaforma' action="#" >
 							<div class="row form-group">
 								<div class="col-md-6">
 									<!-- <label for="fname">First Name</label> -->
@@ -154,14 +154,14 @@
                                         </div>
                             </div>
                             <div class="row form-group">
-                                <input type='radio' id="sponzor" name="tip" value="sponzor.html"> <label for="sponzor">Sponzor</label>
-                                <input type='radio' id="trener" name="tip" value="trener.html"> <label for="trener">Trener</label>
+                                <input type='radio' id="sponzor" name='tip' value="sponzor.html" required> <label for="sponzor">Sponzor</label>
+                                <input type='radio' id="trener" name='tip' value="trener.html" required> <label for="trener">Trener</label>
                             
-                                <input type='radio' id="korisnik" name='tip' value="korisnik.html"> <label for="korisnik">Korisinik</label>
+                                <input type='radio' id="korisnik" name='tip' value="korisnik.html" required > <label for="korisnik">Korisinik</label>
                                     </div>
                 
 							<div class="form-group">
-								<button onclick="fja()"class="btn btn-primary">Nastavi</button>
+								<button onclick="fja()" class="btn btn-primary">Nastavi</button>
 							</div>
 						</form>		
 					</div>
@@ -282,12 +282,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             for(i=0;i<all.length;i++){
                 if(all[i].type="radio"){
                 if(all[i].checked){
-                    window.open(all[i].value);
+                    window.open(all[i].value,"_self");
                 }
                 }
             }
         }
+        
         </script>
+
 	<!-- Google Map -->
     
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
