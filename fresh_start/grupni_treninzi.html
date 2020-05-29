@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>fresh start</title>
+	<title>Fresh start</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -81,11 +81,11 @@
 										<li><a href="snaga.html">Snaga</a></li>
 									</ul>
 								</li>
-								<li><a href="schedule.html">Raspored</a></li>
+								<li class="active"><a href="schedule.html">Raspored</a></li>
 								<li><a href="o_trenerima.html">Treneri</a></li>
 								<li><a href="blog.html">Blog</a></li>
 								<li><a href="contact.html">Kontakt</a></li>
-								<li class="btn-cta"><a href="index.html"><span>Izloguj me</span></a></li>
+								<li class="btn-cta"><a href="login.html"><span>Prijavi se</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -101,8 +101,8 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 				   				<div class="slider-text-inner text-center">
-				   					<h1>ADMIN MENI</h1>
-				   					<h2><span><a href="admin_meni.html">Početna</a> | <a href="login.html"> Prijava </a></span></h2>
+				   					<h1>Raspored</h1>
+				   					<h2><span><a href="index.html">Početna</a> | Raspored | Grupni treninzi</span></h2>
 				   				</div>
 				   			</div>
 				   		</div>
@@ -111,17 +111,102 @@
 			  	</ul>
 		  	</div>
 		</aside>
-					<div class="col-md-10 col-md-offset-1 animate-box">
-						
-						<form action="#">
-							
-                
-							
-						</form>		
+		
+		<div id="colorlib-schedule" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>Raspored grupnih treninga</h2>
+						<p>Rezervišite mesto na vašem omiljenom treningu</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="schedule text-center animate-box">
+						<div class="col-md-12">
+							<ul class="week">
+								<li class="active"><a href="#">Nedelja</a></li>
+								<li><a href="#">Ponedeljak</a></li>
+								<li><a href="#">Utorak</a></li>
+								<li><a href="#">Sreda</a></li>
+								<li><a href="#">Četvrtak</a></li>
+								<li><a href="#">Petak</a></li>
+								<li><a href="#">Subota</a></li>
+							</ul>
+						</div>
+						<div class="schedule-flex">
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-gym"></i></span></p>
+								<p class="time"><span>08am - 09am</span></p>
+								<h3>Aerobic</h3>
+                                <p class="trainer"><span>Ana Mirić</span></p>
+                                <button type="button">Odaberi</button>
+                                <h5> Preostalo mesta: <p id='naPotezu'></p></h5> 
+							</div>
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-exercise-2"></i></span></p>
+								<p class="time"><span>09am - 10am</span></p>
+								<h3>Cardio</h3>
+                                <p class="trainer"><span>Pera Perić</span></p>
+                                <button type="button">Odaberi</button>
+                                <h5> Preostalo mesta: <p id='naPotezu'></p></h5> 
+							</div>
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-meditation"></i></span></p>
+								<p class="time"><span>10am - 11am</span></p>
+								<h3>Yoga</h3>
+                                <p class="trainer"><span>Nina Rakić</span></p>
+                                <button type="button">Odaberi</button>
+                                <h5> Preostalo mesta: <p id='naPotezu'></p></h5> 
+							</div>
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-weightlifting"></i></span></p>
+								<p class="time"><span>11am - 12am</span></p>
+								<h3>Snaga</h3>
+                                <p class="trainer"><span>Pera Perić</span></p>
+                                <button type="button">Odaberi</button>
+                                <h5> Preostalo mesta: <p id='naPotezu'></p></h5> 
+							</div>
+						</div>
+						<div class="schedule-flex">
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-martial-arts"></i></span></p>
+								<p class="time"><span>03pm - 04pm</span></p>
+								<h3>Karate</h3>
+                                <p class="trainer"><span>Nina Rakić</span></p>
+                                <button type="button">Odaberi</button>
+                                <h5> Preostalo mesta: <p id='naPotezu'></p></h5> 
+                                
+							</div>
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-weightlifting"></i></span></p>
+								<p class="time"><span>04pm - 05pm</span></p>
+								<h3>Body Pump</h3>
+                                <p class="trainer"><span>Pera Perić</span></p>
+                                <button type="button">Odaberi</button>
+                                <h5> Preostalo mesta: <p id='naPotezu'></p></h5> 
+							</div>
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-meditation"></i></span></p>
+								<p class="time"><span>05pm - 06pm</span></p>
+								<h3>Yoga</h3>
+                                <p class="trainer"><span>Nina Rakić</span></p>
+                                <button type="button">Odaberi</button>
+                                <h5> Preostalo mesta: <p id='naPotezu'></p></h5> 
+							</div>
+							<div class="entry-forth">
+								<p class="icon"><span><i class="flaticon-weightlifting"></i></span></p>
+								<p class="time"><span>06pm - 07pm</span></p>
+								<h3>Funkcionalni</h3>
+                                <p class="trainer"><span>Ana Mirić</span></p>
+                                <button type="button">Odaberi</button>
+                                <h5> Preostalo mesta: <p id='naPotezu'></p></h5> 
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	
 		
 		<footer id="colorlib-footer">
 			<div class="container">
@@ -183,9 +268,9 @@
 					<div class="col-md-3 colorlib-widget">
 						<h4>Kontakt</h4>
 						<ul class="colorlib-footer-links">
-							<li>Bulevar Kralja Aleksandra 73, <br> Beograd, Srbija</li>
-							<li><a href="tel://38162432234"><i class="icon-phone"></i> +38162543345 </a></li>
-							<li><a href="mailto:info@student.etf.bg.ac"><i class="icon-envelope"></i> info@student.etf.bg.ac</a></li>
+							<li>Bulevar Kralja Aleksandra 73 <br> Beograd,Srbija</li>
+							<li><a href="tel://+38162543345"><i class="icon-phone"></i> +38162543345</a></li>
+							<li><a href="mailto:info@student.bg.ac.rs"><i class="icon-envelope"></i> info@student.bg.ac.rs</a></li>
 						</ul>
 					</div>
 				</div>
@@ -230,9 +315,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
