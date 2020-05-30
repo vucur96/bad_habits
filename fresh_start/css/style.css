@@ -88,6 +88,55 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative; }
+  
+ .label {
+  display: inline-block;
+  
+  text-align: left;
+}
+ #tekst {
+	 overflow-y:scroll;
+	 resize: none;
+ }
+
+.formfield * {
+  vertical-align: middle;
+}
+
+.btn-primary1 {
+  float: right;
+  background: #DC2F2F;
+  color: #fff;
+  border: 2px solid #DC2F2F;
+}
+
+	
+.btn-cta1{
+  margin:20px 0px;
+  float:right;
+  height: 60px;
+  width: 100px;
+  padding:5px 10px;
+  position:relative;
+  cursor:pointer;
+  transition:all 0.4s;
+}
+
+btn-cta:hover{
+  background:#333;
+  border:1px solid #333;
+  color:#fff;
+}
+.notifications {
+      position:absolute;
+      border-radius:2px;
+      font-size:14px;
+      background-color:red;
+      color:#fff;
+      padding:2px 5px;
+      top:-10px;
+      right:-10px;
+    }
 
 .colorlib-nav {
   margin: 0;
