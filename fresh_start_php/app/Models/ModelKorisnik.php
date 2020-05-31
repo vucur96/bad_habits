@@ -36,6 +36,7 @@ class ModelKorisnik extends Model{
         $this->db->set("password",$password);
         $this->db->set("password",$reppassword);
         $this->db->set("tip",$tip);
+        $this->db->insert("korisnik");
         if($tip=="korisnik"){
            $this->dodajkor($ime,$prezime,$datumrodj,$visina,$tezina,$cilj);
         }
@@ -62,12 +63,31 @@ class ModelKorisnik extends Model{
          $this->db->set("prezime",$prezime);
          $this->db->set("datumrodj",$datumrodj);
          $this->db->set("kurs",$kurs);
-         $this->db->insert("trener");
+         $this->db->insert("korisnik");
     }
     public function dodajspon($imefr,$delatnost,$vrstarek){
          $this->db->set("imefr",$imefr);
          $this->db->set("delatnost",$delatnost);
          $this->db->set("vrstarek",$vrstarek);
-         $this->db->insert("sponzor");
+         $this->db->insert("korisnik");
+    }
+    public function promenalozinke_provera($staripass) {
+        $username= $this->session->userdata("username");
+        $rez  = $this->db->where('username',$username)->get('korisnik');    
+        $korisnik=$rez->row();
+        if($korisnik->password != $staripass){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    public function lozinka_provera($password){
+        if($this->korisnik->password!=$password){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 }
