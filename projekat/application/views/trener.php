@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <h2>REGISTRACIJA TRENERA
+
+						<br>
+						<h2>REGISTRACIJA TRENERA
                         
-                        
-        </h2>
-        <form name="registracijatrener" action="" method="POST">
+                        </h2>
+						<form action="#">
                             <div class="row form-group">
                                 <div class="col-md-6">
                                     <!-- <label for="fname">First Name</label> -->
@@ -46,6 +35,7 @@ and open the template in the editor.
 								<input type="submit" value="Registruj" class="btn btn-primary">
 							</div>
 						</form>		
+					</div>
+				</div>
+			</div>
 		
-    </body>
-</html>

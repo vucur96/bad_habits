@@ -1,13 +1,14 @@
 
-							<div class="classes-img classes-img-single" style="background-image: url(images/snaga.jpg);"></div>
+							<div class="classes-img classes-img-single" style="background-image: url(images/cardio.jpg);"></div>
 							<div class="desc">
-								<h3><a href="aerobic.html">TRENING SNAGE</a></h3>
+                                                            <h3><a href="aerobic.php">CARDIO</a></h3>
 								
 									<p>
-										Kada je reč od treningu snage, veliki broj ljudi pomisli na klasičan bodibidling sa velikim brojem različitih vežbi za jačanje određene mišićne grupe. Iako bodibilding trening isto razvija telo, naročito kod početnika, primarni cilj ovog treninga je ipak estetika, a ne funkcionalnost.
-										Vežbe sa nedovršenim otporom su bitne za trening snage. Nedovršen otpor se pravi korišćenjem različitih rekviizita od kojih su najpopularniji slobodni tegovi i različite sprave. Savet je da se favorizuju vežbe sa tegovima, jer su puno bolje od vežbi na spravama, iz prostog razloga što se mišići bolje aktiviraju pri korišćenju ovih rekvizita.
-										Najbolje vežbe koje razvijaju snagu su one koje zahtevaju kompleksne pokrete i angažovanje velikog broja mišićnih grupa. Takve vežbe prouzrokuju i veći hormonalni odogovor na organizam, čime se stvara preduslov za razvoj mišićne mase. Ako je neko poznat po svojoj snazi, onda su to olimpijski dizači tegova, kod toga nema puno filozofiranja, već samo pogledajte kako se izvodi njihov trening.
-										Kod treninga za bodibidling obično se rade tri serije od po deset ponavljanja, ali ukoliko vam je glavni cilj trening sile, preporučuju se dve do tri serija sa pet ili manje ponavljanja. Odmor između serija je duži, u proseku između tri i pet minuta. Mrtvo dizanje u početku ne treba da se radi više od jedne serije sa nekoliko ponavljanja. Dovoljno su tri ovakva treninga u jednoj nedelji.
+										Kardio trening je najefikasniji način za skidanje masnih naslaga, postizanje i održavanja kondicije. Kardio-vežbe su neophodne za svaki efikasan program treninga jer podstiču sagorevanje masnoća ali su ujedno dobre i za celokupno zdravlje organizma. Takođe, ukoliko dugo niste vežbali, i nemate snage za druge treninge, kardio trening uvek možete prilagoditi svojim mogućnostima.
+
+Kardio trening podrazumeva bilo koju vrstu vežbanja gde srce dostiže od 60 do 85 posto od maksimalnog broja srčanih otkucaja. Kada srce radi u tom opsegu onda govorilo o kardio ili aerobnom treningu.
+
+Najčešće kardio vežbe su hodanje, trčanje, vožnja bicikla, plivanje, trčanje na traci, stepenice, preskakanje konopca. Naravno, možete napraviti kombinaciju ovih aktivnosti, ali bitno je da trening traje od 30 do 60 minuta.
 									</p>
 							</div>
 						</div>
@@ -81,9 +82,8 @@
 								</div>
 							</div>
 
+						
 							
-							
-							</div>
 						</div>
 					</div>
 

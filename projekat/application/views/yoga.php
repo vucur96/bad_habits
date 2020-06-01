@@ -1,13 +1,18 @@
 
-							<div class="classes-img classes-img-single" style="background-image: url(images/snaga.jpg);"></div>
+							<div class="classes-img classes-img-single" style="background-image: url(images/yoga.jpg);"></div>
 							<div class="desc">
-								<h3><a href="aerobic.html">TRENING SNAGE</a></h3>
+                                                            <h3><a href="yoga.php">Yoga</a></h3>
 								
 									<p>
-										Kada je reč od treningu snage, veliki broj ljudi pomisli na klasičan bodibidling sa velikim brojem različitih vežbi za jačanje određene mišićne grupe. Iako bodibilding trening isto razvija telo, naročito kod početnika, primarni cilj ovog treninga je ipak estetika, a ne funkcionalnost.
-										Vežbe sa nedovršenim otporom su bitne za trening snage. Nedovršen otpor se pravi korišćenjem različitih rekviizita od kojih su najpopularniji slobodni tegovi i različite sprave. Savet je da se favorizuju vežbe sa tegovima, jer su puno bolje od vežbi na spravama, iz prostog razloga što se mišići bolje aktiviraju pri korišćenju ovih rekvizita.
-										Najbolje vežbe koje razvijaju snagu su one koje zahtevaju kompleksne pokrete i angažovanje velikog broja mišićnih grupa. Takve vežbe prouzrokuju i veći hormonalni odogovor na organizam, čime se stvara preduslov za razvoj mišićne mase. Ako je neko poznat po svojoj snazi, onda su to olimpijski dizači tegova, kod toga nema puno filozofiranja, već samo pogledajte kako se izvodi njihov trening.
-										Kod treninga za bodibidling obično se rade tri serije od po deset ponavljanja, ali ukoliko vam je glavni cilj trening sile, preporučuju se dve do tri serija sa pet ili manje ponavljanja. Odmor između serija je duži, u proseku između tri i pet minuta. Mrtvo dizanje u početku ne treba da se radi više od jedne serije sa nekoliko ponavljanja. Dovoljno su tri ovakva treninga u jednoj nedelji.
+										Hatha yoga je jedna od najpoznatijih i najrasprostranjenijih vrsta joge na svetu. Joga nije samo fizičko vežbanje, već učenje pre svega kako da umirimo um i postignemo stanje potpunog mira i opuštenosti.
+
+										Usmerena je na upostavljanje harmonije uma, tela i duha, odnosno postizanje stanja opuštenosti, sreće i pozitivne energije.
+										
+										Redovnim vežbanjem joge jačamo, zatežemo i oblikujemo telo, ali i otklanjamo napetosti nagomilane u telu i umu. Efekti joge su suptilni, ali redovnim vežbanjem postaju jači i trajni, odnosno postaju deo svakodnevnice i način funkcionisanja.
+										
+										Bolja forma, više energije, osećanje sreće i spokojstva su zasigurno rezultati redovnog vežbanja ove discipline.
+										
+										Dođite da zajedno pretvorimo napetost i stres u stanje mira i opuštenosti.
 									</p>
 							</div>
 						</div>
@@ -81,16 +86,9 @@
 								</div>
 							</div>
 
-							
-							
-							</div>
-						</div>
-					</div>
-
+					
+					
 					
 				</div>
 			</div>	
-		</div>
-	
-		
 		

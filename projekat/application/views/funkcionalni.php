@@ -1,13 +1,26 @@
-
-							<div class="classes-img classes-img-single" style="background-image: url(images/snaga.jpg);"></div>
+<
+							<div class="classes-img classes-img-single" style="background-image: url(images/funkcionalni.jpg);"></div>
 							<div class="desc">
-								<h3><a href="aerobic.html">TRENING SNAGE</a></h3>
+                                                            <h3><a href="aerobic.php">FUNKCIONALNI TRENING</a></h3>
 								
 									<p>
-										Kada je reč od treningu snage, veliki broj ljudi pomisli na klasičan bodibidling sa velikim brojem različitih vežbi za jačanje određene mišićne grupe. Iako bodibilding trening isto razvija telo, naročito kod početnika, primarni cilj ovog treninga je ipak estetika, a ne funkcionalnost.
-										Vežbe sa nedovršenim otporom su bitne za trening snage. Nedovršen otpor se pravi korišćenjem različitih rekviizita od kojih su najpopularniji slobodni tegovi i različite sprave. Savet je da se favorizuju vežbe sa tegovima, jer su puno bolje od vežbi na spravama, iz prostog razloga što se mišići bolje aktiviraju pri korišćenju ovih rekvizita.
-										Najbolje vežbe koje razvijaju snagu su one koje zahtevaju kompleksne pokrete i angažovanje velikog broja mišićnih grupa. Takve vežbe prouzrokuju i veći hormonalni odogovor na organizam, čime se stvara preduslov za razvoj mišićne mase. Ako je neko poznat po svojoj snazi, onda su to olimpijski dizači tegova, kod toga nema puno filozofiranja, već samo pogledajte kako se izvodi njihov trening.
-										Kod treninga za bodibidling obično se rade tri serije od po deset ponavljanja, ali ukoliko vam je glavni cilj trening sile, preporučuju se dve do tri serija sa pet ili manje ponavljanja. Odmor između serija je duži, u proseku između tri i pet minuta. Mrtvo dizanje u početku ne treba da se radi više od jedne serije sa nekoliko ponavljanja. Dovoljno su tri ovakva treninga u jednoj nedelji.
+										Postoji razlog zbog kog svi najbolji fitness centri u svetu imaju program funkcionalnog treninga.
+
+										Telo je napravljeno da se kreće – zbog toga se osećaš i izgledaš najbolje kada vladaš svojim pokretom.
+										
+										Bilo da radiš sa tegovima ili sopstvenom težinom, funkcionalni trening ne izoluje mišiće već ih razvija harmonično.
+										
+										Ovo je trening koji će te naučiti da ovladaš telom. Možeš trenirati u grupi ili samostalno. Osećaćeš se bolje, bićeš bolji, brži i jači u svemu što radiš.
+										
+										Imaćeš energiju koja ti služi u svim sferama. Imaćeš snagu i telo kakvo želiš.
+										
+										Više o funkcionalnom treningu.
+										
+										Mnogi sistemi treninga, da bi razvili telo izoluju mišiće pri vežbama. To postiže efekat u snazi i izgledu, ali, čest je slučaj da takva forma nije dovoljno funkcionalna. Funkcionalnost tela traži koordinaciju mnogih grupa mišića i samo vežbanjem kroz pokret koji ih angažuje zajedno možeš postići sveukupnu i efikasnu formu.
+										
+										Ovakvim vežbanjem dobićeš harmoničnu brzinu i snagu. Izgled, pravilno držanje, koordinacija i ravnoteža biće trajno tvoji.
+										
+										Postaćeš otporniji i manje sklon povredama. Principi ovog programa korišćeni su u terapeutske svrhe jer izbeći i sanirati povrede znači – vladati kretanjem.
 									</p>
 							</div>
 						</div>
@@ -82,15 +95,11 @@
 							</div>
 
 							
-							
 							</div>
 						</div>
 					</div>
 
 					
 				</div>
-			</div>	
-		</div>
-	
-		
+			
 		

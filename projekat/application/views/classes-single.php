@@ -1,13 +1,24 @@
 
-							<div class="classes-img classes-img-single" style="background-image: url(images/snaga.jpg);"></div>
+		
+
+							<div class="classes-img classes-img-single" style="background-image: url(images/classes-1.jpg);"></div>
 							<div class="desc">
-								<h3><a href="aerobic.html">TRENING SNAGE</a></h3>
+                                                            <h3><a href="aerobic.php">INDIVIDUALNI TRENINZI</a></h3>
 								
 									<p>
-										Kada je reč od treningu snage, veliki broj ljudi pomisli na klasičan bodibidling sa velikim brojem različitih vežbi za jačanje određene mišićne grupe. Iako bodibilding trening isto razvija telo, naročito kod početnika, primarni cilj ovog treninga je ipak estetika, a ne funkcionalnost.
-										Vežbe sa nedovršenim otporom su bitne za trening snage. Nedovršen otpor se pravi korišćenjem različitih rekviizita od kojih su najpopularniji slobodni tegovi i različite sprave. Savet je da se favorizuju vežbe sa tegovima, jer su puno bolje od vežbi na spravama, iz prostog razloga što se mišići bolje aktiviraju pri korišćenju ovih rekvizita.
-										Najbolje vežbe koje razvijaju snagu su one koje zahtevaju kompleksne pokrete i angažovanje velikog broja mišićnih grupa. Takve vežbe prouzrokuju i veći hormonalni odogovor na organizam, čime se stvara preduslov za razvoj mišićne mase. Ako je neko poznat po svojoj snazi, onda su to olimpijski dizači tegova, kod toga nema puno filozofiranja, već samo pogledajte kako se izvodi njihov trening.
-										Kod treninga za bodibidling obično se rade tri serije od po deset ponavljanja, ali ukoliko vam je glavni cilj trening sile, preporučuju se dve do tri serija sa pet ili manje ponavljanja. Odmor između serija je duži, u proseku između tri i pet minuta. Mrtvo dizanje u početku ne treba da se radi više od jedne serije sa nekoliko ponavljanja. Dovoljno su tri ovakva treninga u jednoj nedelji.
+										Uzmi ono što imaju najbolji – ličnog trenera.
+
+Imati cilj je dobro ali imati cilj, znanje, podršku i plan je daleko bolje!
+
+Kao svi oni što imaju rezultate na kojima im zavide, dobićeš sopstvenog trenera koji će osmisliti i voditi tvoj program. Personalni trener je uvek tu da izvuče ono najbolje iz tebe, da osmisli i vodi trening koji je prilagođen baš tebi. On je tu da te usmeri, podrži i motiviše. Saznaćeš tajne vežbanja koje prave razliku između vrhunskih i osrednjih rezultata.
+
+Treniraj sa trenerom 1 na 1 kao profesionalac.
+
+Više o individualnom treningu:
+
+Osmisliti i voditi trening zahteva ogromno znanje za koje su potrebne godine proučavanja i prakse. Individualnim treningom dobijaš uz sebe stručni tim i trenera. Raspolagaćeš decenijama iskustva i školovanja sertifikovanih profesionalaca.
+
+Mnogi su primeri ljudi koji nisu istrajali u svojim zamislima. Ti nećeš biti jedan od njih! Tvoj personalni trener poznaje zamke treninga i motivacije i tu je da te motviše da na putu istraješ. Tu je da se pobrine ne samo da postigneš ciljeve kojima stremiš – već i da ih zadržiš. Snaga i gipkost, lepota i visok nivo energije, bolja koncentracija i zdravlje – služiće ti najbolje kada postanu trajno tvoji. Biti fit je način života. Biti fit je uživanje u životu.
 									</p>
 							</div>
 						</div>
@@ -82,8 +93,6 @@
 							</div>
 
 							
-							
-							</div>
 						</div>
 					</div>
 

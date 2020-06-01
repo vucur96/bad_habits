@@ -1,14 +1,12 @@
 
-							<div class="classes-img classes-img-single" style="background-image: url(images/snaga.jpg);"></div>
+							<div class="classes-img classes-img-single" style="background-image: url(images/aerobic.jpeg);"></div>
 							<div class="desc">
-								<h3><a href="aerobic.html">TRENING SNAGE</a></h3>
-								
-									<p>
-										Kada je reč od treningu snage, veliki broj ljudi pomisli na klasičan bodibidling sa velikim brojem različitih vežbi za jačanje određene mišićne grupe. Iako bodibilding trening isto razvija telo, naročito kod početnika, primarni cilj ovog treninga je ipak estetika, a ne funkcionalnost.
-										Vežbe sa nedovršenim otporom su bitne za trening snage. Nedovršen otpor se pravi korišćenjem različitih rekviizita od kojih su najpopularniji slobodni tegovi i različite sprave. Savet je da se favorizuju vežbe sa tegovima, jer su puno bolje od vežbi na spravama, iz prostog razloga što se mišići bolje aktiviraju pri korišćenju ovih rekvizita.
-										Najbolje vežbe koje razvijaju snagu su one koje zahtevaju kompleksne pokrete i angažovanje velikog broja mišićnih grupa. Takve vežbe prouzrokuju i veći hormonalni odogovor na organizam, čime se stvara preduslov za razvoj mišićne mase. Ako je neko poznat po svojoj snazi, onda su to olimpijski dizači tegova, kod toga nema puno filozofiranja, već samo pogledajte kako se izvodi njihov trening.
-										Kod treninga za bodibidling obično se rade tri serije od po deset ponavljanja, ali ukoliko vam je glavni cilj trening sile, preporučuju se dve do tri serija sa pet ili manje ponavljanja. Odmor između serija je duži, u proseku između tri i pet minuta. Mrtvo dizanje u početku ne treba da se radi više od jedne serije sa nekoliko ponavljanja. Dovoljno su tri ovakva treninga u jednoj nedelji.
-									</p>
+								<h3><a href="aerobic.php">Aerobic</a></h3>
+								<p>Aerobik je izuzetno energičan i zabavan fitnes program koji je prilagođen kako vežbačima koji imaju iskustvo sa grupnim treninzima tako i početnicima. Trening podrazumeva sklop aerobno-kardio dela koji karakterišu lako pamtljivi pokreti koji su povezani u smislenu celinu i koji su različitog inteziteta prilagođenog grupi koja se trenira. Veliku pažnju poklanjamo parternom delu, koji je usmeren na preoblikovanje celog tela sa akcentom na najkritičnije delove koji muče 90% ženske populacije. Program je idealan za povećanje kondicije i izdržljivosti, sagorevanje kalorija i masnih naslaga, jačanje svih mišićnih grupa, a namenjen je svim nivoima kondicije.
+
+									Ono što je sigurno, jeste da ćete se već nakon prvog treninga Aerobika osećati puno bolje, a taj osećaj unutrašnjeg zadovoljstva će se ubrzo odraziti i na vašu sliku u ogledalu (smanjenje potkožnog masnog tkiva, oblikovano telo, povećana definicija i snaga).
+									
+									Dođite na besplatan probni trening i dopustite da vas FRESH START uvede u jedan potpuno novi svet Aerobika</p>
 							</div>
 						</div>
 						<div class="classes-desc">
@@ -82,8 +80,6 @@
 							</div>
 
 							
-							
-							</div>
 						</div>
 					</div>
 

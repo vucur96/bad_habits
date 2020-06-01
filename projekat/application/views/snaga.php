@@ -1,7 +1,8 @@
 
+
 							<div class="classes-img classes-img-single" style="background-image: url(images/snaga.jpg);"></div>
 							<div class="desc">
-								<h3><a href="aerobic.html">TRENING SNAGE</a></h3>
+								<h3><a href="snaga.php">TRENING SNAGE</a></h3>
 								
 									<p>
 										Kada je reč od treningu snage, veliki broj ljudi pomisli na klasičan bodibidling sa velikim brojem različitih vežbi za jačanje određene mišićne grupe. Iako bodibilding trening isto razvija telo, naročito kod početnika, primarni cilj ovog treninga je ipak estetika, a ne funkcionalnost.
@@ -81,9 +82,7 @@
 								</div>
 							</div>
 
-							
-							
-							</div>
+						
 						</div>
 					</div>
 

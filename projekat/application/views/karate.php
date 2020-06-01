@@ -1,13 +1,11 @@
 
-							<div class="classes-img classes-img-single" style="background-image: url(images/snaga.jpg);"></div>
+							<div class="classes-img classes-img-single" style="background-image: url(images/karate.jpg);"></div>
 							<div class="desc">
-								<h3><a href="aerobic.html">TRENING SNAGE</a></h3>
+                                                            <h3><a href="karate.php">KARATE</a></h3>
 								
 									<p>
-										Kada je reč od treningu snage, veliki broj ljudi pomisli na klasičan bodibidling sa velikim brojem različitih vežbi za jačanje određene mišićne grupe. Iako bodibilding trening isto razvija telo, naročito kod početnika, primarni cilj ovog treninga je ipak estetika, a ne funkcionalnost.
-										Vežbe sa nedovršenim otporom su bitne za trening snage. Nedovršen otpor se pravi korišćenjem različitih rekviizita od kojih su najpopularniji slobodni tegovi i različite sprave. Savet je da se favorizuju vežbe sa tegovima, jer su puno bolje od vežbi na spravama, iz prostog razloga što se mišići bolje aktiviraju pri korišćenju ovih rekvizita.
-										Najbolje vežbe koje razvijaju snagu su one koje zahtevaju kompleksne pokrete i angažovanje velikog broja mišićnih grupa. Takve vežbe prouzrokuju i veći hormonalni odogovor na organizam, čime se stvara preduslov za razvoj mišićne mase. Ako je neko poznat po svojoj snazi, onda su to olimpijski dizači tegova, kod toga nema puno filozofiranja, već samo pogledajte kako se izvodi njihov trening.
-										Kod treninga za bodibidling obično se rade tri serije od po deset ponavljanja, ali ukoliko vam je glavni cilj trening sile, preporučuju se dve do tri serija sa pet ili manje ponavljanja. Odmor između serija je duži, u proseku između tri i pet minuta. Mrtvo dizanje u početku ne treba da se radi više od jedne serije sa nekoliko ponavljanja. Dovoljno su tri ovakva treninga u jednoj nedelji.
+										Karate mogu da treniraju svi od 6-90 godina života. Najbolje je trenirati u karate školi, ili bar započeti, da uvidite neke osnove tehnike, stavova, držanja, način izvođenja udaraca, blokada, poluga. Kada steknete neko znanje možete da nastavite i sa samostalnim treniranjem. Važno je znati tehnike, blokade, vrste udaraca, kretanje i stavove. Kate su takođe važni elementi bez kojih ne možete napredovati. Kao i kod svake borilačke veštine važno je i disanje kao i koncentracija, kondicija, što se stiče treningom. Početak je uvek zagrevanje. Trčanje, skokovi, čučnjevi sa kombinacijom izvođenja nekih elemenata tehnike, razgibavanje, sklekovi, trbušnjaci. Zatim kreće učenje ili ponavljanje već naučenih elemenata tehnike individualno, pa uvežbavanje i izvođenje kata. Neki se obično i dele prema interesovanju za određeni deo karatea suspenzor, tako da jedan treninga se posvećuje vežbanju kumite (sparinga) i kata.
+										Tradicionalni karate je najrasprostranjeniji u Japanu, odakle je potekao, a sportski karate je popularan u Evropi, pa tako i kod nas, ali i u ostalim zemljama sveta. Postoji još nekoliko vrsta karatea (go dju rju, kjokušinkai, okinava, fudokan, aširaha karatea i druge), a razlike u odnosu na sportski karate su na prvi pogled neprimetne. Odnosno, suština im je ista. U tradicionalnom karateu se, pre svega, stiče veština, nema takmičenja, dok u sportskom ima manje kontakata, a postoje i takmičenja u katama i borbama. Kod nas, sportskim karateom suspenzor dete može da počne da se bavi u takozvanim karate školicama. A prve kate – borbeni pokreti bez drugog takmičara, uče se godinu dana kasnije, jer u tom uzrastu deca mogu lako da zapamte pokrete.
 									</p>
 							</div>
 						</div>
@@ -82,8 +80,6 @@
 							</div>
 
 							
-							
-							</div>
 						</div>
 					</div>
 

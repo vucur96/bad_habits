@@ -1,13 +1,13 @@
 
-							<div class="classes-img classes-img-single" style="background-image: url(images/snaga.jpg);"></div>
+							<div class="classes-img classes-img-single" style="background-image: url(images/bodyPump.jpg);"></div>
 							<div class="desc">
-								<h3><a href="aerobic.html">TRENING SNAGE</a></h3>
+								<h3><a href="aerobic.html">BODY PUMP</a></h3>
 								
 									<p>
-										Kada je reč od treningu snage, veliki broj ljudi pomisli na klasičan bodibidling sa velikim brojem različitih vežbi za jačanje određene mišićne grupe. Iako bodibilding trening isto razvija telo, naročito kod početnika, primarni cilj ovog treninga je ipak estetika, a ne funkcionalnost.
-										Vežbe sa nedovršenim otporom su bitne za trening snage. Nedovršen otpor se pravi korišćenjem različitih rekviizita od kojih su najpopularniji slobodni tegovi i različite sprave. Savet je da se favorizuju vežbe sa tegovima, jer su puno bolje od vežbi na spravama, iz prostog razloga što se mišići bolje aktiviraju pri korišćenju ovih rekvizita.
-										Najbolje vežbe koje razvijaju snagu su one koje zahtevaju kompleksne pokrete i angažovanje velikog broja mišićnih grupa. Takve vežbe prouzrokuju i veći hormonalni odogovor na organizam, čime se stvara preduslov za razvoj mišićne mase. Ako je neko poznat po svojoj snazi, onda su to olimpijski dizači tegova, kod toga nema puno filozofiranja, već samo pogledajte kako se izvodi njihov trening.
-										Kod treninga za bodibidling obično se rade tri serije od po deset ponavljanja, ali ukoliko vam je glavni cilj trening sile, preporučuju se dve do tri serija sa pet ili manje ponavljanja. Odmor između serija je duži, u proseku između tri i pet minuta. Mrtvo dizanje u početku ne treba da se radi više od jedne serije sa nekoliko ponavljanja. Dovoljno su tri ovakva treninga u jednoj nedelji.
+										Body Pump je najpoznatiji svetski trening sa šipkom i opterećenjem dizajniran da vas izdefiniše, ojača i zategne. Kombinacija pokreta izabranih na naučnoj osnovi, motivacija instruktora i odlična muzika pomaže vam da postignete mnogo više nego što biste sami.
+										Efikasnost Body Pump-a potiče od takozvanog „rep“ (repetition) efekta, dokazane formule koja iscrpljuje mišiće koristeći manje kilaže, a velik broj ponavljanja. To je tajna za postizanje vretenastih, definisanih mišića.
+										Iako možete očekivati da ćete sagoreti oko 500 kalorija tokom 55-minutnog treninga Body Pump-a, izgradnja mišićne mase obezbeđuje dugoročne koristi. Izgradnjom mišića povećavate sposobnost tela da efikasno sagoreva kalorije, jer će dodatno mišićno tkivo povećati vaš metabolizam.
+										Body Pump je zaista vrhunski trening za sagorevanje kalorija I oblikovanje tela. Studije pokazuju da Body Pump  stvara dugoročni efekat sagorevanja kalorija koji je daleko veći od klasičnog kardio treninga. Body Pump se stoga može opisati kao snažniji stimulans. Ovo je podržano istraživanjima koja naglašavaju da trening sa opterećenjem bržeg tempa troši više energije nego podizanje tereta u sporijem ritmu. Studije takođe pokazuju da trening Body Pumpa-a pomaže u povećanju gustine kostiju i smanjenju rizika od osteoporoze
 									</p>
 							</div>
 						</div>
@@ -82,8 +82,6 @@
 							</div>
 
 							
-							
-							</div>
 						</div>
 					</div>
 
@@ -93,4 +91,4 @@
 		</div>
 	
 		
-		
+	
