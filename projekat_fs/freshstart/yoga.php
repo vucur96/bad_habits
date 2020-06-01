@@ -113,6 +113,9 @@
 						   					<span class="text-left"><a href="#" class="reply"><i class="icon-reply"></i></a></span>
 							   			</p>
 							   		</div>
+
+</form>
+
 							   	</div>
 								</div>
 							</div>
@@ -121,7 +124,8 @@
 					
 					
 				</div>
-			</div>	
+			</div>
+</div>
 <?php require('footer.php') ?>
 </body>
 </html>

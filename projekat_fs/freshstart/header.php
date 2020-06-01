@@ -69,7 +69,7 @@
 								<ul>
 									<li class="active"><a href="index.php">Početna</a></li>
 									<li class="has-dropdown">
-										<a href="classes.html">Treninzi</a>
+										<a href="classes.php">Treninzi</a>
 										<ul class="dropdown">
 											<li><a href="classes-single.php">Classes Single</a></li>
 											<li><a href="cardio.php">Cardio</a></li>
