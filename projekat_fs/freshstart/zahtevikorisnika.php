@@ -1,5 +1,6 @@
 <?php
 session_start();
+require("konekcija.php");
 
 if (isset($_POST['Prihvati'])){
     $upit = "UPDATE korisnik SET prihvacen=1 WHERE korisnickoime='".$_POST['kor_ime']."'";
@@ -29,10 +30,10 @@ if (isset($_POST['Odbij'])){
                   while ( $niz = mysqli_fetch_array($r)){
                      
                       echo "<form name='form_requests' method='POST' action='".$_SERVER['PHP_SELF']."'>
-                        <table border='0px'>
+                        <table border='0px' cellpadding='1px' style='text-align:center;'>
                         <tr>
-                            <td width='25%'>Ime</td>
-                            <td width='25%'>Prezime</td>
+                            <td width='25%'><b>Ime</b></td>
+                            <td width='25%'><b>Prezime</b></td>
                             <td width='25%'></td>
                             <td width='25%'></td>
                         </tr>";
@@ -56,9 +57,9 @@ if (isset($_POST['Odbij'])){
                       echo "<form name='form_requests' method='POST' action='".$_SERVER['PHP_SELF']."'>
                         <table border='0px'>
                         <tr>
-                            <td width='20%'>Ime</td>
-                            <td width='20%'>Prezime</td>
-							<td width='20%'>Kurs</td>
+                            <td width='20%'><b>Ime</b></td>
+                            <td width='20%'><b>Prezime</b></td>
+							<td width='20%'><b>Kurs</b></td>
                             <td width='20%'></td>
                             <td width='20%'></td>
                         </tr>";
@@ -82,8 +83,8 @@ if (isset($_POST['Odbij'])){
                       echo "<form name='form_requests' method='POST' action='".$_SERVER['PHP_SELF']."'>
                         <table border='0px'>
                         <tr>
-                            <td width='25%'>Ime firme</td>
-                            <td width='25%'>Opis delatnosti</td>
+                            <td width='25%'><b>Ime firme</b></td>
+                            <td width='25%'><b>Opis delatnosti</b></td>
 							<td width='25%'></td>
                             <td width='25%'></td>
 

@@ -56,10 +56,10 @@
 		</div>
 		
 		<div class="row form-group">
-			<input type='radio' id="sponzor" name='tip' value="sponzor.php" required> <label for="sponzor">Sponzor</label>
-			<input type='radio' id="trener" name='tip' value="trener.php" required> <label for="trener">Trener</label>
+			<input type='radio' id="sponzor" name='tip' value='0' required> <label for="sponzor">Sponzor</label>
+			<input type='radio' id="trener" name='tip' value='1' required> <label for="trener">Trener</label>
 
-			<input type='radio' id="korisnik" name='tip' value="korisnik.php" required > <label for="korisnik">Korisinik</label>
+			<input type='radio' id="korisnik" name='tip' value='2' required > <label for="korisnik">Korisinik</label>
 		</div>
 					
 		<div class="form-group">
