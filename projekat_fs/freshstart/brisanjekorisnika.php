@@ -26,11 +26,11 @@ if (isset($_POST['Obrisi'])){
                 if (mysqli_num_rows($r)> 0){
                    echo "<table border='0px' cellpadding='1px' style='text-align:center;'>
                         <tr>
-                            <td width='25%'><b>Korisnicko ime</b></td>
-                            <td width='25%'><b>Ime</b></td>
-                            <td width='25%'><b>Prezime</b></td>
-                            <td width='25%'><b>Tip</b></td>
-                            <td width='25%'></td>
+                            <td width='20%'><b>Korisnicko ime</b></td>
+                            <td width='20%'><b>Ime</b></td>
+                            <td width='20%'><b>Prezime</b></td>
+                            <td width='20%'><b>Tip</b></td>
+                            <td width='20%'></td>
                         </tr>";
                 while ( $red = mysqli_fetch_array($r)){
                         

@@ -23,7 +23,7 @@ if (isset($_POST['Odbij'])){
         <div id="menu">
              <div align="center">
                  <?php 
-                  $q = "SELECT * FROM korisnik WHERE tip='".$_POST['korisnik']."' ";
+                  $q = "SELECT * FROM korisnik WHERE tip='".$_POST['2']."' ";
                   $r = mysqli_query($konekcija, $q) or die ("Greska kod pregleda zahteva za registraciju". mysqli_error($konekcija));
                   if (mysqli_num_rows($r) > 0){
                    echo " <h2 style='color:black;'>Zahtevi korisnika</h2>";   
@@ -48,7 +48,7 @@ if (isset($_POST['Odbij'])){
                   }
 
 				
-				$q = "SELECT * FROM korisnik WHERE tip='".$_POST['trener']."' ";
+				$q = "SELECT * FROM korisnik WHERE tip='".$_POST['1']."' ";
                   $r = mysqli_query($konekcija, $q) or die ("Greska kod pregleda zahteva za registraciju". mysqli_error($konekcija));
                   if (mysqli_num_rows($r) > 0){
                    echo " <h2 style='color:black;'>Zahtevi trenera</h2>";   
@@ -74,7 +74,7 @@ if (isset($_POST['Odbij'])){
                   }
 				  
 				  
-				  $q = "SELECT * FROM korisnik WHERE tip='".$_POST['sponzor']."' ";
+				  $q = "SELECT * FROM korisnik WHERE tip='".$_POST['0']."' ";
                   $r = mysqli_query($konekcija, $q) or die ("Greska kod pregleda zahteva za registraciju". mysqli_error($konekcija));
                   if (mysqli_num_rows($r) > 0){
                    echo " <h2 style='color:black;'>Zahtevi sponzora</h2>";   
