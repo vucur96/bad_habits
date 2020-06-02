@@ -56,14 +56,14 @@
 		</div>
 		
 		<div class="row form-group">
-			<input type='radio' id="sponzor" name='tip' value='0' required> <label for="sponzor">Sponzor</label>
-			<input type='radio' id="trener" name='tip' value='1' required> <label for="trener">Trener</label>
+			<input type='radio' id="sponzor" name='tip' value='1' required> <label for="sponzor">Sponzor</label>
+			<input type='radio' id="trener" name='tip' value='2' required> <label for="trener">Trener</label>
 
-			<input type='radio' id="korisnik" name='tip' value='2' required > <label for="korisnik">Korisinik</label>
+			<input type='radio' id="korisnik" name='tip' value='3' required > <label for="korisnik">Korisinik</label>
 		</div>
 					
 		<div class="form-group">
-				<button onclick="proveriRegistraciju()" class="btn btn-primary">Nastavi</button>
+				<input name="nastavi" value="Nastavi" type="submit">
 		</div>
 		
 	</form>	
