@@ -1,10 +1,14 @@
 <?php
 		require("header.php");
 	?>
+<?php
+	session_start();
+?>
 <html>
 <head>
 </head>
 <body>
+	
 	<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
@@ -27,23 +31,29 @@
 					<div class="col-md-10 col-md-offset-1 animate-box">
     <br>
     <h2>PRIJAVA</h2>
-	<form action="#">
+	<form name="login" action="log.php" method="POST">
+	<?php
+		if(isset($_SESSION['poruka'])){
+			echo'<font color="read">'.$_SESSION['poruka'].'</font>';
+		}
+	?>
             <div class="row form-group">
                     <div class="col-md-6">
                             <!-- <label for="fname">First Name</label> -->
-                            <input type="text" id="korIme" class="form-control" placeholder="Korisnicko ime"required>
+                            <input type="text" name="korIme" class="form-control" placeholder="Korisnicko ime">
                     </div>
             </div>
                             
             <div class="row form-group">
                 <div class="col-md-6">
                     <!-- <label for="fname">First Name</label> -->
-                    <input type="text" id="lozinka" class="form-control" placeholder="Lozinka"required>
+                    <input type="password" name="lozinka" class="form-control" placeholder="Lozinka">
                 </div>
             </div>
                 
             <div class="form-group">
-                    <button value="Prijavi se" class="btn btn-primary">Prijavi se</button>
+					<input name="login" value="Prijavi se" type="submit">
+                    <!--<button value="Prijavi se" class="btn btn-primary">Prijavi se</button>-->
             </div>
             <p>Ako ste novi korisnik nastavite sa <a href="registracija.php">Registracijom</a></p>
 	</form>	
