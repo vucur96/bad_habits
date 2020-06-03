@@ -58,7 +58,27 @@
                 echo "<center><font size='4px' color='#e32319'><b>Niste uneli lozinku!</b></font></center>";
             }
         } else {
-            echo "<center><font size='4px' color='#e32319'><b>Ne postoji korisnik sa unetim korisnickim imenom!</b></font></center>";
+			$upit3 = "SELECT * FROM admin WHERE KorisnickoIme='".$korisnik."'";
+			$rezultat3 = mysqli_query($konekcija, $upit3)
+				or die("Greska kod upita da li postoji uneto korisničko ime!" . mysqli_error($konekcija));
+        
+			if (mysqli_num_rows($rezultat3) == 1) {
+				$_SESSION['KorisnickoIme']=$korisnik;
+            
+				if ($_POST['lozinka'] != '') {
+					$upit4 = "SELECT * FROM admin WHERE KorisnickoIme='".$korisnik."' AND lozinka='".$sifra."'";
+					$rezultat4 = mysqli_query($konekcija, $upit4) or die("Greska kod upita za proveru šifre!" . mysqli_error($konekcija));
+					if (mysqli_num_rows($rezultat4) == 1){
+						echo "<script> location.href='admin_meni.php'; </script>";
+					}else{
+						echo "<center><font size='4px' color='#e32319'><b>Niste uneli odgovarajucu lozinku!</b></font></center>";
+					}
+				}else {
+					echo "<center><font size='4px' color='#e32319'><b>Niste uneli lozinku!</b></font></center>";
+				}
+			}else{
+				echo "<center><font size='4px' color='#e32319'><b>Ne postoji korisnik sa tim korisnickim imenom!</b></font></center>";
+			}
         }
     }else{
 		echo "<center><font size='4px' color='#e32319'><b>Niste uneli korisnicko ime!</b></font></center>";
