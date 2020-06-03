@@ -25,21 +25,27 @@
                     </ul>
                 </div>
             </aside>
+			 <div class="col-md-10 col-md-offset-1 animate-box">
 		<br>
 		<h2>REGISTRACIJA KORISNIKA</h2>
 <?php
-    if(!isset($_POST['Registruj'])){
+	if(isset($_SESSION['KorisnickoIme'])){
+		$korisnik=$_SESSION['KorisnickoIme'];
+	}
+    if(!isset($_POST['registruj'])){
         $ime = '';
         $prezime = '';
 		$datumrodj = '';
 		$visina = '';
 		$tezina = '';
+		$cilj ='';
 	}else{
 		$ime = $_POST['ime'];
 		$prezime = $_POST['prezime'];
 		$datum = $_POST['datumrodj'];
 		$visina = $_POST['visina'];
 		$tezina = $_POST['tezina'];
+		$cilj = $_POST['cilj'];
 	}
     require("konekcija.php");
 	
@@ -48,12 +54,15 @@
 			if($datum!= ''){
 				if($visina!= ''){
 					if($tezina!= ''){
-						$upit2 = "UPDATE zahtevkorisnik SET ime ='".$ime."',prezime ='".$prezime."',datumrodj ='".$datum."',visina ='".$visina."',tezina='".$tezina."' "
-                                    . "WHERE korisnickoime='".$korisnik."'";
-						$rezultat2 = mysqli_query($konekcija, $upit1)
-								or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
-						header("Location:index.php");
-						exit();
+						if($cilj!=''){
+							$upit = "UPDATE zahtevkorisnik SET ime='".$ime."', prezime='".$prezime."', datum='".$datum."', visina='".$visina."', tezina='".$tezina."', cilj='".$cilj."'
+										WHERE KorisnickoIme='".$korisnik."'"; 
+							$rezultat = mysqli_query($konekcija, $upit)
+									or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
+							echo "<script> location.href='index.php'; </script>";
+						}else{
+							echo "<center><font size='4px' color='#e32319'><b>Niste uneli vas cilj!</b></font></center>";
+						}
 					}else{
 						echo "<center><font size='4px' color='#e32319'><b>Niste uneli tezinu!</b></font></center>";
 					}
@@ -75,32 +84,32 @@
 			<div class="row form-group">
 				<div class="col-md-6">
 					<!-- <label for="fname">First Name</label> -->
-					<input type="text" name="ime" class="form-control" placeholder="Vaše ime" required>
+					<input type="text" name="ime" class="form-control" placeholder="Vaše ime" >
 				</div>
 			</div>
 			<div class="row form-group">
 				<div class="col-md-6">
 					<!-- <label for="fname">First Name</label> -->
-					<input type="text" name="prezime" class="form-control" placeholder="Vaše prezime" required>
+					<input type="text" name="prezime" class="form-control" placeholder="Vaše prezime" >
 						</div>
 			</div>
 
 			<div class="row form-group">
 				<div class="col-md-6">
 				
-					<input type="date" name="datumrodj" class="form-control" placeholder="Datum rodjenja" min="1930-01-01"required>
+					<input type="date" name="datumrodj" class="form-control" placeholder="Datum rodjenja" min="1930-01-01">
 				</div>
 			</div>
 			<div class="row form-group">
 				<div class="col-md-4">
 					<!-- <label for="fname">First Name</label> -->
-					<input type="number" name="visina" class="form-control" placeholder="Vaša visina(u cm)" min="100" max="250"required>
+					<input type="number" name="visina" class="form-control" placeholder="Vaša visina(u cm)" min="100" max="250">
 						</div>
 			</div>
 			<div class="row form-group">
 				<div class="col-md-4">
 					<!-- <label for="fname">First Name</label> -->
-					<input type="number" name="tezina" class="form-control" placeholder="Vaša težina(u kg)" min="30" max="500" required>
+					<input type="number" name="tezina" class="form-control" placeholder="Vaša težina(u kg)" min="30" max="500">
 						</div>
 			</div>
 			<div class="row form-group">
@@ -112,11 +121,9 @@
 		
 
 			<div class="form-group">
-<input type="submit" value="Nastavi"  name="nastavi">
-</div>
-		</form>		
+				<input type="submit" value="Registruj me"  name="registruj">
 			</div>
-		</div>
+		</form>	
 	</div>
    <?php require('footer.php') ?>
 		
