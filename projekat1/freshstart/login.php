@@ -29,11 +29,13 @@
     <br>
     <h2>PRIJAVA</h2>
 <?php
-    if(isset($_POST['login'])){
+    if(!isset($_POST['login'])){
         $korisnik = '';
-        $sifra = '';    }
-    $korisnik = $_POST['korIme'];
-    $sifra = $_POST['lozinka'];
+        $sifra = '';    
+	}else{
+		$korisnik = $_POST['korIme'];
+		$sifra = $_POST['lozinka'];
+	}
     require("konekcija.php");
     
     if ($korisnik != '') {
@@ -58,12 +60,14 @@
         } else {
             echo "<center><font size='4px' color='#e32319'><b>Ne postoji korisnik sa unetim korisnickim imenom!</b></font></center>";
         }
-    }
+    }else{
+		echo "<center><font size='4px' color='#e32319'><b>Niste uneli korisnicko ime!</b></font></center>";
+	}
         mysqli_close($konekcija);
 
 ?>
 	<form name="login" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-//	<?php
+	<?php
 	//	if(isset($_SESSION['poruka'])){
 		//	echo'<font color="read">'.$_SESSION['poruka'].'</font>';
 		//}
