@@ -34,8 +34,7 @@
 		$korisnik = $_POST['korisnickoIme'];
 		$email = $_POST['Email'];
 		$sifra = $_POST['lozinka'];
-		$ponovljena = $_POST['PonovoLoz'];
-		$tip = $_POST['tip']; 
+		$ponovljena = $_POST['PonovoLoz']; 
 	}else{
 		$korisnik = '';
 		$email = '';
@@ -49,7 +48,7 @@
 		if ($email != ''){
 			if($sifra!=''){
 				if($ponovljena!=''){
-					if($tip!=''){
+					if($_POST['tip']!=''){
 						if($ponovljena!=$sifra){
 							echo "<center><font size='4px' color='#e32319'><b>Ponovljena lozinka i lozinka se ne slazu!</b></font></center>";
 						}else{
@@ -60,15 +59,15 @@
 								echo "<center><font size='4px' color='#e32319'><b>Korisnicko ime je zauzeto unesite neko drugo!</b></font></center>";
 							}else{
 								
-								$upit2 = "INSERT INTO zahtevkorisnik (KorisnickoIme,email,lozinka,tip,VIP,pogodnosti,Ime,prezime,datumrodj,visina,tezina,Imefirm,opisdel,vrstarek,cilj)"
-										. " VALUES ('".$korisnik."','".$email."','".$sifra."','".$tip.")";
-								$rezultat2 = mysqli_query($konekcija, $upit1)
+								$upit2 = "INSERT INTO zahtevkorisnik (KorisnickoIme, email, lozinka, tip)
+											VALUES ('".$korisnik."', '".$email."', '".$sifra."', '".$_POST['tip']."')";
+								$rezultat2 = mysqli_query($konekcija, $upit2)
 										or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
-								if($tip==1){
+								if($_POST['tip']==1){
 									echo "<script> location.href='sponzor.php'; </script>";
 								}
 								else{ 
-									if($tip==2){
+									if($_POST['t']==2){
 										echo "<script> location.href='trener.php'; </script>";
 									}else { 
 										echo "<script> location.href='korisnik.php'; </script>";
