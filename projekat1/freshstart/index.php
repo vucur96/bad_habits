@@ -15,7 +15,7 @@
 				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 				   				<div class="slider-text-inner text-center">
 				   					<h1>Ima samo jedan način da stigneš na cilj:</h1>
-				   					<p><a href="login.html" class="btn btn-primary btn-lg btn-learn">Pridruži nam se</a></p>
+				   					<p><a href="login.php" class="btn btn-primary btn-lg btn-learn">Pridruži nam se</a></p>
 				   				</div>
 				   			</div>
 				   		</div>
@@ -41,7 +41,7 @@
 				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 				   				<div class="slider-text-inner text-center">
 				   					<h1>Veruj da možeš i već si na pola puta</h1>
-                                                                        <p><a href="login.php" class="btn btn-primary btn-lg btn-learn">Pridruži nam se</a></p>
+                                     <p><a href="login.php" class="btn btn-primary btn-lg btn-learn">Pridruži nam se</a></p>
 				   				</div>
 				   			</div>
 				   		</div>
