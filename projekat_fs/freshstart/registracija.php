@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <html>
 <head>                 
 </head>	
@@ -26,40 +29,45 @@
 	
 	<br>
 	<h2>REGISTRACIJA</h2>
+	<?php
+		if(isset($_SESSION['poruka'])){
+			echo'<font color="read">'.$_SESSION['poruka'].'</font>';
+		}
+	?>
 	<form name='mojaforma' action="reg.php" method="POST">
 		<div class="row form-group">
 				<div class="col-md-6">
 						<!-- <label for="fname">First Name</label> -->
-						<input type="text" name="korisnickoIme" class="form-control" placeholder="Korisnicko ime" required>
+						<input type="text" name="korisnickoIme" class="form-control" placeholder="Korisnicko ime" >
 				</div>
 		</div>
 
 		<div class="row form-group">
 				<div class="col-md-6">
 						<!-- <label for="email">Email</label> -->
-						<input type="text" name="Email" class="form-control" placeholder="Your email address"required>
+						<input type="text" name="Email" class="form-control" placeholder="Your email address">
 				</div>
 		</div>
 								
 		<div class="row form-group">
 			<div class="col-md-6">
 				<!-- <label for="fname">First Name</label> -->
-				<input type="password" name="lozinka" class="form-control" placeholder="Lozinka"required>
+				<input type="password" name="lozinka" class="form-control" placeholder="Lozinka">
 			</div>
 		</div>
 		
 		<div class="row form-group">
 			<div class="col-md-6">
 				<!-- <label for="fname">First Name</label> -->
-				<input type="password" name="PonovoLoz" class="form-control" placeholder="Ponovljena lozinka"required>
+				<input type="password" name="PonovoLoz" class="form-control" placeholder="Ponovljena lozinka">
 					</div>
 		</div>
 		
 		<div class="row form-group">
-			<input type='radio' id="sponzor" name='tip' value='1' required> <label for="sponzor">Sponzor</label>
-			<input type='radio' id="trener" name='tip' value='2' required> <label for="trener">Trener</label>
+			<input type='radio' id="sponzor" name='tip' value='1' > <label for="sponzor">Sponzor</label>
+			<input type='radio' id="trener" name='tip' value='2' > <label for="trener">Trener</label>
 
-			<input type='radio' id="korisnik" name='tip' value='3' required > <label for="korisnik">Korisinik</label>
+			<input type='radio' id="korisnik" name='tip' value='3' > <label for="korisnik">Korisinik</label>
 		</div>
 					
 		<div class="form-group">
@@ -69,20 +77,6 @@
 	</form>	
 	
 	<?php require("footer.php");?>
-
-	<script>
-			function fja(){
-				var all=document.getElementsByName('tip');
-				for(i=0;i<all.length;i++){
-					if(all[i].type="radio"){
-					if(all[i].checked){
-						window.open(all[i].value,"_self");
-					}
-					}
-				}
-			}
-			
-	</script>	
 		
 	<script language="JavaScript">
 		function proveriRegistraciju(){
