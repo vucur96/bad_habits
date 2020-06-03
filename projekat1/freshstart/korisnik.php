@@ -28,17 +28,19 @@
 		<br>
 		<h2>REGISTRACIJA KORISNIKA</h2>
 <?php
-    if(isset($_POST['Registruj'])){
+    if(!isset($_POST['Registruj'])){
         $ime = '';
         $prezime = '';
 		$datumrodj = '';
 		$visina = '';
-		$tezina = '';}
-    $ime = $_POST['ime'];
-	$prezime = $_POST['prezime'];
-    $datum = $_POST['datumrodj'];
-	$visina = $_POST['visina'];
-	$tezina = $_POST['tezina'];
+		$tezina = '';
+	}else{
+		$ime = $_POST['ime'];
+		$prezime = $_POST['prezime'];
+		$datum = $_POST['datumrodj'];
+		$visina = $_POST['visina'];
+		$tezina = $_POST['tezina'];
+	}
     require("konekcija.php");
 	
 	if ($ime != ''){

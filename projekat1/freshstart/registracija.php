@@ -30,14 +30,19 @@
 	<br>
 	<h2>REGISTRACIJA</h2>
 <?php
-    if(isset($_POST['Nastavi'])){
-        $korisnik = '';
-        $sifra = '';    }
-    $korisnik = $_POST['korisnickoIme'];
-	$email = $_POST['Email'];
-    $sifra = $_POST['lozinka'];
-	$ponovljena = $_POST['PonovoLoz'];
-	$tip = $_POST['tip'];
+    if(isset($_POST['nastavi'])){
+		$korisnik = $_POST['korisnickoIme'];
+		$email = $_POST['Email'];
+		$sifra = $_POST['lozinka'];
+		$ponovljena = $_POST['PonovoLoz'];
+		$tip = $_POST['tip']; 
+	}else{
+		$korisnik = '';
+		$email = '';
+		$sifra = '';
+		$ponovljena = '';
+		$tip = ''; 
+	}
     require("konekcija.php");
 	
 	if ($korisnik != ''){
