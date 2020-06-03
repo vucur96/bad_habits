@@ -2,25 +2,36 @@
 -- version 4.9.3
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:8889
+-- Host: l127.0.0.1:3306
 -- Generation Time: May 31, 2020 at 04:06 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `freshstart`
 --
-
+DROP DATABASE IF EXISTS `freshstart`;
+CREATE DATABASE IF NOT EXISTS `freshstart` DEFAULT CHARACTER SET utf8mb4;
+USE `projekat_ankete`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Admin`
+-- Table structure for table `admin`
 --
 
-CREATE TABLE `Admin` (
+DROP TABLE IF EXISTS `admin`;
+CREATE TABLE IF NOT EXISTS `admin` (
   `KorisnickoIme` varchar(20) NOT NULL,
   `lozinka` varchar(16) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -31,7 +42,8 @@ CREATE TABLE `Admin` (
 -- Table structure for table `blog`
 --
 
-CREATE TABLE `blog` (
+DROP TABLE IF EXISTS `anketa`;
+CREATE TABLE IF NOT EXISTS `anketa`  (
   `BlogID` int(11) NOT NULL,
   `naslov` varchar(60) DEFAULT NULL,
   `tekst` text,
@@ -61,7 +73,7 @@ CREATE TABLE `korisnik` (
   `KorisnickoIme` varchar(20) NOT NULL,
   `email` varchar(40) DEFAULT NULL,
   `lozinka` varchar(16) DEFAULT NULL,
-  `tip` char(18) NOT NULL,
+  `tip` tinyint(1) NOT NULL,
   `VIP` tinyint(1) DEFAULT NULL,
   `pogodnosti` varchar(50) DEFAULT NULL,
   `ime` varchar(20) DEFAULT NULL,

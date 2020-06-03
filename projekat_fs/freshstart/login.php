@@ -1,9 +1,6 @@
 <?php
 		require("header.php");
 	?>
-<?php
-	session_start();
-?>
 <html>
 <head>
 </head>
@@ -31,12 +28,46 @@
 					<div class="col-md-10 col-md-offset-1 animate-box">
     <br>
     <h2>PRIJAVA</h2>
-	<form name="login" action="log.php" method="POST">
-	<?php
-		if(isset($_SESSION['poruka'])){
-			echo'<font color="read">'.$_SESSION['poruka'].'</font>';
-		}
-	?>
+<?php
+    if(isset($_POST['login'])){
+        $korisnik = '';
+        $sifra = '';    }
+    $korisnik = $_POST['korIme'];
+    $sifra = $_POST['lozinka'];
+    require("konekcija.php");
+    
+    if ($korisnik != '') {
+        $upit1 = "SELECT * FROM korisnik WHERE KorisnickoIme='".$korisnik."'";
+        $rezultat1 = mysqli_query($konekcija, $upit1)
+        or die("Greska kod upita da li postoji uneto korisničko ime!" . mysqli_error($konekcija));
+        
+        if (mysqli_num_rows($rezultat1) == 1) {
+            $_SESSION['KorisnickoIme']=$korisnik;
+            
+            if ($_POST['lozinka'] != '') {
+                $upit2 = "SELECT * FROM korisnik WHERE KorisnickoIme='".$korisnik."' AND lozinka='".$sifra."'";
+                $rezultat2 = mysqli_query($konekcija, $upit2) or die("Greska kod upita za proveru šifre!" . mysqli_error($konekcija));
+                if (mysqli_num_rows($rezultat2) == 1){
+					echo "<script> location.href='index.php'; </script>";
+				}else{
+					echo "<center><font size='4px' color='#e32319'><b>Niste uneli odgovarajucu lozinku!</b></font></center>";
+				}
+			}else {
+                echo "<center><font size='4px' color='#e32319'><b>Niste uneli lozinku!</b></font></center>";
+            }
+        } else {
+            echo "<center><font size='4px' color='#e32319'><b>Ne postoji korisnik sa unetim korisnickim imenom!</b></font></center>";
+        }
+    }
+        mysqli_close($konekcija);
+
+?>
+	<form name="login" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+//	<?php
+	//	if(isset($_SESSION['poruka'])){
+		//	echo'<font color="read">'.$_SESSION['poruka'].'</font>';
+		//}
+	//?>
             <div class="row form-group">
                     <div class="col-md-6">
                             <!-- <label for="fname">First Name</label> -->
@@ -65,3 +96,4 @@
 		require("footer.php");
 	?>	
 </body>		
+</html>
