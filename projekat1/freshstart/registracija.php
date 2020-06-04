@@ -124,7 +124,7 @@
 		</div>
 					
 		<div class="form-group">
-				<input name="nastavi" value="Nastavi" type="submit">
+				<input type="submit" value="Nastavi" name ="nastavi" class="btn btn-primary">
 		</div>
 		
 	</form>	

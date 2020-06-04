@@ -33,48 +33,43 @@
     if(isset($_SESSION['korisnickoIme'])){
         $korisnik=$_SESSION['korisnickoIme'];
     }
-    if(!isset($_POST['registruj'])){
-        $korisnik = '';
-        $imefirme = '';
-        $opisdel = '';
-        $vrstarek='';
-    }else{
+    if(isset($_POST['registruj'])){
         $korisnik = $_POST['korisnickoIme'];
         $imefirme = $_POST['imefirme'];
         $opisdel = $_POST['opisdel'];
         $vrstarek=$_POST['vrstarek'];
         
-    }
-    require("konekcija.php");
-    
-        if ($imefirme != ''){
-            if($opisdel!=''){
-                    if($vrstarek!=''){
-                        $upit1 = "SELECT * FROM zahtevkorisnik WHERE KorisnickoIme='".$korisnik."'";
-                        $rezultat1 = mysqli_query($konekcija, $upit1)
-                        or die("Greska kod upita koji proverava da li uneto korisničko ime postoji u bazi!" . mysqli_error($konekcija));
-                        if (mysqli_num_rows($rezultat1) != 1) {
-                            echo "<center><font size='4px' color='#e32319'><b>Korisnicko ime ne postoji unesite neko drugo!</b></font></center>";
-                        }else{
-                            $upit = "UPDATE zahtevkorisnik SET imefirme='".$imefirme."', opisdel='".$opisdel."', vrstarek='".$_POST['vrstarek']."'
-                            WHERE KorisnickoIme='".$korisnik."'";
-                            $rezultat = mysqli_query($konekcija, $upit)
-                            or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
-                            echo "<script> location.href='index.php'; </script>";
-                        }
-                    }else{    echo "<center><font size='4px' color='#e32319'><b>Niste uneli vrstu reklame!</b></font></center>";
-                        
-                    }
-            }
-                    else{
-                        "<center><font size='4px' color='#e32319'><b>Niste uneli opis delatnosti Vase firme!</b></font></center>";
-                        
-                    }
-        }else{
-                        echo "<center><font size='4px' color='#e32319'><b> Niste uneli ime firme!</b></font></center>";
-                        
-                    }
-                        mysqli_close($konekcija);
+		require("konekcija.php");
+		
+			if ($imefirme != ''){
+				if($opisdel!=''){
+						if($vrstarek!=''){
+							$upit1 = "SELECT * FROM zahtevkorisnik WHERE KorisnickoIme='".$korisnik."'";
+							$rezultat1 = mysqli_query($konekcija, $upit1)
+							or die("Greska kod upita koji proverava da li uneto korisničko ime postoji u bazi!" . mysqli_error($konekcija));
+							if (mysqli_num_rows($rezultat1) != 1) {
+								echo "<center><font size='4px' color='#e32319'><b>Korisnicko ime ne postoji unesite neko drugo!</b></font></center>";
+							}else{
+								$upit = "UPDATE zahtevkorisnik SET imefirme='".$imefirme."', opisdel='".$opisdel."', vrstarek='".$_POST['vrstarek']."'
+								WHERE KorisnickoIme='".$korisnik."'";
+								$rezultat = mysqli_query($konekcija, $upit)
+								or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
+								echo "<script> location.href='index.php'; </script>";
+							}
+						}else{    echo "<center><font size='4px' color='#e32319'><b>Niste uneli vrstu reklame!</b></font></center>";
+							
+						}
+				}
+						else{
+							"<center><font size='4px' color='#e32319'><b>Niste uneli opis delatnosti Vase firme!</b></font></center>";
+							
+						}
+			}else{
+							echo "<center><font size='4px' color='#e32319'><b> Niste uneli ime firme!</b></font></center>";
+							
+						}
+							mysqli_close($konekcija);
+	}
 ?>
 
         <form name='registracijaspon' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
@@ -105,7 +100,7 @@
                                         
                             </div>
 							<div class="form-group">
-								<input type="submit" value="Registruj me"  name="registruj">
+								<input type="submit" value="Registruj me" name ="registruj" class="btn btn-primary">
 							</div>
 						</form>		
 

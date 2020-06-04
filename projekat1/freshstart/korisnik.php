@@ -128,7 +128,7 @@
 		
 
 			<div class="form-group">
-				<input type="submit" value="Registruj me"  name="registruj">
+				<input type="submit" value="Registruj me" name ="registruj" class="btn btn-primary">
 			</div>
 		</form>	
 	</div>

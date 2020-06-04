@@ -99,7 +99,7 @@
             </div>
                 
             <div class="form-group">
-					<input name="login" value="Prijavi se" type="submit">
+					<input type="submit" value="Prijavi se" name ="login" class="btn btn-primary">
                     <!--<button value="Prijavi se" class="btn btn-primary">Prijavi se</button>-->
             </div>
             <p>Ako ste novi korisnik nastavite sa <a href="registracija.php">Registracijom</a></p>
