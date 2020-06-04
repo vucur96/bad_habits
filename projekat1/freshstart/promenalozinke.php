@@ -41,8 +41,8 @@
 				if ($stara != ''){
 					if($nova!= ''){
 						if($potvrdaLoz!= ''){
-							if($potvrdaloz==$nova){
-								$upit1 = "SELECT * FROM zahtevkorisnik WHERE KorisnickoIme='".$korisnik."'";
+							if($potvrdaLoz==$nova){
+								$upit1 = "SELECT * FROM korisnik WHERE KorisnickoIme='".$korisnik."'";
 								$rezultat1 = mysqli_query($konekcija, $upit1)
 								or die("Greska kod upita koji proverava da li uneto korisničko ime postoji u bazi!" . mysqli_error($konekcija));
 								if (mysqli_num_rows($rezultat1) != 1) {
@@ -78,7 +78,7 @@
 	
 	?>
 	
-		<form action="#">
+		<form name='mojaforma' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 		
 			<div class="row form-group">
 				<div class="col-md-6">
@@ -106,7 +106,7 @@
 			</div>
 
 			<div class="form-group">
-				<input type="submit" value="Promeni" class="btn btn-primary">
+				<input type="submit" value="Promeni" name ="Promeni" class="btn btn-primary">
 			</div>
 		</form>		
 					</div>
