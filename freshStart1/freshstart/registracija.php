@@ -67,6 +67,9 @@
 												VALUES ('".$korisnik."', '".$email."', '".$sifra."', '".$_POST['tip']."')";
 									$rezultat2 = mysqli_query($konekcija, $upit2)
 											or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
+									
+									$_SESSION['KorisnickoIme']=$korisnik;
+									
 									if($_POST['tip']==1){
 										echo "<script> location.href='sponzor.php'; </script>";
 									}
