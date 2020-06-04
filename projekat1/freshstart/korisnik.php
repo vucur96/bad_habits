@@ -29,10 +29,11 @@
 		<br>
 		<h2>REGISTRACIJA KORISNIKA</h2>
 <?php
-	if(isset($_SESSION['KorisnickoIme'])){
-		$korisnik=$_SESSION['KorisnickoIme'];
+	if(isset($_SESSION['korisnickoIme'])){
+		$korisnik=$_SESSION['korisnickoIme'];
 	}
     if(!isset($_POST['registruj'])){
+        $korisnik = '';
         $ime = '';
         $prezime = '';
 		$datumrodj = '';
@@ -40,6 +41,7 @@
 		$tezina = '';
 		$cilj ='';
 	}else{
+            $korisnik = $_POST['korisnickoIme'];
 		$ime = $_POST['ime'];
 		$prezime = $_POST['prezime'];
 		$datum = $_POST['datumrodj'];
@@ -55,11 +57,18 @@
 				if($visina!= ''){
 					if($tezina!= ''){
 						if($cilj!=''){
-							$upit = "UPDATE zahtevkorisnik SET ime='".$ime."', prezime='".$prezime."', datum='".$datum."', visina='".$visina."', tezina='".$tezina."', cilj='".$cilj."'
+                            $upit1 = "SELECT * FROM zahtevkorisnik WHERE KorisnickoIme='".$korisnik."'";
+                            $rezultat1 = mysqli_query($konekcija, $upit1)
+                            or die("Greska kod upita koji proverava da li uneto korisničko ime postoji u bazi!" . mysqli_error($konekcija));
+                            if (mysqli_num_rows($rezultat1) != 1) {
+                                echo "<center><font size='4px' color='#e32319'><b>Korisnicko ime ne postoji unesite neko drugo!</b></font></center>";
+                            }else{
+							$upit = "UPDATE zahtevkorisnik SET ime='".$ime."', prezime='".$prezime."', datumrodj='".$datum."', visina='".$visina."', tezina='".$tezina."', cilj='".$cilj."'
 										WHERE KorisnickoIme='".$korisnik."'"; 
 							$rezultat = mysqli_query($konekcija, $upit)
 									or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
 							echo "<script> location.href='index.php'; </script>";
+                            }
 						}else{
 							echo "<center><font size='4px' color='#e32319'><b>Niste uneli vas cilj!</b></font></center>";
 						}
@@ -82,6 +91,12 @@
 ?>
 		<form name="registracijakor" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 			<div class="row form-group">
+<div class="col-md-6">
+<!-- <label for="fname">First Name</label> -->
+<input type="text" name="korisnickoIme" class="form-control" placeholder="Korisnicko ime" >
+</div>
+</div>
+<div class="row form-group">
 				<div class="col-md-6">
 					<!-- <label for="fname">First Name</label> -->
 					<input type="text" name="ime" class="form-control" placeholder="Vaše ime" >

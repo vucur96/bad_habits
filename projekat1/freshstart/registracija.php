@@ -67,7 +67,7 @@
 									echo "<script> location.href='sponzor.php'; </script>";
 								}
 								else{ 
-									if($_POST['t']==2){
+									if($_POST['tip']==2){
 										echo "<script> location.href='trener.php'; </script>";
 									}else { 
 										echo "<script> location.href='korisnik.php'; </script>";

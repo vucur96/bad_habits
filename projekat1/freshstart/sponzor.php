@@ -1,4 +1,9 @@
-
+<?php
+    session_start();
+    ?>
+<html>
+<head>
+</head>
 <body>
 <?php require('header.php'); ?>
 <aside id="colorlib-hero">
@@ -20,14 +25,69 @@
                     </ul>
                 </div>
             </aside>
-<h2>REGISTRACIJA SPONZORA
+ <div class="col-md-10 col-md-offset-1 animate-box">
+<br>
+<h2>REGISTRACIJA SPONZORA </h2>
+
+<?php
+    if(isset($_SESSION['korisnickoIme'])){
+        $korisnik=$_SESSION['korisnickoIme'];
+    }
+    if(!isset($_POST['registruj'])){
+        $korisnik = '';
+        $imefirme = '';
+        $opisdel = '';
+        $vrstarek='';
+    }else{
+        $korisnik = $_POST['korisnickoIme'];
+        $imefirme = $_POST['imefirme'];
+        $opisdel = $_POST['opisdel'];
+        $vrstarek=$_POST['vrstarek'];
+        
+    }
+    require("konekcija.php");
+    
+        if ($imefirme != ''){
+            if($opisdel!=''){
+                    if($vrstarek!=''){
+                        $upit1 = "SELECT * FROM zahtevkorisnik WHERE KorisnickoIme='".$korisnik."'";
+                        $rezultat1 = mysqli_query($konekcija, $upit1)
+                        or die("Greska kod upita koji proverava da li uneto korisničko ime postoji u bazi!" . mysqli_error($konekcija));
+                        if (mysqli_num_rows($rezultat1) != 1) {
+                            echo "<center><font size='4px' color='#e32319'><b>Korisnicko ime ne postoji unesite neko drugo!</b></font></center>";
+                        }else{
+                            $upit = "UPDATE zahtevkorisnik SET imefirme='".$imefirme."', opisdel='".$opisdel."', vrstarek='".$_POST['vrstarek']."'
+                            WHERE KorisnickoIme='".$korisnik."'";
+                            $rezultat = mysqli_query($konekcija, $upit)
+                            or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
+                            echo "<script> location.href='index.php'; </script>";
+                        }
+                    }else{    echo "<center><font size='4px' color='#e32319'><b>Niste uneli vrstu reklame!</b></font></center>";
                         
-                        </h2>
-						<form name='registracijaspon' action="regspoz.php" method="POST">
+                    }
+            }
+                    else{
+                        "<center><font size='4px' color='#e32319'><b>Niste uneli opis delatnosti Vase firme!</b></font></center>";
+                        
+                    }
+        }else{
+                        echo "<center><font size='4px' color='#e32319'><b> Niste uneli ime firme!</b></font></center>";
+                        
+                    }
+                        mysqli_close($konekcija);
+?>
+
+        <form name='registracijaspon' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 							<div class="row form-group">
+    <div class="col-md-6">
+    <!-- <label for="fname">First Name</label> -->
+    <input type="text" name="korisnickoIme" class="form-control" placeholder="Korisnicko ime" >
+    </div>
+    </div>
+<div class="row form-group">
 								<div class="col-md-6">
 									<!-- <label for="fname">First Name</label> -->
-									<input type="text" id="imefirme" class="form-control" placeholder="Ime Vaše firme" required>
+									<input type="text" name="imefirme" class="form-control" placeholder="Ime Vaše firme" required>
 								</div>
 							</div>
                             <div class="row form-group">
@@ -38,35 +98,19 @@
                             </div>
 
                             <div class="row form-group">
-                                </p>Vrsta reklame koju želite:</p>
-                               <p> <input type="checkbox" name="vrstarek" value="proizvod">Reklamiranje Vašeg proizovda u teretani</p>
-                               <p> <input type="checkbox" name="vrstarek" value="poster">Reklamiranje Vaše firme u vidu postera</p>
-                               <p> <input type="checkbox" name="vrstarek" value="flajer">Reklamiranje Vaših flajera</p>
+                                <p>Vrsta reklame koju želite:</p>
+                               <p> <input type='checkbox' name='vrstarek' value='proizvod'>Reklamiranje Vašeg proizovda u teretani</p>
+                               <p> <input type='checkbox' name='vrstarek' value='poster'>Reklamiranje Vaše firme u vidu postera</p>
+                               <p> <input type='checkbox' name='vrstarek' value='flajer'>Reklamiranje Vaših flajera</p>
                                         
-                                            </div>
+                            </div>
 							<div class="form-group">
-								<input type="button" value="Registruj" onclick="proveriSponzora()" class="btn btn-primary">
+								<input type="submit" value="Registruj me"  name="registruj">
 							</div>
 						</form>		
-					</div>
-				</div>
-			</div>
-<?php require('footer.php') ?>
 
-<script language="JavaScript">
-function proveriSponzora(){
-    name =document.registracijaspon.imefirme.value;
-    opisd= document.registracijaspon.opisdel.value;
-   vrsta=document.registracijaspon.vrstarek.value;
+<?php require("footer.php") ?>
 
-    
-    if((name.length==0) || (opisd.length==0) || ( vrsta.length==0)){
-        alert("Nisu popunjena sva polja!");
-        return;
-    }
 
-    
-    if((error == "")) document.forms["registracijaspon"].submit();
-    else alert(error);
-}
-<body>
+</body>
+</html>

@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    ?>
+<html>
+<head>
+</head>
 <body>
 <?php require('header.php'); ?>
 <aside id="colorlib-hero">
@@ -19,17 +25,74 @@
                     </ul>
                 </div>
             </aside>
-						<br>
+ <div class="col-md-10 col-md-offset-1 animate-box">
+<br>
 						<h2>REGISTRACIJA TRENERA
-                        
                         </h2>
-						<form name="registracijatr" action="regtr" method="POST">
+<?php
+    if(isset($_SESSION['korisnickoIme'])){
+        $korisnik=$_SESSION['korisnickoIme'];
+    }
+    if(!isset($_POST['registruj'])){
+        $korisnik = '';
+        $ime = '';
+        $prezime = '';
+        $datum = '';
+        $kurs ='';
+    }else{
+        $korisnik = $_POST['korisnickoIme'];
+        $ime = $_POST['ime'];
+        $prezime = $_POST['prezime'];
+        $datum = $_POST['datumrodj'];
+        $kurs = $_POST['kurs'];
+    }
+    require("konekcija.php");
+    
+    if ($ime != ''){
+        if ($prezime != ''){
+            if($datum!= ''){
+                        if($kurs!=''){
+                            $upit1 = "SELECT * FROM zahtevkorisnik WHERE KorisnickoIme='".$korisnik."'";
+                            $rezultat1 = mysqli_query($konekcija, $upit1)
+                            or die("Greska kod upita koji proverava da li uneto korisničko ime postoji u bazi!" . mysqli_error($konekcija));
+                            if (mysqli_num_rows($rezultat1) != 1) {
+                                echo "<center><font size='4px' color='#e32319'><b>Korisnicko ime ne postoji unesite neko drugo!</b></font></center>";
+                            }else{
+                                $upit = "UPDATE zahtevkorisnik SET ime='".$ime."', prezime='".$prezime."', datumrodj='".$datum."', kurs='".$kurs."'
+                                WHERE KorisnickoIme='".$korisnik."'";
+                                $rezultat = mysqli_query($konekcija, $upit)
+                                or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
+                                echo "<script> location.href='index.php'; </script>";
+                            }
+                        }else{
+                            echo "<center><font size='4px' color='#e32319'><b>Niste uneli vas kurs!</b></font></center>";
+                        }
+                
+            }else{
+                echo "<center><font size='4px' color='#e32319'><b>Niste uneli datum!</b></font></center>";
+            }
+        }else{
+            echo "<center><font size='4px' color='#e32319'><b>Niste uneli prezime!</b></font></center>";
+        }
+    }else{
+        echo "<center><font size='4px' color='#e32319'><b>Niste uneli ime!</b></font></center>";
+    }
+    mysqli_close($konekcija);
+    ?>
+						<form name='registracijatren' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                             <div class="row form-group">
+<div class="col-md-6">
+<!-- <label for="fname">First Name</label> -->
+<input type="text" name="korisnickoIme" class="form-control" placeholder="Korisnicko ime" >
+</div>
+</div>
+            <div class="col-md-6">
                                 <div class="col-md-6">
                                     <!-- <label for="fname">First Name</label> -->
                                     <input type="text" name="ime" class="form-control" placeholder="Vaše ime" required>
                                         </div>
                             </div>
+
                             <div class="row form-group">
                                 <div class="col-md-6">
                                     <!-- <label for="fname">First Name</label> -->
@@ -53,39 +116,12 @@
                 
 							<div class="form-group">
                     <div class="form-group">
-                        <input type="value" value="Registruj" onclick="proveriTrenera()" class="btn btn-primary">
+                            <input type="submit" value="Registruj me"  name="registruj">
                                 </div>
 						</form>		
 					</div>
-				</div>
-			</div>
 <?php require('footer.php') ?>
 
-<script language="JavaScript">
-function proveriTrenera(){
-    name =document.registracijakor.ime.value;
-    surrname= document.registracijakor.prezime.value;
-    datebir=document.registracijakor.datumrodj.value;
-    kursk=document.registracijakor.kurs.value;
-
-    
-    if((name.length==0) || (surrname.length==0) || ( datebir.length==0) ||(kurs.length==0)){
-        alert("Nisu popunjena sva polja!");
-        return;
-    }
-    
-    var pime= /^[A-Z]([a-z])+$/g;
-    if(name.search(pime) == -1)
-        error+= "Pogresan unos imena!\n"
-        else tacnoime=true;
-    
-    var pprezime= /^[A-Z]([a-z])+$/g;
-    if(surrname.search(pprezime) == -1)
-        error+= "Pogresan unos prezimena!\n";
-    else tacnoprezime=true;
-    
-    if((error == "")&&(tacnoime==true)&&(tacnoprezime==true)) document.forms["registracijakor"].submit();
-    else alert(error);
-}
-<body>
+</body>
+</html>
 
