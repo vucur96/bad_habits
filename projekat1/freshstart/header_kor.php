@@ -57,7 +57,7 @@
 		
 	<div class="colorlib-loader"></div>
 
-	<div id="page">
+	<div id="header">
 		<nav class="colorlib-nav" role="navigation">
 			<div class="top-menu">
 				<div class="container">
