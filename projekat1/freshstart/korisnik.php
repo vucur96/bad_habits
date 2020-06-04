@@ -32,62 +32,54 @@
 	if(isset($_SESSION['korisnickoIme'])){
 		$korisnik=$_SESSION['korisnickoIme'];
 	}
-    if(!isset($_POST['registruj'])){
-        $korisnik = '';
-        $ime = '';
-        $prezime = '';
-		$datumrodj = '';
-		$visina = '';
-		$tezina = '';
-		$cilj ='';
-	}else{
-            $korisnik = $_POST['korisnickoIme'];
+    if(isset($_POST['registruj'])){
+        $korisnik = $_POST['korisnickoIme'];
 		$ime = $_POST['ime'];
 		$prezime = $_POST['prezime'];
 		$datum = $_POST['datumrodj'];
 		$visina = $_POST['visina'];
 		$tezina = $_POST['tezina'];
 		$cilj = $_POST['cilj'];
-	}
-    require("konekcija.php");
-	
-	if ($ime != ''){
-		if ($prezime != ''){
-			if($datum!= ''){
-				if($visina!= ''){
-					if($tezina!= ''){
-						if($cilj!=''){
-                            $upit1 = "SELECT * FROM zahtevkorisnik WHERE KorisnickoIme='".$korisnik."'";
-                            $rezultat1 = mysqli_query($konekcija, $upit1)
-                            or die("Greska kod upita koji proverava da li uneto korisničko ime postoji u bazi!" . mysqli_error($konekcija));
-                            if (mysqli_num_rows($rezultat1) != 1) {
-                                echo "<center><font size='4px' color='#e32319'><b>Korisnicko ime ne postoji unesite neko drugo!</b></font></center>";
-                            }else{
-							$upit = "UPDATE zahtevkorisnik SET ime='".$ime."', prezime='".$prezime."', datumrodj='".$datum."', visina='".$visina."', tezina='".$tezina."', cilj='".$cilj."'
-										WHERE KorisnickoIme='".$korisnik."'"; 
-							$rezultat = mysqli_query($konekcija, $upit)
-									or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
-							echo "<script> location.href='index.php'; </script>";
-                            }
+		require("konekcija.php");
+		
+		if ($ime != ''){
+			if ($prezime != ''){
+				if($datum!= ''){
+					if($visina!= ''){
+						if($tezina!= ''){
+							if($cilj!=''){
+								$upit1 = "SELECT * FROM zahtevkorisnik WHERE KorisnickoIme='".$korisnik."'";
+								$rezultat1 = mysqli_query($konekcija, $upit1)
+								or die("Greska kod upita koji proverava da li uneto korisničko ime postoji u bazi!" . mysqli_error($konekcija));
+								if (mysqli_num_rows($rezultat1) != 1) {
+									echo "<center><font size='4px' color='#e32319'><b>Korisnicko ime ne postoji unesite neko drugo!</b></font></center>";
+								}else{
+								$upit = "UPDATE zahtevkorisnik SET ime='".$ime."', prezime='".$prezime."', datumrodj='".$datum."', visina='".$visina."', tezina='".$tezina."', cilj='".$cilj."'
+											WHERE KorisnickoIme='".$korisnik."'"; 
+								$rezultat = mysqli_query($konekcija, $upit)
+										or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
+								echo "<script> location.href='index.php'; </script>";
+								}
+							}else{
+								echo "<center><font size='4px' color='#e32319'><b>Niste uneli vas cilj!</b></font></center>";
+							}
 						}else{
-							echo "<center><font size='4px' color='#e32319'><b>Niste uneli vas cilj!</b></font></center>";
+							echo "<center><font size='4px' color='#e32319'><b>Niste uneli tezinu!</b></font></center>";
 						}
 					}else{
-						echo "<center><font size='4px' color='#e32319'><b>Niste uneli tezinu!</b></font></center>";
-					}
+						echo "<center><font size='4px' color='#e32319'><b>Niste uneli visinu!</b></font></center>";
+					}	
 				}else{
-					echo "<center><font size='4px' color='#e32319'><b>Niste uneli visinu!</b></font></center>";
-				}	
+					echo "<center><font size='4px' color='#e32319'><b>Niste uneli datum!</b></font></center>";
+				}
 			}else{
-				echo "<center><font size='4px' color='#e32319'><b>Niste uneli datum!</b></font></center>";
+				echo "<center><font size='4px' color='#e32319'><b>Niste uneli prezime!</b></font></center>";
 			}
 		}else{
-			echo "<center><font size='4px' color='#e32319'><b>Niste uneli prezime!</b></font></center>";
+			echo "<center><font size='4px' color='#e32319'><b>Niste uneli ime!</b></font></center>";
 		}
-	}else{
-		echo "<center><font size='4px' color='#e32319'><b>Niste uneli ime!</b></font></center>";
+		mysqli_close($konekcija);
 	}
-	mysqli_close($konekcija);
 ?>
 		<form name="registracijakor" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 			<div class="row form-group">
