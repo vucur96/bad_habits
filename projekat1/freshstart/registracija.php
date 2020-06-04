@@ -35,62 +35,56 @@
 		$email = $_POST['Email'];
 		$sifra = $_POST['lozinka'];
 		$ponovljena = $_POST['PonovoLoz']; 
-	}else{
-		$korisnik = '';
-		$email = '';
-		$sifra = '';
-		$ponovljena = '';
-		$tip = ''; 
-	}
-    require("konekcija.php");
-	
-	if ($korisnik != ''){
-		if ($email != ''){
-			if($sifra!=''){
-				if($ponovljena!=''){
-					if($_POST['tip']!=''){
-						if($ponovljena!=$sifra){
-							echo "<center><font size='4px' color='#e32319'><b>Ponovljena lozinka i lozinka se ne slazu!</b></font></center>";
-						}else{
-							$upit1 = "SELECT * FROM korisnik WHERE KorisnickoIme='".$korisnik."'";
-							$rezultat1 = mysqli_query($konekcija, $upit1)
-									or die("Greska kod upita koji proverava da li uneto korisničko ime postoji u bazi!" . mysqli_error($konekcija));
-							if (mysqli_num_rows($rezultat1) == 1) {
-								echo "<center><font size='4px' color='#e32319'><b>Korisnicko ime je zauzeto unesite neko drugo!</b></font></center>";
+		require("konekcija.php");
+		
+		if ($korisnik != ''){
+			if ($email != ''){
+				if($sifra!=''){
+					if($ponovljena!=''){
+						if($_POST['tip']!=''){
+							if($ponovljena!=$sifra){
+								echo "<center><font size='4px' color='#e32319'><b>Ponovljena lozinka i lozinka se ne slazu!</b></font></center>";
 							}else{
-								
-								$upit2 = "INSERT INTO zahtevkorisnik (KorisnickoIme, email, lozinka, tip)
-											VALUES ('".$korisnik."', '".$email."', '".$sifra."', '".$_POST['tip']."')";
-								$rezultat2 = mysqli_query($konekcija, $upit2)
-										or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
-								if($_POST['tip']==1){
-									echo "<script> location.href='sponzor.php'; </script>";
-								}
-								else{ 
-									if($_POST['tip']==2){
-										echo "<script> location.href='trener.php'; </script>";
-									}else { 
-										echo "<script> location.href='korisnik.php'; </script>";
+								$upit1 = "SELECT * FROM korisnik WHERE KorisnickoIme='".$korisnik."'";
+								$rezultat1 = mysqli_query($konekcija, $upit1)
+										or die("Greska kod upita koji proverava da li uneto korisničko ime postoji u bazi!" . mysqli_error($konekcija));
+								if (mysqli_num_rows($rezultat1) == 1) {
+									echo "<center><font size='4px' color='#e32319'><b>Korisnicko ime je zauzeto unesite neko drugo!</b></font></center>";
+								}else{
+									
+									$upit2 = "INSERT INTO zahtevkorisnik (KorisnickoIme, email, lozinka, tip)
+												VALUES ('".$korisnik."', '".$email."', '".$sifra."', '".$_POST['tip']."')";
+									$rezultat2 = mysqli_query($konekcija, $upit2)
+											or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
+									if($_POST['tip']==1){
+										echo "<script> location.href='sponzor.php'; </script>";
+									}
+									else{ 
+										if($_POST['tip']==2){
+											echo "<script> location.href='trener.php'; </script>";
+										}else { 
+											echo "<script> location.href='korisnik.php'; </script>";
+										}
 									}
 								}
 							}
+						}else{
+							echo "<center><font size='4px' color='#e32319'><b>Niste uneli tip!</b></font></center>";
 						}
 					}else{
-						echo "<center><font size='4px' color='#e32319'><b>Niste uneli tip!</b></font></center>";
-					}
+						echo "<center><font size='4px' color='#e32319'><b>Niste uneli ponovljenu lozinku!</b></font></center>";
+					}	
 				}else{
-					echo "<center><font size='4px' color='#e32319'><b>Niste uneli ponovljenu lozinku!</b></font></center>";
-				}	
+					echo "<center><font size='4px' color='#e32319'><b>Niste uneli lozinku!</b></font></center>";
+				}
 			}else{
-				echo "<center><font size='4px' color='#e32319'><b>Niste uneli lozinku!</b></font></center>";
+				echo "<center><font size='4px' color='#e32319'><b>Niste uneli email!</b></font></center>";
 			}
 		}else{
-			echo "<center><font size='4px' color='#e32319'><b>Niste uneli email!</b></font></center>";
+			echo "<center><font size='4px' color='#e32319'><b>Niste uneli korisnicko ime!</b></font></center>";
 		}
-	}else{
-		echo "<center><font size='4px' color='#e32319'><b>Niste uneli korisnicko ime!</b></font></center>";
+		mysqli_close($konekcija);
 	}
-	mysqli_close($konekcija);
 ?>
 	
 	<form name='mojaforma' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
