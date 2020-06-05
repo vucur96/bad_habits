@@ -92,7 +92,7 @@
 								</li>
 								<li><a href="o_trenerima.php">Treneri</a></li>
 								<li><a href="blog.php">Blog</a></li>
-                                <li><a href="index.php">Pisanje Teksta</a></li>
+                                <li><a href="pisanjebloga_tr.php">Pisanje Teksta</a></li>
 								<li><a href="contact.php">Kontakt</a></li>
 								<li class="btn btn-cta"><a href="logout.php"><span>Izloguj me</span></a></li>
 							</ul>

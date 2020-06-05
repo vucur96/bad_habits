@@ -25,8 +25,7 @@
 <div class="row">
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
-<h1>ADMIN MENI</h1>
-<h2><span><a href="admin_meni.php">Početna</a></span></h2>
+<a href="admin_meni.php"><h1>ADMIN MENI</h1></a>
 </div>
 </div>
 </div>

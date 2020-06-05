@@ -13,15 +13,45 @@ if (isset($_POST['promeniuvip'])){
         <meta charset="UTF-8">
         <title>Promena statusa</title>  
     </head>
+	
+	<?php
+    if(!isset($_SESSION['KorisnickoIme'])){
+        require('header.php');
+    }else{
+        require("konekcija.php");
+        require('header_adm.php');
+        
+    }
+    ?>
+<aside id="colorlib-hero">
+<div class="flexslider">
+<ul class="slides">
+<li style="background-image: url(images/img_bg_2.jpg);">
+<div class="overlay"></div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+<div class="slider-text-inner text-center">
+<a href="admin_meni.php"><h1>ADMIN MENI</h1></a>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</aside>
     
     
         <div id="header">
        <?php require("header_adm.php"); ?> 
         </div>
+		
         <div id="menu">
             <div align="center">
+
 			<?php
-                $upit = "SELECT * FROM korisnik WHERE tip=3 AND VIP=0";
+                $upit = "SELECT * FROM korisnik WHERE tip=3 AND VIP IS NULL";
                 $rez = mysqli_query($konekcija, $upit) or die("Greska kod upita za uzimanje informacija o korisnicima!" . mysqli_error($konekcija));
                 if (mysqli_num_rows($rez)> 0){
                    echo "<form name='form_requests' method='POST' action='".$_SERVER['PHP_SELF']."'>

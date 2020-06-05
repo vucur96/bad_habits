@@ -1,9 +1,8 @@
 <?php
     session_start();
+	require("konekcija.php");
     ?>
-<html>
 <head>
-<<<<<<< HEAD
         <meta charset="UTF-8">
         <title>Zahtevi za blog</title>  
     </head>
@@ -12,10 +11,7 @@
        <?php require("header_adm.php"); ?> 
         
       </div>
-=======
-<title>Admin meni</title>
-</head>
-<body>
+
 
 <?php
     if(!isset($_SESSION['KorisnickoIme'])){
@@ -35,8 +31,7 @@
 <div class="row">
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
-<h1>ADMIN ZAHTEVI BLOG</h1>
-<h2><span><a href="admin_meni.php">Početna</a></span></h2>
+<a href="admin_meni.php"><h1>ADMIN MENI</h1></a>
 </div>
 </div>
 </div>
@@ -45,7 +40,6 @@
 </ul>
 </div>
 </aside>
->>>>>>> 88eb8129b8235794cd6eba6ece4d233b947d93eb
 		<div id="menu">
              <div align="center">
                  <?php 
@@ -81,10 +75,3 @@
 		 <?php 
             require("footer.php");
         ?>
-<<<<<<< HEAD
-		
-=======
-		</div>
-</body>
-</html>
->>>>>>> 88eb8129b8235794cd6eba6ece4d233b947d93eb

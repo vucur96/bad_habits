@@ -28,8 +28,6 @@ if (isset($_POST['odbij'])){
         	
     </head>
 	
-	
-<<<<<<< HEAD
 <?php
     if(!isset($_SESSION['KorisnickoIme'])){
         require('header.php');
@@ -48,8 +46,7 @@ if (isset($_POST['odbij'])){
 <div class="row">
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
-<h1>ADMIN ZAHTEV KORISNIKA</h1>
-<h2><span><a href="admin_meni.php">Početna</a></span></h2>
+<a href="admin_meni.php"><h1>ADMIN MENI</h1></a>
 </div>
 </div>
 </div>
@@ -59,11 +56,11 @@ if (isset($_POST['odbij'])){
 </div>
 </aside>
 
-=======
+
       <div id="header">
        <?php require("header_adm.php"); ?> 
         
->>>>>>> fef4ad83eb43f2c3f025ff697e2baef1ac6b61c8
+
         <div id="menu">
              <div align="center">
                  <?php 
