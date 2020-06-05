@@ -19,6 +19,7 @@ require("konekcija.php");
 			$rez = mysqli_query($konekcija, $upit) or die("Greska kod delete upita!" . mysqli_error($konekcija));
 			
 			echo "<center><font size='6px'><b>Obirsan korisnik <font color='#e32319'>".$_GET['korIme']."</b></font></center>";
+			
 			?>
 			</div>
 			</div>
