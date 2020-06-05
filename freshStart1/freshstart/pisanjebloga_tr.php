@@ -39,7 +39,7 @@
 <div class="row">
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
-<h1>Treneri</h1>
+<h1>Pisanje BLOGA</h1>
 <h2><span><a href="index.php">Pocetna</a></span></h2>
 </div>
 </div>
@@ -83,7 +83,7 @@
             <form name='formablogtr' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                 <br>
                 <p class="formfield">
-                <input type='hidden' name='idbloga' value="<?php echo ['BlogID']; ?>">
+                <input type='hidden' name="idbloga" value="<?php echo ['BlogID']; ?>">
                 <label for="textarea"> Naslov </label>
 
                 <textarea  name="naslov" rows="1" cols="56"></textarea>
