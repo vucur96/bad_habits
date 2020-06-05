@@ -1,4 +1,4 @@
-<html>	
+	
 <footer id="colorlib-footer">
 			<div class="container">
 				<div class="row row-pb-md">
