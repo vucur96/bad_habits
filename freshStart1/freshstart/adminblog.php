@@ -47,12 +47,12 @@ require("konekcija.php");
 							
 						
 						<textarea  name="naslov" rows="1" cols="92" class="kontrola"></textarea>
+				
 						
+						<input type="button" value="Zahtevi" class="btn btn-cta1" onclick="window.location.href='zahtevizablog.php'">;
+						<br><br>
 						
-						<div class="form-group" >
-								<button onclick="window.location.href='zahtevizablog.php'" class="btn btn-cta1" > Zahtevi </button>
-							</div>
-						
+
 
 						<textarea class="kontrola" id="tekst" name="tekstbloga" rows="15" cols="100"> </textarea>		
 
@@ -73,11 +73,11 @@ require("konekcija.php");
 		
 		
 		
-		<div>
+		
 		 <?php 
             require("footer.php");
         ?>
-		</div>
+		
 		
 
   

@@ -2,11 +2,7 @@
 session_start();
 require("konekcija.php");
 
-if (isset($_POST['obrisi'])){
-    $upit = "DELETE FROM korisnik WHERE KorisnickoIme = '".$_GET['korIme']."'";
-    $rez = mysqli_query($konekcija, $upit) or die("Greska kod delete upita!".mysqli_error($konekcija));
-	
-}
+
 ?>
 
 

@@ -22,12 +22,14 @@ if (isset($_POST['odbij'])){
 
 
     <head>
+	
+        <meta charset="UTF-8">
         <title>Zahtevi</title>
         	
     </head>
 	
 	
-        
+      <div id="header">
        <?php require("header_adm.php"); ?> 
         
         <div id="menu">
@@ -122,6 +124,7 @@ if (isset($_POST['odbij'])){
                 ?>
             </div>
         </div>
+		
 		
         <?php require("footer.php") ?>
     

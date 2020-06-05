@@ -11,8 +11,8 @@ require("konekcija.php");
 	
 	 <div id="header">
        <?php require("header_adm.php"); ?> 
-        </div>
         
+      </div>
 		<div id="menu">
              <div align="center">
                  <?php 
@@ -26,7 +26,7 @@ require("konekcija.php");
                   while ( $niz = mysqli_fetch_array($rez)){
                      
                       
-                      echo "<tr> <td> <a href='tekstzahtev.php?blogID=".$niz['naslov']."'> ".$niz['naslov']." </a></td>  ";
+                      echo "<tr> <td> <a href='tekstzahtev.php?naslov=".$niz['naslov']."'> ".$niz['naslov']." </a></td>  ";
                       
                      }
 					echo "</table><br><br>";
@@ -40,11 +40,12 @@ require("konekcija.php");
 		
 		
 		?>
+		</div>
+		</div>
 		
 		
 		
-		<div>
 		 <?php 
             require("footer.php");
         ?>
-		</div>
+		
