@@ -30,12 +30,11 @@
 						<h2>REGISTRACIJA TRENERA
                         </h2>
 <?php
-    if(isset($_SESSION['korisnickoIme'])){
-        $korisnik=$_SESSION['korisnickoIme'];
+    if(isset($_SESSION['KorisnickoIme'])){
+        $korisnik=$_SESSION['KorisnickoIme'];
     }
     if(isset($_POST['registruj'])){
      
-        $korisnik = $_POST['korisnickoIme'];
         $ime = $_POST['ime'];
         $prezime = $_POST['prezime'];
         $datum = $_POST['datumrodj'];
@@ -76,13 +75,8 @@
 	}
     ?>
 						<form name='registracijatren' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-                            <div class="row form-group">
-            <div class="col-md-6">
-<!-- <label for="fname">First Name</label> -->
-<input type="text" name="korisnickoIme" class="form-control" placeholder="Korisnicko ime" >
-</div>
-</div>
-            <div class="row form-group">
+
+							<div class="row form-group">
                                 <div class="col-md-6">
                                     <!-- <label for="fname">First Name</label> -->
                                     <input type="text" name="ime" class="form-control" placeholder="Vaše ime" required>
