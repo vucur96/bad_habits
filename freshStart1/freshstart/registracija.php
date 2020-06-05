@@ -16,7 +16,7 @@
                                     <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
                                         <div class="slider-text-inner text-center">
                                             <h1>Registracija</h1>
-                                            <h2><span><a href="index.html">Početna</a> | Registracija</span></h2>
+                                            <h2><span><a href="index.php">Početna</a> | Registracija</span></h2>
                                         </div>
                                     </div>
                                 </div>
@@ -67,6 +67,9 @@
 												VALUES ('".$korisnik."', '".$email."', '".$sifra."', '".$_POST['tip']."')";
 									$rezultat2 = mysqli_query($konekcija, $upit2)
 											or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
+									
+									$_SESSION['KorisnickoIme']=$korisnik;
+									
 									if($_POST['tip']==1){
 										echo "<script> location.href='sponzor.php'; </script>";
 									}

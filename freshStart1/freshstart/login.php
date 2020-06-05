@@ -52,11 +52,16 @@
                         $red = mysqli_fetch_array($rezultat2);
                         $pom = $red['tip'];
                         $vip= $red['VIP'];
+                        $pog= $red['pogodnosti'];
                            
                         if($pom==3 and $vip==1){
-                        echo "<script> location.href='korisnik_pocetna_vip.php'; </script>";
+                            if($pog!=''){
+                                 echo "<script> location.href='index.php'; </script>";
+                                exit;
+                            }else{
+                                echo "<script> location.href='korisnik_pocetna_vip.php'; </script>";
                             exit;
-                            
+                            }
                         }
                         else{
                             echo "<script> location.href='index.php'; </script>";
