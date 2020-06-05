@@ -18,7 +18,7 @@
        
     }
 ?>
-    <h2>        Dodavanje teksta kao admin</h2>
+    <h2> Dodavanje teksta kao admin</h2>
 <?php
     if(isset($_POST['objavi'])){
         $korisnik=$_SESSION['KorisnickoIme'];
@@ -56,9 +56,6 @@
                 <label for="textarea"> Naslov </label>
 
                 <textarea  name="naslov" rows="1" cols="56"></textarea>
-
-                <button class="btn btn-cta1" onclick="window.location.href='zahtevizablog.php'">Zahtevi</button><br><br>
-
                 <textarea id="tekst" name="tekstbloga" rows="15" cols="70"> </textarea>
                 </p>
             <p>
@@ -69,11 +66,15 @@
                 <br>
                 <br>
             </p>
-                </div>
 
+            <div >
+            <a href="zahtevizablog.php">Zahtevi za blog</a>
+            </div>
+
+</div>
                 </form>
                 </div>
-</div>
+
 
 <?php require('footer.php') ?>
 </body>
