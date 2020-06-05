@@ -56,7 +56,7 @@
 									WHERE KorisnickoIme='".$korisnik."'";
 									$rezultat = mysqli_query($konekcija, $upit)
 									or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
-									echo "<script> location.href='index.php'; </script>";
+									echo "<script> location.href='logout.php'; </script>";
 								}
 							}else{
 								echo "<center><font size='4px' color='#e32319'><b>Niste uneli vas kurs!</b></font></center>";
