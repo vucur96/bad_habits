@@ -16,7 +16,7 @@
                                     <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
                                         <div class="slider-text-inner text-center">
                                             <h1>Registracija</h1>
-                                            <h2><span><a href="index.html">Početna</a> | Registracija</span></h2>
+                                            <h2><span><a href="index.php">Početna</a> | Registracija</span></h2>
                                         </div>
                                     </div>
                                 </div>
