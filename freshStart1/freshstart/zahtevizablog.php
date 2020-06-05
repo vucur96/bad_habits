@@ -3,6 +3,16 @@
     ?>
 <html>
 <head>
+<<<<<<< HEAD
+        <meta charset="UTF-8">
+        <title>Zahtevi za blog</title>  
+    </head>
+	
+	 <div id="header">
+       <?php require("header_adm.php"); ?> 
+        
+      </div>
+=======
 <title>Admin meni</title>
 </head>
 <body>
@@ -35,6 +45,7 @@
 </ul>
 </div>
 </aside>
+>>>>>>> 88eb8129b8235794cd6eba6ece4d233b947d93eb
 		<div id="menu">
              <div align="center">
                  <?php 
@@ -48,7 +59,7 @@
                   while ( $niz = mysqli_fetch_array($rez)){
                      
                       
-                      echo "<tr> <td> <a href='tekstzahtev.php?blogID=".$niz['naslov']."'> ".$niz['naslov']." </a></td>  ";
+                      echo "<tr> <td> <a href='tekstzahtev.php?naslov=".$niz['naslov']."'> ".$niz['naslov']." </a></td>  ";
                       
                      }
 					echo "</table><br><br>";
@@ -62,13 +73,18 @@
 		
 		
 		?>
+		</div>
+		</div>
 		
 		
 		
-		<div>
 		 <?php 
             require("footer.php");
         ?>
+<<<<<<< HEAD
+		
+=======
 		</div>
 </body>
 </html>
+>>>>>>> 88eb8129b8235794cd6eba6ece4d233b947d93eb

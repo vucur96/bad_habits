@@ -22,11 +22,14 @@ if (isset($_POST['odbij'])){
 
 
     <head>
+	
+        <meta charset="UTF-8">
         <title>Zahtevi</title>
         	
     </head>
 	
 	
+<<<<<<< HEAD
 <?php
     if(!isset($_SESSION['KorisnickoIme'])){
         require('header.php');
@@ -56,6 +59,11 @@ if (isset($_POST['odbij'])){
 </div>
 </aside>
 
+=======
+      <div id="header">
+       <?php require("header_adm.php"); ?> 
+        
+>>>>>>> fef4ad83eb43f2c3f025ff697e2baef1ac6b61c8
         <div id="menu">
              <div align="center">
                  <?php 
@@ -148,6 +156,7 @@ if (isset($_POST['odbij'])){
                 ?>
             </div>
         </div>
+		
 		
         <?php require("footer.php") ?>
     

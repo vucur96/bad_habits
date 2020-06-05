@@ -1,15 +1,14 @@
 <?php
-    session_start();
+session_start();
+require("konekcija.php");
 ?>
-<html>
+
 <head>
-<meta charset="UTF-8">
-<title>Admin blog</title>
-</head>
-<body>
-
-
-<?php
+        <meta charset="UTF-8">
+        <title>Admin blog</title>  
+    </head>
+	
+	<?php
     if(!isset($_SESSION['KorisnickoIme'])){
         require('header.php');
     }else{
@@ -18,6 +17,7 @@
         
     }
     ?>
+<<<<<<< HEAD
 <aside id="colorlib-hero">
 <div class="flexslider">
 <ul class="slides">
@@ -39,6 +39,10 @@
 </aside>
 
 <div class="col-md-10 col-md-offset-1 animate-box">
+=======
+        
+		<div class="col-md-10 col-md-offset-1 animate-box">
+>>>>>>> fef4ad83eb43f2c3f025ff697e2baef1ac6b61c8
 						
 						<form name='mojaforma' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 						
@@ -72,7 +76,16 @@
 							
 							
 						
+<<<<<<< HEAD
 						<textarea  name="naslov" rows="1" cols="60" class="kontrola"></textarea>
+=======
+						<textarea  name="naslov" rows="1" cols="92" class="kontrola"></textarea>
+				
+						
+						<input type="button" value="Zahtevi" class="btn btn-cta1" onclick="window.location.href='zahtevizablog.php'">;
+						<br><br>
+						
+>>>>>>> fef4ad83eb43f2c3f025ff697e2baef1ac6b61c8
 
 
 						<textarea class="kontrola" id="tekst" name="tekstbloga" rows="15" cols="75" placeholder="Tekst"> </textarea>
@@ -97,13 +110,11 @@
 		
 		
 		
-		<div>
+		
 		 <?php 
             require("footer.php");
         ?>
-		</div>
-</body>
-</html>
-
+		
+		
 
   
