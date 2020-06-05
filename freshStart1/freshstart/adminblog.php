@@ -1,17 +1,23 @@
 <?php
-session_start();
-require("konekcija.php");
+    session_start();
 ?>
-
+<html>
 <head>
-        <meta charset="UTF-8">
-        <title>Admin blog</title>  
-    </head>
-	
-	 <div id="header">
-       <?php require("header_adm.php"); ?> 
-        </div>
+<meta charset="UTF-8">
+<title>Admin blog</title>
+</head>
+<body>
+
+
+<?php
+    if(!isset($_SESSION['KorisnickoIme'])){
+        require('header.php');
+    }else{
+        require("konekcija.php");
+        require('header_adm.php');
         
+    }
+    ?>
 		<div class="col-md-10 col-md-offset-1 animate-box">
 						
 						<form name='mojaforma' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
@@ -78,6 +84,8 @@ require("konekcija.php");
             require("footer.php");
         ?>
 		</div>
-		
+</body>
+</html>
+
 
   

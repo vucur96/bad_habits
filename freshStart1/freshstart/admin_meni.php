@@ -53,7 +53,7 @@
 								<button  onclick="window.location.href='promenastatusa.php'" class="btn btn-primary" > Promena statusa </button>
 							</div>
 							<div class="form-group">
-								<button  onclick="window.location.href='pisanjebloga_admin.php'" class="btn btn-primary" > Blog </button>
+								<button  onclick="window.location.href='adminblog.php'" class="btn btn-primary" > Blog </button>
 							</div>
 				
 						
