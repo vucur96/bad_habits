@@ -54,69 +54,50 @@
 
 </head>
 <body>
-
 <div class="colorlib-loader"></div>
 
-<div id="page">
-<nav class="colorlib-nav" role="navigation">
-<div class="top-menu">
-<div class="container">
-<div class="row">
-<div class="col-md-2">
-<div id="colorlib-logo"><a href="index.php">FRESH START</a></div>
-</div>
-<div class="col-md-10 text-right menu-1">
-<ul>
-<li><a href="index.php">Početna</a></li>
-<li class="has-dropdown">
-<a href="classes.php">Treninzi</a>
-<ul class="dropdown">
-<li><a href="classes-single.php">Classes Single</a></li>
-<li><a href="cardio.php">Cardio</a></li>
-<li><a href="funkcionalni.php">Funkcionalni</a></li>
-<li><a href="yoga.php">Yoga</a></li>
-<li><a href="aerobic.php">Aerobic</a></li>
-<li><a href="karate.php">Karate</a></li>
-<li><a href="body_pump.php">Body Pump</a></li>
-<li><a href="snaga.hphp">Snaga</a></li>
-</ul>
-</li>
-<li class="has-dropdown">
-<a href="schedule.php">Raspored</a>
-<ul class="dropdown">
-<li><a href="grupni_treninzi.php">Grupni treninzi</a></li>
-<li><a href="individualni_treninzi.php">Individualni treninzi</a></li>
+	<div id="header">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div id="colorlib-logo"><a href="index.php">FRESH START</a></div>
+						</div>
+						<div class="col-md-10 text-right menu-1">
+							<ul>
+								<li><a href="admin_meni.php">Početna</a></li>
+								<li class="has-dropdown">
+									<a href="classes.php">Treninzi</a>
+									<ul class="dropdown">
+										<li><a href="classes-single.php">Classes Single</a></li>
+										<li><a href="cardio.php">Cardio</a></li>
+										<li><a href="funkcionalni.php">Funkcionalni</a></li>
+										<li><a href="yoga.php">Yoga</a></li>
+										<li><a href="aerobic.php">Aerobic</a></li>
+										<li><a href="karate.php">Karate</a></li>
+										<li><a href="body_pump.php">Body Pump</a></li>
+										<li><a href="snaga.php">Snaga</a></li>
+									</ul>
+								</li>
+								<li class="has-dropdown">
+									<a href="schedule.php">Raspored</a>
+									<ul class="dropdown">
+										<li><a href="grupni_treninzi.php">Grupni treninzi</a></li>
+										<li><a href="individualni_treninzi.php">Individualni treninzi</a></li>
+										
+									</ul>
+									
+									
+								</li>
+								<li><a href="o_trenerima.php">Treneri</a></li>
+								<li><a href="blog.php">Blog</a></li>
+								<li><a href="contact.php">Kontakt</a></li>
+								<li class="btn btn-cta"><a href="logout.php"><span>Izloguj me</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
 
-</ul>
-
-
-</li>
-<li><a href="o_trenerima.php">Treneri</a></li>
-<li><a href="blog.php">Blog</a></li>
-<li><a href="contact.php">Kontakt</a></li>
-<li class="btn btn-cta"><a href="logout.php"><span>Izloguj me</span></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</nav>
-<aside id="colorlib-hero">
-<div class="flexslider">
-<ul class="slides">
-<li style="background-image: url(images/img_bg_2.jpg);">
-<div class="overlay"></div>
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
-<div class="slider-text-inner text-center">
-<h1>ADMIN MENI</h1>
-<h2><span><a href="admin_meni.php">Početna</a></span></h2>
-</div>
-</div>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</aside>

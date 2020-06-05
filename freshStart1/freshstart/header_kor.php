@@ -63,13 +63,13 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="index_ulogovan.php">FRESH START</a></div>
+							<div id="colorlib-logo"><a href="index.php">FRESH START</a></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
-								<li><a href="index_ulogovan.php">Početna</a></li>
+								<li><a href="index.php">Početna</a></li>
 								<li class="has-dropdown">
-									<a href="classes_ulog.php">Treninzi</a>
+									<a href="classes.php">Treninzi</a>
 									<ul class="dropdown">
 										<li><a href="classes-single.php">Classes Single</a></li>
 										<li><a href="cardio.php">Cardio</a></li>

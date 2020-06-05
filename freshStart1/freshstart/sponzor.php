@@ -30,11 +30,10 @@
 <h2>REGISTRACIJA SPONZORA </h2>
 
 <?php
-    if(isset($_SESSION['korisnickoIme'])){
-        $korisnik=$_SESSION['korisnickoIme'];
+    if(isset($_SESSION['KorisnickoIme'])){
+        $korisnik=$_SESSION['KorisnickoIme'];
     }
     if(isset($_POST['registruj'])){
-        $korisnik = $_POST['korisnickoIme'];
         $imefirme = $_POST['imefirme'];
         $opisdel = $_POST['opisdel'];
         $vrstarek=$_POST['vrstarek'];
@@ -54,7 +53,7 @@
 								WHERE KorisnickoIme='".$korisnik."'";
 								$rezultat = mysqli_query($konekcija, $upit)
 								or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
-								echo "<script> location.href='index.php'; </script>";
+								echo "<script> location.href='logout.php'; </script>";
 							}
 						}else{    echo "<center><font size='4px' color='#e32319'><b>Niste uneli vrstu reklame!</b></font></center>";
 							
@@ -73,13 +72,8 @@
 ?>
 
         <form name='registracijaspon' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+	
 							<div class="row form-group">
-    <div class="col-md-6">
-    <!-- <label for="fname">First Name</label> -->
-    <input type="text" name="korisnickoIme" class="form-control" placeholder="Korisnicko ime" >
-    </div>
-    </div>
-<div class="row form-group">
 								<div class="col-md-6">
 									<!-- <label for="fname">First Name</label> -->
 									<input type="text" name="imefirme" class="form-control" placeholder="Ime Vaše firme" required>

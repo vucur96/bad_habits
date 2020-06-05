@@ -21,9 +21,10 @@
 			}else{
 				if ($tip==3){
 					require('header_kor.php');
+				}
 			}
 		}else{
-			require('header.php');
+			require('header_adm.php');
 		}
 		mysqli_close($konekcija);
 	}

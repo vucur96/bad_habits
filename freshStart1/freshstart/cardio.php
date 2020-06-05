@@ -27,7 +27,7 @@
 				}
 			}
 		}else{
-			require('header.php');
+			require('header_adm.php');
 		}
 		mysqli_close($konekcija);
 	}
