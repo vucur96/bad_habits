@@ -10,10 +10,10 @@ require("konekcija.php");
 	
 	<?php
     if(!isset($_SESSION['KorisnickoIme'])){
-        require('header.php');
+        require("header.php");
     }else{
         require("konekcija.php");
-        require('header_adm.php');
+        require("header_adm.php");
         
     }
     ?>
