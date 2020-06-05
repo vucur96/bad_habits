@@ -18,7 +18,27 @@
         
     }
     ?>
-		<div class="col-md-10 col-md-offset-1 animate-box">
+<aside id="colorlib-hero">
+<div class="flexslider">
+<ul class="slides">
+<li style="background-image: url(images/img_bg_2.jpg);">
+<div class="overlay"></div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+<div class="slider-text-inner text-center">
+<h1>ADMIN BLOG</h1>
+<h2><span><a href="admin_meni.php">Početna</a></span></h2>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</aside>
+
+<div class="col-md-10 col-md-offset-1 animate-box">
 						
 						<form name='mojaforma' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 						
@@ -52,15 +72,10 @@
 							
 							
 						
-						<textarea  name="naslov" rows="1" cols="92" class="kontrola"></textarea>
-						
-						
-						<div class="form-group" >
-								<button onclick="window.location.href='zahtevizablog.php'" class="btn btn-cta1" > Zahtevi </button>
-							</div>
-						
+						<textarea  name="naslov" rows="1" cols="60" class="kontrola"></textarea>
 
-						<textarea class="kontrola" id="tekst" name="tekstbloga" rows="15" cols="100"> </textarea>		
+
+						<textarea class="kontrola" id="tekst" name="tekstbloga" rows="15" cols="75" placeholder="Tekst"> </textarea>
 
 												
 						</p>
@@ -71,6 +86,9 @@
 								<input type="submit" value="Objavi" name="objavi" class="btn btn-primary1" > 
 								 
 								</p>
+<div >
+<a href="zahtevizablog.php">Zahtevi za blog</a>
+</div>
 								</div>
                 
 						</form>		
