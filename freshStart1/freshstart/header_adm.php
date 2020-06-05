@@ -63,7 +63,7 @@
 <div class="container">
 <div class="row">
 <div class="col-md-2">
-<div id="colorlib-logo"><a href="index.html">FRESH START</a></div>
+<div id="colorlib-logo"><a href="index.php">FRESH START</a></div>
 </div>
 <div class="col-md-10 text-right menu-1">
 <ul>
@@ -84,8 +84,8 @@
 <li class="has-dropdown">
 <a href="schedule.php">Raspored</a>
 <ul class="dropdown">
-<li><a href="raspored_grupni_treninzi.php">Grupni treninzi</a></li>
-<li><a href="raspored_individualni_treninzi.php">Individualni treninzi</a></li>
+<li><a href="grupni_treninzi.php">Grupni treninzi</a></li>
+<li><a href="individualni_treninzi.php">Individualni treninzi</a></li>
 
 </ul>
 
@@ -94,7 +94,7 @@
 <li><a href="o_trenerima.php">Treneri</a></li>
 <li><a href="blog.php">Blog</a></li>
 <li><a href="contact.php">Kontakt</a></li>
-<li class="btn btn-cta"><a href="index.php"><span>Izloguj me</span></a></li>
+<li class="btn btn-cta"><a href="logout.php"><span>Izloguj me</span></a></li>
 </ul>
 </div>
 </div>
@@ -111,7 +111,7 @@
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
 <h1>ADMIN MENI</h1>
-<h2><span><a href="admin_meni.php">Početna</a> | <a href="login.php"> Prijava </a></span></h2>
+<h2><span><a href="admin_meni.php">Početna</a></span></h2>
 </div>
 </div>
 </div>
