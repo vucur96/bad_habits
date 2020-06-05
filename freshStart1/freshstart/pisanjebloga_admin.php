@@ -1,6 +1,6 @@
 <?php
 	session_start();
-    require("konekcija.php");
+    
 ?>
 <html>
 <head>
@@ -13,7 +13,9 @@
     if(!isset($_SESSION['KorisnickoIme'])){
     require('header.php');
     }else{
+             require("konekcija.php");
         require('header_adm.php');
+       
     }
 ?>
     <h2>        Dodavanje teksta kao admin</h2>
@@ -50,7 +52,7 @@
             <form name='formablogadm' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                 <br>
                 <p class="formfield">
-                <input type='hidden' name='idbloga' value="<?php echo ['BlogID']; ?>">
+                <input type='hidden' name='idbloga' value="<?php echo 'BlogID'; ?>">
                 <label for="textarea"> Naslov </label>
 
                 <textarea  name="naslov" rows="1" cols="56"></textarea>
