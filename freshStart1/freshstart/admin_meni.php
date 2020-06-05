@@ -1,16 +1,21 @@
 <?php
 	session_start();
 ?>
-
+<html>
 <head>
   <title>Admin meni</title>
 </head>
+<body>
 
-     
-	  
-     <?php require("header_adm.php"); ?> 
-
-   
+<?php
+    if(!isset($_SESSION['KorisnickoIme'])){
+        require('header.php');
+    }else{
+        require("konekcija.php");
+        require('header_adm.php');
+        
+    }
+    ?>
 <aside id="colorlib-hero">
 <div class="flexslider">
 <ul class="slides">
@@ -48,14 +53,15 @@
 								<button  onclick="window.location.href='promenastatusa.php'" class="btn btn-primary" > Promena statusa </button>
 							</div>
 							<div class="form-group">
-								<button  onclick="window.location.href='pisanjebloga_admin.php'" class="btn btn-primary" > Blog </button>
+								<button  onclick="window.location.href='adminblog.php'" class="btn btn-primary" > Blog </button>
 							</div>
 				
 						
 </div>
 	
 	
-</div>
 <?php require("footer.php") ?>
 </div>
+</body>
+<html>
 

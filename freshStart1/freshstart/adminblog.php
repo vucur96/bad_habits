@@ -8,9 +8,15 @@ require("konekcija.php");
         <title>Admin blog</title>  
     </head>
 	
-	 <div id="header">
-       <?php require("header_adm.php"); ?> 
-        </div>
+	<?php
+    if(!isset($_SESSION['KorisnickoIme'])){
+        require('header.php');
+    }else{
+        require("konekcija.php");
+        require('header_adm.php');
+        
+    }
+    ?>
         
 		<div class="col-md-10 col-md-offset-1 animate-box">
 						

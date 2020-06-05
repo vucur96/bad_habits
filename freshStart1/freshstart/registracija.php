@@ -115,7 +115,7 @@
 		<div class="row form-group">
 				<div class="col-md-6">
 						<!-- <label for="email">Email</label> -->
-						<input type="text" name="Email" class="form-control" placeholder="Your email address">
+						<input type="email" name="Email" class="form-control" placeholder="Your email address">
 				</div>
 		</div>
 								
