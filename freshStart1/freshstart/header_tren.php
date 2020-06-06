@@ -84,8 +84,8 @@
 								<li class="has-dropdown">
 									<a href="schedule.php">Raspored</a>
 									<ul class="dropdown">
-										<li><a href="raspored_grupni_treninzi.php">Grupni treninzi</a></li>
-										<li><a href="raspored_individualni_treninzi.php">Individualni treninzi</a></li>
+										<li><a href="grupni_treninzi.php">Grupni treninzi</a></li>
+										<li><a href="individualni_treninzi.php">Individualni treninzi</a></li>
 										
 									</ul>
 

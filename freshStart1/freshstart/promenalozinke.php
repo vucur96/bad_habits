@@ -48,23 +48,22 @@
 								if (mysqli_num_rows($rezultat1) != 1) {
 									echo "<center><font size='4px' color='#e32319'><b>Korisnicko ime ne postoji!</b></font></center>";
 								}else{
-                                        $upit2 = "SELECT * FROM korisnik WHERE lozinka='".$stara."'";
+                                        $upit2 = "SELECT * FROM korisnik WHERE  KorisnickoIme='".$korisnik."' AND lozinka='".$stara."'";
                                         $rezultat1 = mysqli_query($konekcija, $upit2)
                                         or die("Greska kod upita koji proverava da li je uneta dobra stara lozinka!" . mysqli_error($konekcija));
                                         if (mysqli_num_rows($rezultat1) != 1) {
                                             echo "<center><font size='4px' color='#e32319'><b>Nije uneta dobra stara lozinka!!</b></font></center>";
                                         }else{
                                             if(true){
-										$upit = "UPDATE korisnik SET lozinka='".$nova."'
-													WHERE KorisnickoIme='".$korisnik."'"; 
-										$rezultat = mysqli_query($konekcija, $upit)
-												or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
-										echo "<script> location.href='index.php'; </script>";
-									}else{
-										echo "<center><font size='4px' color='#e32319'><b>Niste uneli ispravnu staru lozinke!</b></font></center>";
-									}
-								}
-                                    
+												$upit = "UPDATE korisnik SET lozinka='".$nova."'
+															WHERE KorisnickoIme='".$korisnik."'"; 
+												$rezultat = mysqli_query($konekcija, $upit)
+														or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
+												echo "<script> location.href='index.php'; </script>";
+											}else{
+												echo "<center><font size='4px' color='#e32319'><b>Niste uneli ispravnu staru lozinke!</b></font></center>";
+											}
+										}
                                 }
 							}else{
 								echo "<center><font size='4px' color='#e32319'><b>Potvrda nove lozinke se ne poklapa sa unetom novom lozinkom!</b></font></center>";
