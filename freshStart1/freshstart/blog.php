@@ -26,7 +26,7 @@
 				}
 			}
 		}else{
-			require('header.php');
+			require('header_adm.php');
 		}
     }
 ?>

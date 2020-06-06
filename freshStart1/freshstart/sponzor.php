@@ -60,7 +60,7 @@
 						}
 				}
 						else{
-							"<center><font size='4px' color='#e32319'><b>Niste uneli opis delatnosti Vase firme!</b></font></center>";
+							echo "<center><font size='4px' color='#e32319'><b>Niste uneli opis delatnosti Vase firme!</b></font></center>";
 							
 						}
 			}else{
@@ -76,13 +76,13 @@
 							<div class="row form-group">
 								<div class="col-md-6">
 									<!-- <label for="fname">First Name</label> -->
-									<input type="text" name="imefirme" class="form-control" placeholder="Ime Vaše firme" required>
+									<input type="text" name="imefirme" class="form-control" placeholder="Ime Vaše firme" >
 								</div>
 							</div>
                             <div class="row form-group">
                                 <div>
                                     <p> Opis delatnosti firme: </p>
-                                    <textarea name="opisdel" rows="5" cols="50"required></textarea>
+                                    <textarea name="opisdel" rows="5" cols="50"></textarea>
                                 </div>
                             </div>
 
