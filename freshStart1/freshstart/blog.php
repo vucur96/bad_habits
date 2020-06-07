@@ -6,10 +6,10 @@
 </head>
 <body>
 <?php 
+	require("konekcija.php");
 	if(!isset($_SESSION['KorisnickoIme'])){
 		require('header.php');
 	}else{
-		require("konekcija.php");
 		$upit2 = "SELECT * FROM korisnik WHERE KorisnickoIme='".$_SESSION['KorisnickoIme']."'";
 		$rezultat2 = mysqli_query($konekcija, $upit2) or die("Greska kod upita za proveru šifre!" . mysqli_error($konekcija));
 		if (mysqli_num_rows($rezultat2) == 1){
@@ -115,7 +115,7 @@
     }
     
     
-    
+    mysqli_close($konekcija);
     
     ?>
 
