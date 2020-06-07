@@ -1,11 +1,11 @@
 <?php
 	session_start();
 ?>
-<html>
+
 <head>
   <title>Admin meni</title>
 </head>
-<body>
+
 
 <?php
     if(!isset($_SESSION['KorisnickoIme'])){
@@ -60,7 +60,5 @@
 	
 	
 <?php require("footer.php") ?>
-</div>
-</body>
-<html>
+
 

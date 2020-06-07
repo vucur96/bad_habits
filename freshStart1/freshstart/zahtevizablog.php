@@ -45,6 +45,7 @@
                  <?php 
                   $upit = "SELECT * FROM zahtevblog";
                   $rez = mysqli_query($konekcija, $upit) or die ("Greska kod pregleda zahteva za blog". mysqli_error($konekcija));
+				  echo "<br>";
                   if (mysqli_num_rows($rez) > 0){  
 					
                    echo " <table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>";
@@ -56,7 +57,7 @@
                       echo "<tr> <td> <a href='tekstzahtev.php?naslov=".$niz['naslov']."'> ".$niz['naslov']." </a></td>  ";
                       
                      }
-					echo "</table><br><br>";
+					echo "</table>";
                   }else{
                       echo "</br></br></br>";
                       echo "<font face:'Gill' size='6'><b>Nema zahteva za blog.</b></font>";

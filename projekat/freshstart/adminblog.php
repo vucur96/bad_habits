@@ -1,6 +1,5 @@
 <?php
 session_start();
-require("konekcija.php");
 ?>
 
 <head>
@@ -50,7 +49,7 @@ require("konekcija.php");
 							
 							
 							if($naslov != '') {
-								if($tekst != '') {
+								if($tekst != ' ') {
 									$upit = "INSERT INTO blog (naslov,tekst) VALUES ('".$naslov."' , '".$tekst."')";
 									$rez = mysqli_query($konekcija, $upit)
 											or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));

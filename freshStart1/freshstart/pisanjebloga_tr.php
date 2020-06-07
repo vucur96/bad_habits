@@ -4,6 +4,7 @@
 ?>
 <html>
 <head>
+<title> Pisanje bloga </title>
 </head>
 <body>
 <?php
@@ -50,7 +51,17 @@
 </div>
 </aside>
 
-<?php
+
+
+        <div class="col-md-10 col-md-offset-1 animate-box">
+		<input type='hidden' name="idbloga" value="<?php echo 'BlogID'; ?>">
+
+
+            <form name='formablogtr' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                <br>
+                <p class="formfield">
+                 <label for="textarea"> Naslov </label>
+	<?php
     if(isset($_POST['objavi'])){
         $korisnik=$_SESSION['KorisnickoIme'];
         $nas=$_POST['naslov'];
@@ -78,31 +89,29 @@
     }
     ?>
 
-        <div class="col-md-10 col-md-offset-1 animate-box">
+               <textarea  name="naslov" rows="1" cols="92"></textarea>
+				
+						
+						<br><br>
+						
 
-            <form name='formablogtr' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-                <br>
-                <p class="formfield">
-                <input type='hidden' name="idbloga" value="<?php echo ['BlogID']; ?>">
-                <label for="textarea"> Naslov </label>
 
-                <textarea  name="naslov" rows="1" cols="56"></textarea>
+						<textarea id="tekst" name="tekstbloga" rows="15" cols="100" required> </textarea>
 
-                <textarea id="tekst" name="tekstbloga" rows="15" cols="70"> </textarea>
-                </p>
-            <p>
-
-                <button class="btn btn-cta"> Dodaj sliku </button>
-
-                <input type="submit" value="Objavi" name ="objavi" class="btn btn-primary">
-                <br>
-                <br>
-            </p>
-                </div>
-
-                </form>
-                </div>
-                </div>
+												
+						</p>
+								<p>
+								
+								<button class="btn btn-cta"> Dodaj sliku </button>
+								
+								<input type="submit" value="Objavi" name="objavi" class="btn btn-primary1" > 
+								 
+								</p>
+								</div>
+                
+						</form>		
+					</div>
+                
 
 <?php require('footer.php') ?>
 </body>

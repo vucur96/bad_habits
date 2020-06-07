@@ -55,6 +55,7 @@ if (isset($_POST['promeniuvip'])){
                 $rez = mysqli_query($konekcija, $upit) or die("Greska kod upita za uzimanje informacija o korisnicima!" . mysqli_error($konekcija));
                 if (mysqli_num_rows($rez)> 0){
                    echo "<form name='form_requests' method='POST' action='".$_SERVER['PHP_SELF']."'>
+				           
 				   <table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
                         <tr>
                             <td width='25%'><b>Korisnicko ime</b></td>
@@ -69,7 +70,7 @@ if (isset($_POST['promeniuvip'])){
                       
                  }
 					echo "</tr></table></form>";
-                 echo "</br>";
+                 
 				}else {
                     echo "<center><font size='6px'><b>Ne postoji ni jedan korisnik u sistemu!</b></font></center>";
                   } 

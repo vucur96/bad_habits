@@ -74,7 +74,7 @@ if (isset($_POST['odbij'])){
 								   <tr><td colspan='2' align='center'> ".$red['tekst']."</td> </tr>
 								   <tr> <td width='50%'> <input type='submit' class='btn btn-cta' name='prihvati' value=' Prihvati '></td><td width='50%'><input type='submit' class='btn btn-primary' name='odbij' value=' Odbij '></td></tr>";
 								   
-						    echo "</table></form></br></br>";
+						    echo "</table></form>";
 							
 							?>
 							</div>

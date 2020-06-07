@@ -69,7 +69,7 @@ require("konekcija.php");
                     
                  }
 				 echo "</tr></table>";
-				 echo "<br>";
+				 
                 } else {
                     echo "<center><font size='6px'><b>Ne postoji ni jedan korisnik u sistemu!</b></font></center>";
                   }     
