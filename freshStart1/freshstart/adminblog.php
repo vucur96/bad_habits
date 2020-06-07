@@ -1,14 +1,13 @@
 <?php
 session_start();
-
+require("konekcija.php");
 ?>
-<html>
 
 <head>
         <meta charset="UTF-8">
         <title>Admin blog</title>  
     </head>
-	<body>
+	
 	<?php
     if(!isset($_SESSION['KorisnickoIme'])){
         require("header.php");
@@ -17,36 +16,6 @@ session_start();
         require("header_adm.php");
         
     }
-    ?>
-<?php
-    if(isset($_POST['objavi'])){
-        $korisnik=$_SESSION['KorisnickoIme'];
-        $naslov = $_POST['naslov'];
-        $tekst = $_POST['tekstbloga'];
-        
-        
-        if($naslov != '') {
-            if($tekst != '') {
-                $upit = "INSERT INTO blog (naslov,tekst,KorisnickoIme) VALUES ('".$naslov."', '".$tekst."','".$korisnik."')";
-                $rez = mysqli_query($konekcija, $upit)
-                or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
-                if (mysqli_num_rows($rez) == 1) {
-                    echo "<script> location.href='admin_meni.php'; </script>";
-            }
-            }else {
-                echo "<center><font size='4px' color='#e32319'><b>Niste uneli tekst!</b></font></center>";
-                
-            }
-        }
-        else{
-            
-            echo "<center><font size='4px' color='#e32319'><b>Niste uneli naslov!</b></font></center>";
-            
-        }
-        mysqli_close($konekcija);
-
-    }
-    
     ?>
 <aside id="colorlib-hero">
 <div class="flexslider">
@@ -72,15 +41,36 @@ session_start();
 						<form name='mojaforma' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 						
 						<br>
-                    <p class="formfield">
-                    <input type='hidden' name='idbloga' value="<?php echo 'BlogID'; ?>">
-
+						<p class="formfield">
 						<label for="textarea"> Naslov </label> 
+						<?php
+						if(isset($_POST['objavi'])){
+							$naslov = $_POST['naslov'];
+							$tekst = $_POST['tekstbloga'];
+							
+							
+							if($naslov != '') {
+								if($tekst != '') {
+									$upit = "INSERT INTO blog (naslov,tekst) VALUES ('".$naslov."' , '".$tekst."')";
+									$rez = mysqli_query($konekcija, $upit)
+											or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
+								}else {
+									echo "<center><font size='4px' color='#e32319'><b>Niste uneli tekst!</b></font></center>";
 
+							} 
+							}
+							else{
+							
+								echo "<center><font size='4px' color='#e32319'><b>Niste uneli naslov!</b></font></center>";
+
+							}
+						}
+							
+						?>
 							
 							
 						
-						<textarea  name="naslov" rows="1" cols="80"></textarea>
+						<textarea  name="naslov" rows="1" cols="92" class="kontrola"></textarea>
 				
 						
 						<input type="button" value="Zahtevi" class="btn btn-cta1" onclick="window.location.href='zahtevizablog.php'">;
@@ -88,7 +78,7 @@ session_start();
 						
 
 
-						<textarea id="tekst" name="tekstbloga" rows="15" cols="80"> </textarea>
+						<textarea class="kontrola" id="tekst" name="tekstbloga" rows="15" cols="100"> </textarea>		
 
 												
 						</p>
@@ -112,9 +102,6 @@ session_start();
             require("footer.php");
         ?>
 		
-</body>
-</html>
-
-
+		
 
   
