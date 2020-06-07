@@ -38,11 +38,7 @@ require("konekcija.php");
         
 		<div class="col-md-10 col-md-offset-1 animate-box">
 						
-						<form name='mojaforma' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
 						
-						<br>
-						<p class="formfield">
-						<label for="textarea"> Naslov </label> 
 						<?php
 						if(isset($_POST['objavi'])){
 							$naslov = $_POST['naslov'];
@@ -50,14 +46,14 @@ require("konekcija.php");
 							
 							
 							if($naslov != '') {
-								if($tekst != '') {
+								if($tekst != ' ') {
 									$upit = "INSERT INTO blog (naslov,tekst) VALUES ('".$naslov."' , '".$tekst."')";
 									$rez = mysqli_query($konekcija, $upit)
 											or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
 								}else {
 									echo "<center><font size='4px' color='#e32319'><b>Niste uneli tekst!</b></font></center>";
 
-							} 
+								} 
 							}
 							else{
 							
@@ -68,7 +64,11 @@ require("konekcija.php");
 							
 						?>
 							
-							
+						<form name='mojaforma' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+						
+						<br>
+						<p class="formfield">
+						<label for="textarea"> Naslov </label> 
 						
 						<textarea  name="naslov" rows="1" cols="92" class="kontrola"></textarea>
 				
