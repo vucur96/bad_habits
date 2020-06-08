@@ -1,0 +1,191 @@
+Running 'loginNeuspesno-KorisnickoImeNePostoji'
+00:56:13
+1.
+open on / OK
+00:56:13
+2.
+setWindowSize on 1200x783 OK
+00:56:13
+3.
+click on linkText=freshStart1/ OK
+00:56:13
+4.
+click on linkText=freshstart/ OK
+00:56:14
+5.
+click on css=a > span OK
+00:56:14
+6.
+click on name=korIme OK
+00:56:14
+7.
+type on name=korIme with value marina123 OK
+00:56:15
+8.
+click on name=lozinka OK
+00:56:15
+9.
+type on name=lozinka with value 123 OK
+00:56:15
+10.
+click on css=.btn OK
+00:56:15
+11.
+click on css=.col-md-offset-1 OK
+00:56:16
+12.
+Trying to find css=b... OK
+00:56:16
+13.
+close OK
+00:56:19
+'loginNeuspesno-KorisnickoImeNePostoji' completed successfully
+00:56:19
+
+--------------------------------------------------------------------
+Running 'loginNeuspesno-pogresnaSifra'
+00:56:19
+1.
+open on / OK
+00:56:20
+2.
+setWindowSize on 1200x783 OK
+00:56:20
+3.
+click on linkText=freshStart1/ OK
+00:56:20
+4.
+click on linkText=freshstart/ OK
+00:56:20
+5.
+click on css=a > span OK
+00:56:20
+6.
+click on name=korIme OK
+00:56:21
+7.
+type on name=korIme with value iva OK
+00:56:22
+8.
+click on name=lozinka OK
+00:56:22
+9.
+type on name=lozinka with value sifraa OK
+00:56:22
+10.
+click on css=.btn OK
+00:56:22
+11.
+click on css=center OK
+00:56:22
+12.
+assertText on css=b with value Niste uneli odgovarajucu lozinku! OK
+00:56:23
+13.
+close OK
+00:56:23
+'loginNeuspesno-pogresnaSifra' completed successfully
+00:56:23
+
+-------------------------------------------------
+Running 'loginNeuspesno-praznoPolje'
+00:56:23
+1.
+open on / OK
+00:56:23
+2.
+setWindowSize on 1200x783 OK
+00:56:23
+3.
+click on linkText=freshStart1/ OK
+00:56:23
+4.
+click on linkText=freshstart/ OK
+00:56:24
+5.
+click on css=a > span OK
+00:56:24
+6.
+click on name=korIme OK
+00:56:25
+7.
+type on name=korIme with value iva OK
+00:56:25
+8.
+click on css=.btn OK
+00:56:25
+9.
+click on css=center OK
+00:56:25
+10.
+assertText on css=b with value Niste uneli lozinku! OK
+00:56:26
+11.
+close OK
+00:56:26
+'loginNeuspesno-praznoPolje' completed successfully
+00:56:26
+
+----------------------------------------------------------------------------
+Running 'loginNeuspesno-praznoPolje2'
+00:56:26
+1.
+open on / OK
+00:56:26
+2.
+setWindowSize on 1200x783 OK
+00:56:26
+3.
+click on linkText=freshStart1/ OK
+00:56:26
+4.
+click on linkText=freshstart/ OK
+00:56:27
+5.
+click on css=a > span OK
+00:56:27
+6.
+click on name=lozinka OK
+00:56:28
+7.
+type on name=lozinka with value sifra OK
+00:56:28
+8.
+click on css=.btn OK
+00:56:28
+9.
+click on css=center OK
+00:56:28
+10.
+assertText on css=b with value Niste uneli korisnicko ime! OK
+00:56:29
+11.
+close OK
+00:56:29
+'loginNeuspesno-praznoPolje2' completed successfully
+00:56:29
+----------------------------------------------------------------
+Running 'loginUspesno'
+00:56:29
+1.
+open on /freshStart1/freshstart/login.php OK
+00:56:30
+2.
+setWindowSize on 1200x783 OK
+00:56:30
+3.
+click on name=korIme OK
+00:56:30
+4.
+type on name=korIme with value iva OK
+00:56:31
+5.
+click on name=lozinka OK
+00:56:31
+6.
+type on name=lozinka with value sifra OK
+00:56:31
+7.
+click on css=.btn OK
+00:56:31
+'loginUspesno' completed successfully
