@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <title>Admin blog</title>  
     </head>
-	
+	<body>
 	<?php
     if(!isset($_SESSION['KorisnickoIme'])){
         require("header.php");
@@ -111,7 +111,8 @@
 		 <?php 
             require("footer.php");
         ?>
-		
+	</body>
+</html>
 
 
 
