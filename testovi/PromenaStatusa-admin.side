@@ -1,0 +1,59 @@
+{
+  "id": "d27250b7-a30f-4a39-aff3-a5c7809422c7",
+  "version": "2.0",
+  "name": "PromenaStatusa-admin",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "19bce927-8c9b-4161-92aa-61c91f36b27f",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "9d9fbcb7-946f-40e1-81bf-e8c18f805ba4",
+    "name": "UspesnaPromena",
+    "commands": [{
+      "id": "1342d79f-d9ac-485a-ad7a-f54872e3bdbe",
+      "comment": "",
+      "command": "open",
+      "target": "/freshStart1/freshstart/promenastatusa.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53e98e1c-20a3-4e16-a25b-e5dfd6422c5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x783",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "676bdf3c-dfe5-4e59-b222-0ecac12899f8",
+      "comment": "",
+      "command": "click",
+      "target": "name=promeniuvip",
+      "targets": [
+        ["name=promeniuvip", "name"],
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=//input[@name='promeniuvip']", "xpath:attributes"],
+        ["xpath=//div[@id='menu']/div/form/table/tbody/tr[2]/td[4]/input", "xpath:idRelative"],
+        ["xpath=//td[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0314097-925f-4491-b82b-c6d1ad90c437",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e287de0f-c64d-4e3a-af91-afb7db15919c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["19bce927-8c9b-4161-92aa-61c91f36b27f"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

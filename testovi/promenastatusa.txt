@@ -1,0 +1,15 @@
+Running 'UspesnaPromena'
+01:45:11
+1.
+open on /freshStart1/freshstart/promenastatusa.php OK
+01:45:11
+2.
+setWindowSize on 1200x783 OK
+01:45:11
+3.
+click on name=promeniuvip OK
+01:45:11
+4.
+close OK
+01:45:12
+'UspesnaPromena' completed successfully

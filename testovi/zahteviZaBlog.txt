@@ -1,0 +1,42 @@
+Running 'UspesnoPrihvatanje/OdbijanjeTeksta'
+03:02:56
+1.
+open on / OK
+03:02:57
+2.
+setWindowSize on 1200x783 OK
+03:02:57
+3.
+click on linkText=freshStart1/ OK
+03:02:58
+4.
+click on linkText=freshstart/ OK
+03:02:58
+5.
+click on css=a > span OK
+03:02:58
+6.
+click on name=korIme OK
+03:02:59
+7.
+type on name=korIme with value nikoleta OK
+03:02:59
+8.
+click on name=lozinka OK
+03:02:59
+9.
+type on name=lozinka with value 123 OK
+03:03:00
+10.
+click on css=.btn OK
+03:03:00
+11.
+click on css=.form-group:nth-child(6) > .btn OK
+03:03:00
+12.
+click on css=.btn-cta1 OK
+03:03:00
+13.
+click on linkText=naslov
+03:03:01
+'UspesnoPrihvatanje/OdbijanjeTeksta' completed successfully

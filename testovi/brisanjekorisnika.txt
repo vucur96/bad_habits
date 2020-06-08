@@ -1,0 +1,15 @@
+Running 'UspesnoBrisanje'
+01:43:09
+1.
+open on /freshStart1/freshstart/brisanjekorisnika.php OK
+01:43:09
+2.
+setWindowSize on 1200x783 OK
+01:43:09
+3.
+click on linkText=Obrisi OK
+01:43:09
+4.
+close OK
+01:43:10
+'UspesnoBrisanje' completed successfully

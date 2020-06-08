@@ -1,0 +1,670 @@
+{
+  "id": "8cf7538e-e5dd-42e9-a4a6-1710e74c0f0f",
+  "version": "2.0",
+  "name": "RegistracijaTrenera",
+  "url": "http://localhost/freshStart1/freshstart/trener.php",
+  "tests": [{
+    "id": "00ba4b0c-77d3-469c-b9cc-debba14046d5",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "e7f26447-5317-410f-9ae6-9224922c305c",
+    "name": "UspesnaRegistracija",
+    "commands": [{
+      "id": "36ab9d0d-2e10-4eba-81be-3c5a1ddd0dbb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/freshStart1/freshstart/trener.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd444e5d-97bf-442b-b563-5fece26ef20e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x783",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5eb78671-ef26-4b0b-9294-cc56351c02b7",
+      "comment": "",
+      "command": "click",
+      "target": "name=ime",
+      "targets": [
+        ["name=ime", "name"],
+        ["css=.row:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='ime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30f1850e-fd4d-4c16-a611-3099a6aa9a1c",
+      "comment": "",
+      "command": "type",
+      "target": "name=ime",
+      "targets": [
+        ["name=ime", "name"],
+        ["css=.row:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='ime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nadja"
+    }, {
+      "id": "8285e24f-9ac9-4dd6-b7ab-5789c8b6368f",
+      "comment": "",
+      "command": "click",
+      "target": "name=prezime",
+      "targets": [
+        ["name=prezime", "name"],
+        ["css=.row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='prezime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53053139-2642-49e2-abcc-9dbec8763e84",
+      "comment": "",
+      "command": "type",
+      "target": "name=prezime",
+      "targets": [
+        ["name=prezime", "name"],
+        ["css=.row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='prezime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Matic"
+    }, {
+      "id": "0f562de6-98e6-474e-a2c9-d4eccb5fce8f",
+      "comment": "",
+      "command": "click",
+      "target": "name=datumrodj",
+      "targets": [
+        ["name=datumrodj", "name"],
+        ["css=.row:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='datumrodj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ec8fae0-b2a6-430c-8988-70aa35e06b7b",
+      "comment": "",
+      "command": "type",
+      "target": "name=datumrodj",
+      "targets": [
+        ["name=datumrodj", "name"],
+        ["css=.row:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='datumrodj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "1992-06-17"
+    }, {
+      "id": "54b053fa-0366-4ac0-9a62-22761af211f5",
+      "comment": "",
+      "command": "click",
+      "target": "name=kurs",
+      "targets": [
+        ["name=kurs", "name"],
+        ["css=.row:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='kurs']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f731598-a110-4363-b4ea-d6533e9004a4",
+      "comment": "",
+      "command": "type",
+      "target": "name=kurs",
+      "targets": [
+        ["name=kurs", "name"],
+        ["css=.row:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='kurs']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "joga"
+    }, {
+      "id": "63a7c430-7641-446f-8ed0-c82d671aae47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group > .form-group",
+      "targets": [
+        ["css=.form-group > .form-group", "css:finder"],
+        ["xpath=//div[@id='header']/div/form/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24e18874-6dfd-49fe-8f47-dba8e5eee7e7",
+      "comment": "",
+      "command": "click",
+      "target": "name=registruj",
+      "targets": [
+        ["name=registruj", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='registruj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a313024-b68d-4453-b873-9b8f3d20dc97",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "aedd0283-448f-416d-a3e1-50b97e66ae28",
+    "name": "NeuspesnaRegistracija-NekoPoljePrazno",
+    "commands": [{
+      "id": "16d89f05-3006-488e-bb96-ed985597d345",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/freshStart1/freshstart/trener.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f5fa36a-0bbe-45c1-aa5a-2035034dfa47",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x783",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fcee78b-82f1-431f-812b-e42e10fc99b6",
+      "comment": "",
+      "command": "click",
+      "target": "name=prezime",
+      "targets": [
+        ["name=prezime", "name"],
+        ["css=.row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='prezime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3328a693-571c-4f54-9477-f1f9ce61123a",
+      "comment": "",
+      "command": "type",
+      "target": "name=prezime",
+      "targets": [
+        ["name=prezime", "name"],
+        ["css=.row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='prezime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Maric"
+    }, {
+      "id": "8de89939-0686-498d-b96f-7964266e5c29",
+      "comment": "",
+      "command": "click",
+      "target": "name=datumrodj",
+      "targets": [
+        ["name=datumrodj", "name"],
+        ["css=.row:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='datumrodj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "809aedc5-b157-4dbe-a306-4c5d27a2211b",
+      "comment": "",
+      "command": "type",
+      "target": "name=datumrodj",
+      "targets": [
+        ["name=datumrodj", "name"],
+        ["css=.row:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='datumrodj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2002-10-25"
+    }, {
+      "id": "c7ec0642-cb05-46cf-a0c1-44895d6e7538",
+      "comment": "",
+      "command": "click",
+      "target": "name=kurs",
+      "targets": [
+        ["name=kurs", "name"],
+        ["css=.row:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='kurs']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3960eb01-671a-4678-bf35-672f4e7d6c65",
+      "comment": "",
+      "command": "type",
+      "target": "name=kurs",
+      "targets": [
+        ["name=kurs", "name"],
+        ["css=.row:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='kurs']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "joga"
+    }, {
+      "id": "58af5de8-e6cd-47c0-b7f9-47f043a57d7c",
+      "comment": "",
+      "command": "click",
+      "target": "name=registruj",
+      "targets": [
+        ["name=registruj", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='registruj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "158f3b1a-74c6-4747-9d1a-0c14ba2c85b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-offset-1",
+      "targets": [
+        ["css=.col-md-offset-1", "css:finder"],
+        ["xpath=//div[@id='header']/div", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3315911-f905-4c66-8b8f-c5714c85f787",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=b",
+      "targets": [
+        ["css=b", "css:finder"],
+        ["xpath=//div[@id='header']/div/center/font/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Niste uneli ime!')]", "xpath:innerText"]
+      ],
+      "value": "Niste uneli ime!"
+    }, {
+      "id": "38d0ed28-dda3-4e2b-9b74-c0dea6e80b2e",
+      "comment": "",
+      "command": "click",
+      "target": "name=ime",
+      "targets": [
+        ["name=ime", "name"],
+        ["css=.row:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='ime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5aded9e6-4e31-43ca-9707-5e1407cd887b",
+      "comment": "",
+      "command": "type",
+      "target": "name=ime",
+      "targets": [
+        ["name=ime", "name"],
+        ["css=.row:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='ime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nadja"
+    }, {
+      "id": "75d627a9-4f30-4aa6-b475-7a4b333983ba",
+      "comment": "",
+      "command": "click",
+      "target": "name=datumrodj",
+      "targets": [
+        ["name=datumrodj", "name"],
+        ["css=.row:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='datumrodj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89512eea-f2ad-428e-8714-949ddb698bb9",
+      "comment": "",
+      "command": "click",
+      "target": "name=datumrodj",
+      "targets": [
+        ["name=datumrodj", "name"],
+        ["css=.row:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='datumrodj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e115dba-0ee8-40a7-89f3-bbe9f6abf906",
+      "comment": "",
+      "command": "type",
+      "target": "name=datumrodj",
+      "targets": [
+        ["name=datumrodj", "name"],
+        ["css=.row:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='datumrodj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2002-12-06"
+    }, {
+      "id": "de3b2ab8-3cb3-4a50-9706-12b4e974de50",
+      "comment": "",
+      "command": "click",
+      "target": "name=kurs",
+      "targets": [
+        ["name=kurs", "name"],
+        ["css=.row:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='kurs']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1747350c-716c-40d7-ae9a-71811bce2729",
+      "comment": "",
+      "command": "type",
+      "target": "name=kurs",
+      "targets": [
+        ["name=kurs", "name"],
+        ["css=.row:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='kurs']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "joga"
+    }, {
+      "id": "7fa2dbb7-4937-4632-8dab-30877abd415f",
+      "comment": "",
+      "command": "click",
+      "target": "name=registruj",
+      "targets": [
+        ["name=registruj", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='registruj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "965bd5c5-bd20-45a3-99fd-0139624a5eac",
+      "comment": "",
+      "command": "click",
+      "target": "css=center",
+      "targets": [
+        ["css=center", "css:finder"],
+        ["xpath=//div[@id='header']/div/center", "xpath:idRelative"],
+        ["xpath=//center", "xpath:position"],
+        ["xpath=//center[contains(.,'Niste uneli prezime!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e30870e-f9cc-41c9-8401-31c77d1cfbcc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=b",
+      "targets": [
+        ["css=b", "css:finder"],
+        ["xpath=//div[@id='header']/div/center/font/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Niste uneli prezime!')]", "xpath:innerText"]
+      ],
+      "value": "Niste uneli prezime!"
+    }, {
+      "id": "df19566e-ac7f-42d0-bdbd-807c2d2ee107",
+      "comment": "",
+      "command": "click",
+      "target": "name=ime",
+      "targets": [
+        ["name=ime", "name"],
+        ["css=.row:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='ime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac797c7c-a0a1-41c0-87dd-ab612a6c066b",
+      "comment": "",
+      "command": "type",
+      "target": "name=ime",
+      "targets": [
+        ["name=ime", "name"],
+        ["css=.row:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='ime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nadja"
+    }, {
+      "id": "a3ece94b-173e-4789-8892-cfe21e9d1981",
+      "comment": "",
+      "command": "click",
+      "target": "name=prezime",
+      "targets": [
+        ["name=prezime", "name"],
+        ["css=.row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='prezime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe79db94-458e-4789-aa09-c16b04df39b4",
+      "comment": "",
+      "command": "type",
+      "target": "name=prezime",
+      "targets": [
+        ["name=prezime", "name"],
+        ["css=.row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='prezime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Maric"
+    }, {
+      "id": "339916d4-d539-4904-8f74-126ea4dc9884",
+      "comment": "",
+      "command": "click",
+      "target": "name=kurs",
+      "targets": [
+        ["name=kurs", "name"],
+        ["css=.row:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='kurs']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbda86ab-1770-46bd-ac14-95f8406dabbc",
+      "comment": "",
+      "command": "type",
+      "target": "name=kurs",
+      "targets": [
+        ["name=kurs", "name"],
+        ["css=.row:nth-child(4) .form-control", "css:finder"],
+        ["xpath=//input[@name='kurs']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "joga"
+    }, {
+      "id": "0d17c610-45ba-47fb-ae27-c0d8f8463fbb",
+      "comment": "",
+      "command": "click",
+      "target": "name=registruj",
+      "targets": [
+        ["name=registruj", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='registruj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99783deb-496a-448c-b598-32c96d7c5917",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-offset-1",
+      "targets": [
+        ["css=.col-md-offset-1", "css:finder"],
+        ["xpath=//div[@id='header']/div", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d625c64-f224-40e1-8878-29803ef73d64",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=b",
+      "targets": [
+        ["css=b", "css:finder"],
+        ["xpath=//div[@id='header']/div/center/font/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Niste uneli datum!')]", "xpath:innerText"]
+      ],
+      "value": "Niste uneli datum!"
+    }, {
+      "id": "bbd8422c-5d73-47b5-9308-455f20b5300c",
+      "comment": "",
+      "command": "click",
+      "target": "name=ime",
+      "targets": [
+        ["name=ime", "name"],
+        ["css=.row:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='ime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd39c0c5-7136-41ff-9cbe-960ecfa3901a",
+      "comment": "",
+      "command": "type",
+      "target": "name=ime",
+      "targets": [
+        ["name=ime", "name"],
+        ["css=.row:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='ime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nadja"
+    }, {
+      "id": "240782b4-37fc-41fe-9200-a57b29c24571",
+      "comment": "",
+      "command": "click",
+      "target": "name=prezime",
+      "targets": [
+        ["name=prezime", "name"],
+        ["css=.row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='prezime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef352127-a79d-4fc7-93ec-752a4965227c",
+      "comment": "",
+      "command": "type",
+      "target": "name=prezime",
+      "targets": [
+        ["name=prezime", "name"],
+        ["css=.row:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='prezime']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Maric"
+    }, {
+      "id": "11737dba-56bc-463c-b027-58e8be5a506d",
+      "comment": "",
+      "command": "click",
+      "target": "name=datumrodj",
+      "targets": [
+        ["name=datumrodj", "name"],
+        ["css=.row:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='datumrodj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1809bfac-2c4c-491c-9c2e-2046adacaca7",
+      "comment": "",
+      "command": "type",
+      "target": "name=datumrodj",
+      "targets": [
+        ["name=datumrodj", "name"],
+        ["css=.row:nth-child(3) .form-control", "css:finder"],
+        ["xpath=//input[@name='datumrodj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2002-12-13"
+    }, {
+      "id": "5619c898-3c0e-459c-9e67-975d4dbaea18",
+      "comment": "",
+      "command": "click",
+      "target": "name=registruj",
+      "targets": [
+        ["name=registruj", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='registruj']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7f0308a-91ca-4cb2-bded-39455fd31b04",
+      "comment": "",
+      "command": "click",
+      "target": "css=center",
+      "targets": [
+        ["css=center", "css:finder"],
+        ["xpath=//div[@id='header']/div/center", "xpath:idRelative"],
+        ["xpath=//center", "xpath:position"],
+        ["xpath=//center[contains(.,'Niste uneli vas kurs!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7ccc2a6-eb7f-4839-b24f-d1d6fdd159a2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=b",
+      "targets": [
+        ["css=b", "css:finder"],
+        ["xpath=//div[@id='header']/div/center/font/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Niste uneli vas kurs!')]", "xpath:innerText"]
+      ],
+      "value": "Niste uneli vas kurs!"
+    }, {
+      "id": "428cd8ce-3300-4ff9-a657-a4354a2165e6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "15de0257-96fb-4424-8af6-b90bbb0674d7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["00ba4b0c-77d3-469c-b9cc-debba14046d5"]
+  }],
+  "urls": ["http://localhost/freshStart1/freshstart/trener.php"],
+  "plugins": []
+}

@@ -1,0 +1,308 @@
+Running 'UspesnaRegistracija'
+03:27:09
+1.
+open on http://localhost/freshStart1/freshstart/korisnik.php OK
+03:27:09
+2.
+setWindowSize on 1200x783 OK
+03:27:12
+3.
+click on name=ime OK
+03:27:15
+4.
+type on name=ime with value Masa OK
+03:27:18
+5.
+click on name=prezime OK
+03:27:21
+6.
+type on name=prezime with value Radonjic OK
+03:27:24
+7.
+click on name=datumrodj OK
+03:27:28
+8.
+type on name=datumrodj with value 1999-11-09 OK
+03:27:31
+9.
+click on name=visina OK
+03:27:34
+10.
+type on name=visina with value 178 OK
+03:27:37
+11.
+click on name=tezina OK
+03:27:40
+12.
+type on name=tezina with value 59 OK
+03:27:43
+13.
+click on name=cilj OK
+03:27:46
+14.
+type on name=cilj with value ugojiti se OK
+03:27:50
+15.
+click on name=registruj OK
+03:27:53
+16.
+close OK
+03:27:56
+'UspesnaRegistracija' completed successfully
+03:27:56
+------------------------------------------------------------------------------
+Running 'NeuspesnaRegistracija-NekoPoljePrazno'
+03:30:57
+1.
+open on http://localhost/freshStart1/freshstart/korisnik.php OK
+03:30:57
+2.
+setWindowSize on 1200x783 OK
+03:31:00
+3.
+click on name=prezime OK
+03:31:03
+4.
+type on name=prezime with value Radonjic OK
+03:31:07
+5.
+click on name=datumrodj OK
+03:31:10
+6.
+type on name=datumrodj with value 1999-06-09 OK
+03:31:13
+7.
+click on name=visina OK
+03:31:16
+8.
+type on name=visina with value 178 OK
+03:31:19
+9.
+click on name=tezina OK
+03:31:23
+10.
+type on name=tezina with value 58 OK
+03:31:26
+11.
+click on name=cilj OK
+03:31:29
+12.
+type on name=cilj with value ugojiti se OK
+03:31:32
+13.
+click on name=registruj OK
+03:31:35
+14.
+click on css=center OK
+03:31:39
+15.
+assertText on css=b with value Niste uneli ime! OK
+03:31:42
+16.
+click on name=ime OK
+03:31:45
+17.
+type on name=ime with value Masa OK
+03:31:48
+18.
+click on name=datumrodj OK
+03:31:52
+19.
+click on name=datumrodj OK
+03:31:55
+20.
+type on name=datumrodj with value 2002-12-31 OK
+03:31:58
+21.
+click on name=visina OK
+03:32:01
+22.
+type on name=visina with value 178 OK
+03:32:04
+23.
+click on name=tezina OK
+03:32:07
+24.
+type on name=tezina with value 58 OK
+03:32:11
+25.
+click on name=cilj OK
+03:32:14
+26.
+type on name=cilj with value ugojiti se OK
+03:32:17
+27.
+click on name=registruj OK
+03:32:20
+28.
+click on css=.col-md-offset-1 OK
+03:32:23
+29.
+Trying to find css=b... OK
+03:32:27
+30.
+click on name=ime OK
+03:32:57
+31.
+type on name=ime with value Masa OK
+03:33:00
+32.
+click on name=prezime OK
+03:33:03
+33.
+type on name=prezime with value Radonjic OK
+03:33:06
+34.
+click on name=visina OK
+03:33:09
+35.
+type on name=visina with value 178 OK
+03:33:13
+36.
+click on name=tezina OK
+03:33:16
+37.
+type on name=tezina with value 58 OK
+03:33:19
+38.
+click on name=cilj OK
+03:33:22
+39.
+type on name=cilj with value ugojiti se OK
+03:33:25
+40.
+click on name=registruj OK
+03:33:28
+41.
+click on css=center OK
+03:33:32
+42.
+assertText on css=b with value Niste uneli datum! OK
+03:33:35
+43.
+click on name=ime OK
+03:33:38
+44.
+type on name=ime with value Masa OK
+03:33:42
+45.
+click on name=prezime OK
+03:33:45
+46.
+type on name=prezime with value Radonjic OK
+03:33:48
+47.
+click on name=datumrodj OK
+03:33:51
+48.
+click on name=datumrodj OK
+03:33:54
+49.
+type on name=datumrodj with value 1999-11-10 OK
+03:33:58
+50.
+click on name=tezina OK
+03:34:01
+51.
+type on name=tezina with value 58 OK
+03:34:04
+52.
+click on name=cilj OK
+03:34:07
+53.
+type on name=cilj with value Ugojiti se OK
+03:34:10
+54.
+click on name=registruj OK
+03:34:14
+55.
+click on css=.col-md-offset-1 OK
+03:34:17
+56.
+Trying to find css=b... OK
+03:34:20
+57.
+click on name=ime OK
+03:34:26
+58.
+type on name=ime with value Masa OK
+03:34:29
+59.
+click on name=registracijakor OK
+03:34:33
+60.
+click on name=prezime OK
+03:34:36
+61.
+type on name=prezime with value Radonjic OK
+03:34:39
+62.
+click on name=datumrodj OK
+03:34:42
+63.
+type on name=datumrodj with value 1998-06-17 OK
+03:34:45
+64.
+click on name=visina OK
+03:34:48
+65.
+type on name=visina with value 178 OK
+03:34:52
+66.
+click on name=cilj OK
+03:34:55
+67.
+type on name=cilj with value ugojiti se OK
+03:34:58
+68.
+click on name=registruj OK
+03:35:01
+69.
+click on css=center OK
+03:35:04
+70.
+click on name=ime OK
+03:35:08
+71.
+type on name=ime with value Masa OK
+03:35:11
+72.
+click on name=prezime OK
+03:35:14
+73.
+type on name=prezime with value Radonjic OK
+03:35:17
+74.
+click on name=datumrodj OK
+03:35:21
+75.
+click on name=datumrodj OK
+03:35:24
+76.
+type on name=datumrodj with value 2002-12-31 OK
+03:35:27
+77.
+click on name=visina OK
+03:35:30
+78.
+type on name=visina with value 178 OK
+03:35:33
+79.
+click on name=tezina OK
+03:35:37
+80.
+type on name=tezina with value 58 OK
+03:35:40
+81.
+click on name=registruj OK
+03:35:43
+82.
+click on css=.col-md-offset-1 OK
+03:35:46
+83.
+Trying to find css=b... OK
+03:35:50
+84.
+close OK
+03:36:02
+'NeuspesnaRegistracija-NekoPoljePrazno' completed successfully

@@ -1,0 +1,107 @@
+Running 'UspesnoPisanje'
+01:54:25
+1.
+open on /freshStart1/freshstart/adminblog.php OK
+01:54:25
+2.
+setWindowSize on 1200x783 OK
+01:54:25
+3.
+click on name=naslov OK
+01:54:25
+4.
+type on name=naslov with value nesto OK
+01:54:26
+5.
+click on id=tekst OK
+01:54:26
+6.
+type on id=tekst with value neki tekst ide ovde OK
+01:54:27
+7.
+click on name=objavi OK
+01:54:27
+8.
+close OK
+01:54:27
+'UspesnoPisanje' completed successfully
+01:54:27
+----------------------------------------------------------------------------------
+Running 'Neuspesno-nekoPoljeNijePopunjeno'
+01:56:11
+1.
+open on / OK
+01:56:11
+2.
+setWindowSize on 1200x783 OK
+01:56:11
+3.
+click on linkText=freshStart1/ OK
+01:56:11
+4.
+click on linkText=freshstart/ OK
+01:56:12
+5.
+click on css=a > span OK
+01:56:12
+6.
+click on name=korIme OK
+01:56:13
+7.
+type on name=korIme with value nikoleta OK
+01:56:13
+8.
+click on name=lozinka OK
+01:56:13
+9.
+type on name=lozinka with value 123 OK
+01:56:13
+10.
+click on css=.btn OK
+01:56:14
+11.
+click on css=.form-group:nth-child(6) > .btn OK
+01:56:14
+12.
+click on name=naslov OK
+01:56:14
+13.
+type on name=naslov with value n OK
+01:56:15
+14.
+click on name=objavi OK
+01:56:15
+15.
+click on name=mojaforma OK
+01:56:15
+16.
+Trying to find css=b... OK
+01:56:15
+17.
+click on name=naslov OK
+01:56:17
+18.
+click on id=tekst OK
+01:56:17
+19.
+type on id=tekst with value neki tekst OK
+01:56:17
+20.
+click on name=objavi OK
+01:56:17
+21.
+click on css=center OK
+01:56:17
+22.
+click on css=center OK
+01:56:18
+23.
+doubleClick on css=center OK
+01:56:18
+24.
+assertText on css=b with value Niste uneli naslov! OK
+01:56:18
+25.
+close OK
+01:56:18
+'Neuspesno-nekoPoljeNijePopunjeno' completed successfully

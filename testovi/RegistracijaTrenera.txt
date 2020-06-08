@@ -1,0 +1,168 @@
+Running 'UspesnaRegistracija'
+03:16:46
+1.
+open on http://localhost/freshStart1/freshstart/trener.php OK
+03:16:46
+2.
+setWindowSize on 1200x783 OK
+03:16:49
+3.
+click on name=ime OK
+03:16:52
+4.
+type on name=ime with value Nadja OK
+03:16:55
+5.
+click on name=prezime OK
+03:16:58
+6.
+type on name=prezime with value Matic OK
+03:17:02
+7.
+click on name=datumrodj OK
+03:17:05
+8.
+type on name=datumrodj with value 1992-06-17 OK
+03:17:08
+9.
+click on name=kurs OK
+03:17:11
+10.
+type on name=kurs with value joga OK
+03:17:14
+11.
+click on css=.form-group > .form-group OK
+03:17:17
+12.
+click on name=registruj OK
+03:17:21
+13.
+close OK
+03:17:24
+'UspesnaRegistracija' completed successfully
+03:17:24
+
+----------------------------------------------------------------------
+Running 'NeuspesnaRegistracija-NekoPoljePrazno'
+03:21:26
+1.
+open on http://localhost/freshStart1/freshstart/trener.php OK
+03:21:26
+2.
+setWindowSize on 1200x783 OK
+03:21:29
+3.
+click on name=prezime OK
+03:21:32
+4.
+type on name=prezime with value Maric OK
+03:21:35
+5.
+click on name=datumrodj OK
+03:21:39
+6.
+type on name=datumrodj with value 2002-10-25 OK
+03:21:42
+7.
+click on name=kurs OK
+03:21:45
+8.
+type on name=kurs with value joga OK
+03:21:48
+9.
+click on name=registruj OK
+03:21:51
+10.
+click on css=.col-md-offset-1 OK
+03:21:54
+11.
+assertText on css=b with value Niste uneli ime! OK
+03:21:58
+12.
+click on name=ime OK
+03:22:01
+13.
+type on name=ime with value Nadja OK
+03:22:04
+14.
+click on name=datumrodj OK
+03:22:07
+15.
+click on name=datumrodj OK
+03:22:11
+16.
+type on name=datumrodj with value 2002-12-06 OK
+03:22:14
+17.
+click on name=kurs OK
+03:22:17
+18.
+type on name=kurs with value joga OK
+03:22:20
+19.
+click on name=registruj OK
+03:22:23
+20.
+click on css=center OK
+03:22:26
+21.
+assertText on css=b with value Niste uneli prezime! OK
+03:22:30
+22.
+click on name=ime OK
+03:22:33
+23.
+type on name=ime with value Nadja OK
+03:22:36
+24.
+click on name=prezime OK
+03:22:39
+25.
+type on name=prezime with value Maric OK
+03:22:42
+26.
+click on name=kurs OK
+03:22:46
+27.
+type on name=kurs with value joga OK
+03:22:49
+28.
+click on name=registruj OK
+03:22:52
+29.
+click on css=.col-md-offset-1 OK
+03:22:55
+30.
+assertText on css=b with value Niste uneli datum! OK
+03:22:59
+31.
+click on name=ime OK
+03:23:02
+32.
+type on name=ime with value Nadja OK
+03:23:05
+33.
+click on name=prezime OK
+03:23:08
+34.
+type on name=prezime with value Maric OK
+03:23:11
+35.
+click on name=datumrodj OK
+03:23:14
+36.
+type on name=datumrodj with value 2002-12-13 OK
+03:23:18
+37.
+click on name=registruj OK
+03:23:21
+38.
+click on css=center OK
+03:23:24
+39.
+assertText on css=b with value Niste uneli vas kurs! OK
+03:23:27
+40.
+close OK
+03:23:30
+'NeuspesnaRegistracija-NekoPoljePrazno' completed successfully

@@ -1,0 +1,106 @@
+01:38:10
+1.
+open on / OK
+01:38:10
+2.
+setWindowSize on 1200x783 OK
+01:38:10
+3.
+click on linkText=freshStart1/ OK
+01:38:10
+4.
+click on linkText=freshstart/ OK
+01:38:11
+5.
+click on css=a > span OK
+01:38:11
+6.
+click on name=korIme OK
+01:38:11
+7.
+type on name=korIme with value nikoleta OK
+01:38:12
+8.
+click on name=lozinka OK
+01:38:12
+9.
+type on name=lozinka with value 123 OK
+01:38:12
+10.
+click on css=.btn OK
+01:38:12
+11.
+click on css=.form-group:nth-child(3) > .btn OK
+01:38:13
+12.
+click on css=#menu > div OK
+01:38:13
+13.
+assertText on css=font:nth-child(4) > b with value Nema zahteva za korisnika. OK
+01:38:13
+14.
+click on css=#menu > div OK
+01:38:13
+15.
+assertText on css=font:nth-child(9) > b with value Nema zahteva za trenera. OK
+01:38:14
+16.
+click on css=#menu > div OK
+01:38:14
+17.
+assertText on css=font:nth-child(14) > b with value Nema zahteva za sponzora. OK
+01:38:14
+18.
+close OK
+01:38:14
+'NemaZahteva' completed successfully
+01:38:14
+
+-----------------------------------------------------------------
+Running 'PrihvatanjeOdbijanjeUspesno'
+01:38:21
+1.
+open on / OK
+01:38:21
+2.
+setWindowSize on 1200x783 OK
+01:38:21
+3.
+click on linkText=freshStart1/ OK
+01:38:21
+4.
+click on linkText=freshstart/ OK
+01:38:22
+5.
+click on css=a > span OK
+01:38:22
+6.
+click on name=korIme OK
+01:38:23
+7.
+type on name=korIme with value nikoleta OK
+01:38:23
+8.
+click on name=lozinka OK
+01:38:23
+9.
+type on name=lozinka with value 123 OK
+01:38:23
+10.
+click on css=.btn OK
+01:38:23
+11.
+click on css=.form-group:nth-child(3) > .btn OK
+01:38:24
+12.
+click on name=prihvati
+13.
+click on css=.form-group:nth-child(34) > .btn OK
+01:38:24
+14.
+click on name=prihvati
+15.
+close OK
+01:38:24
+'PrihvatanjeOdbijanjeUspesno' completed successfully
+01:38:24

@@ -1,0 +1,61 @@
+{
+  "id": "9029bc97-b4bd-4408-961f-4836322c58fb",
+  "version": "2.0",
+  "name": "BrisanjeKorisnika-admin",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "4e5cfb50-c7e2-46d6-add6-483dc3c43664",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "500c4f51-381e-43d0-be38-b280b599d17f",
+    "name": "UspesnoBrisanje",
+    "commands": [{
+      "id": "398480d9-22cc-4b5c-b030-e23967acc2d2",
+      "comment": "",
+      "command": "open",
+      "target": "/freshStart1/freshstart/brisanjekorisnika.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "038aef0e-200e-45f0-aaef-4c588f016f5e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x783",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ef3677f-4802-4ff7-b06d-c07004b287d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Obrisi",
+      "targets": [
+        ["linkText=Obrisi", "linkText"],
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Obrisi')]", "xpath:link"],
+        ["xpath=//div[@id='menu']/div/table/tbody/tr[2]/td[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'brisi.php?korIme=bobica1')]", "xpath:href"],
+        ["xpath=//td[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Obrisi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2c1febe-5577-44c2-aa9a-36019f4c2406",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "363d3904-27dd-4763-803a-0508d8fdd69d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4e5cfb50-c7e2-46d6-add6-483dc3c43664"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}

@@ -1,0 +1,113 @@
+Running 'UspesnaRegistracija'
+03:10:01
+1.
+open on /freshStart1/freshstart/sponzor.php OK
+03:10:01
+2.
+setWindowSize on 1200x783 OK
+03:10:04
+3.
+click on name=imefirme OK
+03:10:07
+4.
+type on name=imefirme with value Firma OK
+03:10:10
+5.
+click on name=opisdel OK
+03:10:13
+6.
+type on name=opisdel with value delatnost OK
+03:10:16
+7.
+click on css=p:nth-child(4) > input OK
+03:10:20
+8.
+click on name=registruj OK
+03:10:23
+9.
+close OK
+03:10:26
+'UspesnaRegistracija' completed successfully
+03:10:26
+------------------------------------------------------------------------------
+Running 'NeuspesnaRegistracija-PraznoPolje'
+03:12:08
+1.
+open on http://localhost/freshStart1/freshstart/sponzor.php OK
+03:12:09
+2.
+setWindowSize on 1200x783 OK
+03:12:12
+3.
+click on name=imefirme OK
+03:12:15
+4.
+click on name=opisdel OK
+03:12:18
+5.
+type on name=opisdel with value delatnost OK
+03:12:21
+6.
+click on name=vrstarek OK
+03:12:31
+7.
+click on name=registruj OK
+03:12:34
+8.
+click on css=center OK
+03:12:38
+9.
+assertText on css=b with value Niste uneli ime firme! OK
+03:12:41
+10.
+click on name=imefirme OK
+03:12:44
+11.
+type on name=imefirme with value Firma OK
+03:12:47
+12.
+click on name=opisdel OK
+03:12:50
+13.
+click on name=vrstarek OK
+03:12:54
+14.
+click on name=registruj OK
+03:12:57
+15.
+click on css=center OK
+03:13:00
+16.
+assertText on css=b with value Niste uneli opis delatnosti Vase firme! OK
+03:13:03
+17.
+click on name=imefirme OK
+03:13:06
+18.
+type on name=imefirme with value Firma OK
+03:13:10
+19.
+click on name=opisdel OK
+03:13:13
+20.
+type on name=opisdel with value delatnost OK
+03:13:16
+21.
+click on name=vrstarek OK
+03:13:19
+22.
+click on name=vrstarek OK
+03:13:22
+23.
+click on name=registruj OK
+03:13:25
+24.
+click on css=center OK
+03:13:29
+25.
+assertText on css=b with value Niste uneli vrstu reklame! OK
+03:13:32
+26.
+close OK
+03:13:35
+'NeuspesnaRegistracija-PraznoPolje' completed successfully
