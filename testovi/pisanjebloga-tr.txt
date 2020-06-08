@@ -1,0 +1,65 @@
+Running 'UspesnoPisanjeTeksta'
+02:00:44
+1.
+open on /freshStart1/freshstart/pisanjebloga_tr.php OK
+02:00:44
+2.
+setWindowSize on 1200x783 OK
+02:00:44
+3.
+click on name=naslov OK
+02:00:44
+4.
+type on name=naslov with value neki naslov ide ovde OK
+02:00:45
+5.
+click on id=tekst OK
+02:00:45
+6.
+type on id=tekst with value a ovde ide neki tekst OK
+02:00:46
+7.
+click on name=objavi OK
+02:00:46
+8.
+close OK
+02:00:46
+'UspesnoPisanjeTeksta' completed successfully
+02:00:46
+----------------------------------------------------------------------------
+Running 'NeuspesnoPisanjeTeksta-PraznoPolje'
+02:16:14
+1.
+open on / OK
+02:16:14
+2.
+setWindowSize on 1200x783 OK
+02:16:14
+3.
+click on linkText=freshStart1/ OK
+02:16:14
+4.
+click on linkText=freshstart/ OK
+02:16:15
+5.
+click on linkText=Pisanje Teksta OK
+02:16:15
+6.
+click on id=tekst OK
+02:16:16
+7.
+type on id=tekst with value defr OK
+02:16:16
+8.
+click on name=objavi OK
+02:16:16
+9.
+click on css=center OK
+02:16:17
+10.
+Trying to find css=b... OK
+02:16:17
+11.
+close OK
+02:16:17
+'NeuspesnoPisanjeTeksta-PraznoPolje' completed successfully
