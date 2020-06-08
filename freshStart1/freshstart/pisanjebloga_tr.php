@@ -73,12 +73,9 @@
                 VALUES ('".$nas."', '".$tekstb."','".$korisnik."')";
                 $rezultat = mysqli_query($konekcija, $upit)
                 or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
-                if (mysqli_num_rows($rezultat) == 1) {
-                    echo "<script> location.href='index.php'; </script>";
+                "<script> location.href='index.php'; </script>";
                     
-                }//else{
-                //echo "<center><font size='4px' color='#e32319'><b>Greska kod unosa u zatevblog!</b></font></center>";
-                //}
+                
             }else{
                 echo "<center><font size='4px' color='#e32319'><b>Niste uneli tekst!</b></font></center>";
             }
