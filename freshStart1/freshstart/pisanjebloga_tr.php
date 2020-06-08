@@ -68,7 +68,7 @@
         $tekstb=$_POST['tekstbloga'];
         
         if($nas != ''){
-            if($tekstb != ''){
+            if($tekstb != ' '){
                 $upit = "INSERT INTO zahtevblog (naslov, tekst, KorisnickoIme)
                 VALUES ('".$nas."', '".$tekstb."','".$korisnik."')";
                 $rezultat = mysqli_query($konekcija, $upit)
