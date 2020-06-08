@@ -73,7 +73,7 @@
                 VALUES ('".$nas."', '".$tekstb."','".$korisnik."')";
                 $rezultat = mysqli_query($konekcija, $upit)
                 or die("Greska kod upita za upis u bazu!" . mysqli_error($konekcija));
-                "<script> location.href='index.php'; </script>";
+                echo "<script> location.href='index.php'; </script>";
                     
                 
             }else{
