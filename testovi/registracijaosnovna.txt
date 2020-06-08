@@ -1,0 +1,354 @@
+Running 'registracijaUspesna'
+01:01:11
+1.
+open on /freshStart1/freshstart/registracija.php OK
+01:01:11
+2.
+setWindowSize on 1200x783 OK
+01:01:11
+3.
+click on name=korisnickoIme OK
+01:01:11
+4.
+type on name=korisnickoIme with value milica OK
+01:01:12
+5.
+click on name=Email OK
+01:01:12
+6.
+type on name=Email with value milica@gmail.com OK
+01:01:12
+7.
+click on name=lozinka OK
+01:01:13
+8.
+type on name=lozinka with value sifra OK
+01:01:13
+9.
+click on name=PonovoLoz OK
+01:01:13
+10.
+type on name=PonovoLoz with value sifra OK
+01:01:13
+11.
+click on id=sponzor OK
+01:01:13
+12.
+click on name=nastavi OK
+01:01:13
+13.
+close OK
+01:01:13
+'registracijaUspesna' completed successfully
+01:01:14
+----------------------------------------------------------------------
+Running 'registracijaNeuspesno-praznoPolje'
+01:03:40
+1.
+open on / OK
+01:03:40
+2.
+setWindowSize on 1200x783 OK
+01:03:40
+3.
+click on linkText=freshStart1/ OK
+01:03:40
+4.
+click on linkText=freshstart/ OK
+01:03:41
+5.
+click on css=a > span OK
+01:03:41
+6.
+Trying to find linkText=Registracijom... OK
+01:03:42
+7.
+click on name=Email OK
+01:03:44
+8.
+type on name=Email with value iva@gmail.com OK
+01:03:44
+9.
+click on name=lozinka OK
+01:03:45
+10.
+type on name=lozinka with value 123 OK
+01:03:45
+11.
+click on name=PonovoLoz OK
+01:03:45
+12.
+type on name=PonovoLoz with value 123 OK
+01:03:45
+13.
+click on id=sponzor OK
+01:03:45
+14.
+click on name=nastavi OK
+01:03:46
+15.
+click on css=center OK
+01:03:46
+16.
+assertText on css=b with value Niste uneli korisnicko ime! OK
+01:03:46
+17.
+click on name=korisnickoIme OK
+01:03:46
+18.
+type on name=korisnickoIme with value iva OK
+01:03:47
+19.
+click on name=Email OK
+01:03:47
+20.
+click on name=lozinka OK
+01:03:47
+21.
+type on name=lozinka with value sifra OK
+01:03:47
+22.
+click on name=PonovoLoz OK
+01:03:47
+23.
+type on name=PonovoLoz with value sifra OK
+01:03:48
+24.
+click on id=trener OK
+01:03:48
+25.
+click on name=nastavi OK
+01:03:48
+26.
+click on css=center OK
+01:03:48
+27.
+assertText on css=b with value Niste uneli email! OK
+01:03:48
+28.
+click on name=lozinka OK
+01:03:49
+29.
+click on name=korisnickoIme OK
+01:03:49
+30.
+type on name=korisnickoIme with value iva OK
+01:03:49
+31.
+click on name=Email OK
+01:03:49
+32.
+type on name=Email with value iva@gmail.com OK
+01:03:50
+33.
+click on name=lozinka OK
+01:03:50
+34.
+type on name=lozinka with value 123 OK
+01:03:50
+35.
+click on id=sponzor OK
+01:03:50
+36.
+click on name=nastavi OK
+01:03:50
+37.
+click on css=center OK
+01:03:50
+38.
+assertText on css=b with value Niste uneli ponovljenu lozinku! OK
+01:03:51
+39.
+click on name=korisnickoIme OK
+01:03:51
+40.
+type on name=korisnickoIme with value iva OK
+01:03:51
+41.
+click on name=Email OK
+01:03:51
+42.
+type on name=Email with value iva@gmail.com OK
+01:03:52
+43.
+click on name=PonovoLoz OK
+01:03:52
+44.
+type on name=PonovoLoz with value 123 OK
+01:03:52
+45.
+click on id=korisnik OK
+01:03:52
+46.
+click on name=nastavi OK
+01:03:52
+47.
+click on css=center OK
+01:03:53
+48.
+assertText on css=b with value Niste uneli lozinku! OK
+01:03:53
+49.
+click on name=korisnickoIme OK
+01:03:53
+50.
+type on name=korisnickoIme with value iva OK
+01:03:53
+51.
+click on name=Email OK
+01:03:53
+52.
+type on name=Email with value iva@gmail.com OK
+01:03:54
+53.
+click on name=lozinka OK
+01:03:54
+54.
+type on name=lozinka with value sifra OK
+01:03:54
+55.
+click on name=PonovoLoz OK
+01:03:54
+56.
+type on name=PonovoLoz with value sifra OK
+01:03:54
+57.
+click on name=korisnickoIme OK
+01:03:55
+58.
+click on name=nastavi OK
+01:03:55
+59.
+click on css=center OK
+01:03:55
+60.
+assertText on css=b with value Niste uneli tip! OK
+01:03:55
+61.
+close OK
+01:03:56
+'registracijaNeuspesno-praznoPolje' completed successfully
+01:03:56
+----------------------------------------------------------------------
+Running 'registracijaNeuspesno-korImeVecPostoji'
+01:05:46
+1.
+open on / OK
+01:05:46
+2.
+setWindowSize on 1200x783 OK
+01:05:46
+3.
+click on linkText=freshStart1/ OK
+01:05:46
+4.
+click on linkText=freshstart/ OK
+01:05:47
+5.
+click on css=a > span OK
+01:05:47
+6.
+Trying to find linkText=Registracijom... OK
+01:05:48
+7.
+click on name=korisnickoIme OK
+01:06:12
+8.
+type on name=korisnickoIme with value iva OK
+01:06:13
+9.
+click on name=Email OK
+01:06:13
+10.
+type on name=Email with value iva@gmail.com OK
+01:06:13
+11.
+click on name=lozinka OK
+01:06:13
+12.
+type on name=lozinka with value sifra OK
+01:06:14
+13.
+click on name=PonovoLoz OK
+01:06:14
+14.
+type on name=PonovoLoz with value sifra OK
+01:06:14
+15.
+click on id=sponzor OK
+01:06:14
+16.
+click on name=nastavi OK
+01:06:14
+17.
+click on css=center OK
+01:06:14
+18.
+assertText on css=b with value Korisnicko ime je zauzeto unesite neko drugo! OK
+01:06:15
+19.
+close OK
+01:06:15
+'registracijaNeuspesno-korImeVecPostoji' completed successfully
+01:06:15
+---------------------------------------------------------------------------
+Running 'registracijaNeuspesno-LozinkeSeNeSlazu'
+01:07:19
+1.
+open on / OK
+01:07:19
+2.
+setWindowSize on 1200x783 OK
+01:07:19
+3.
+click on linkText=freshStart1/ OK
+01:07:19
+4.
+click on linkText=freshstart/ OK
+01:07:19
+5.
+click on css=a > span OK
+01:07:19
+6.
+Trying to find linkText=Registracijom... OK
+01:07:20
+7.
+click on name=korisnickoIme OK
+01:07:22
+8.
+type on name=korisnickoIme with value milica1 OK
+01:07:22
+9.
+click on name=Email OK
+01:07:23
+10.
+type on name=Email with value milica@gmail.com OK
+01:07:23
+11.
+click on name=lozinka OK
+01:07:23
+12.
+type on name=lozinka with value sifra OK
+01:07:23
+13.
+click on name=PonovoLoz OK
+01:07:23
+14.
+type on name=PonovoLoz with value 123 OK
+01:07:23
+15.
+click on id=korisnik OK
+01:07:24
+16.
+click on name=nastavi OK
+01:07:24
+17.
+click on css=center OK
+01:07:24
+18.
+assertText on css=b with value Ponovljena lozinka i lozinka se ne slazu! OK
+01:07:24
+19.
+close OK
+01:07:24
+'registracijaNeuspesno-LozinkeSeNeSlazu' completed successfully

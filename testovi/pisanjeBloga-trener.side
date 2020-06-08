@@ -1,0 +1,242 @@
+{
+  "id": "ae3ec1b9-9756-4f91-a0f3-73fdf7334f2b",
+  "version": "2.0",
+  "name": "pisanjeBloga-trener",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "69a52ab2-c104-4dea-a57b-43aea4c5f3a6",
+    "name": "UspesnoPisanjeTeksta",
+    "commands": [{
+      "id": "36d5ffce-0c71-419a-9834-b330ee94b8b2",
+      "comment": "",
+      "command": "open",
+      "target": "/freshStart1/freshstart/pisanjebloga_tr.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c30e24d-f217-44f5-8ae2-1e3a1fef0b52",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x783",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "392409bd-f64e-47f9-92c2-2758fbab7c34",
+      "comment": "",
+      "command": "click",
+      "target": "name=naslov",
+      "targets": [
+        ["name=naslov", "name"],
+        ["css=textarea:nth-child(2)", "css:finder"],
+        ["xpath=//textarea[@name='naslov']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/p/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "694efc8e-cbc4-43eb-b97d-53371ddf6833",
+      "comment": "",
+      "command": "type",
+      "target": "name=naslov",
+      "targets": [
+        ["name=naslov", "name"],
+        ["css=textarea:nth-child(2)", "css:finder"],
+        ["xpath=//textarea[@name='naslov']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/p/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "neki naslov ide ovde"
+    }, {
+      "id": "02d265d1-3ea4-46c5-b5b6-067d11282e8e",
+      "comment": "",
+      "command": "click",
+      "target": "id=tekst",
+      "targets": [
+        ["id=tekst", "id"],
+        ["name=tekstbloga", "name"],
+        ["css=#tekst", "css:finder"],
+        ["xpath=//textarea[@id='tekst']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/p/textarea[2]", "xpath:idRelative"],
+        ["xpath=//textarea[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1dd6ac8-181d-41cf-a989-ebd0ec5e1637",
+      "comment": "",
+      "command": "type",
+      "target": "id=tekst",
+      "targets": [
+        ["id=tekst", "id"],
+        ["name=tekstbloga", "name"],
+        ["css=#tekst", "css:finder"],
+        ["xpath=//textarea[@id='tekst']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/p/textarea[2]", "xpath:idRelative"],
+        ["xpath=//textarea[2]", "xpath:position"]
+      ],
+      "value": " a ovde ide neki tekst"
+    }, {
+      "id": "5642cb69-3fae-4671-9561-e77e50cf6289",
+      "comment": "",
+      "command": "click",
+      "target": "name=objavi",
+      "targets": [
+        ["name=objavi", "name"],
+        ["css=.btn-primary1", "css:finder"],
+        ["xpath=//input[@name='objavi']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cb97da9-5f60-4711-8f29-0e1ba023072a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d77e07fd-5f6a-4c87-ae19-a48301c41b7c",
+    "name": "NeuspesnoPisanjeTeksta-PraznoPolje",
+    "commands": [{
+      "id": "ebfc0276-e1d5-49d1-8b65-f755d7efbf76",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed962963-e7b3-4a04-aaae-64a871da7901",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x783",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d42d7633-80a6-4c12-a471-02e0e0208c08",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=freshStart1/",
+      "targets": [
+        ["linkText=freshStart1/", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'freshStart1/')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'freshStart1/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'freshStart1/')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ddf34ec-6c91-4442-86c4-cc03773e330a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=freshstart/",
+      "targets": [
+        ["linkText=freshstart/", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'freshstart/')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'freshstart/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'freshstart/')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d6a716d-d9dd-4593-8b33-a19e1201d3b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Pisanje Teksta",
+      "targets": [
+        ["linkText=Pisanje Teksta", "linkText"],
+        ["css=ul:nth-child(1) > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Pisanje Teksta')]", "xpath:link"],
+        ["xpath=//div[@id='header']/nav/div/div/div/div[2]/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'pisanjebloga_tr.php')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pisanje Teksta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a62fab49-96b5-46b2-ab32-2665aee3b6db",
+      "comment": "",
+      "command": "click",
+      "target": "id=tekst",
+      "targets": [
+        ["id=tekst", "id"],
+        ["name=tekstbloga", "name"],
+        ["css=#tekst", "css:finder"],
+        ["xpath=//textarea[@id='tekst']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/p/textarea[2]", "xpath:idRelative"],
+        ["xpath=//textarea[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "418cfe05-2781-4adc-8cfd-cb6aa93a9aad",
+      "comment": "",
+      "command": "type",
+      "target": "id=tekst",
+      "targets": [
+        ["id=tekst", "id"],
+        ["name=tekstbloga", "name"],
+        ["css=#tekst", "css:finder"],
+        ["xpath=//textarea[@id='tekst']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/p/textarea[2]", "xpath:idRelative"],
+        ["xpath=//textarea[2]", "xpath:position"]
+      ],
+      "value": " defr"
+    }, {
+      "id": "5af6b81b-c363-4caf-b41d-b643a5796933",
+      "comment": "",
+      "command": "click",
+      "target": "name=objavi",
+      "targets": [
+        ["name=objavi", "name"],
+        ["css=.btn-primary1", "css:finder"],
+        ["xpath=//input[@name='objavi']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a80f92a8-c274-45d7-b379-b8bd9ce95066",
+      "comment": "",
+      "command": "click",
+      "target": "css=center",
+      "targets": [
+        ["css=center", "css:finder"],
+        ["xpath=//div[@id='header']/div/form/center", "xpath:idRelative"],
+        ["xpath=//center", "xpath:position"],
+        ["xpath=//center[contains(.,'Niste uneli naslov!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab5af6c8-8d14-4141-a991-3ad3ba7f1b13",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=b",
+      "targets": [
+        ["css=b", "css:finder"],
+        ["xpath=//div[@id='header']/div/form/center/font/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Niste uneli naslov!')]", "xpath:innerText"]
+      ],
+      "value": "Niste uneli naslov!"
+    }, {
+      "id": "4e9f715c-54c2-4cdc-a9ee-919e9ca52014",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a193612f-a645-41f8-88a0-e11de6e65a9a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["69a52ab2-c104-4dea-a57b-43aea4c5f3a6"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
