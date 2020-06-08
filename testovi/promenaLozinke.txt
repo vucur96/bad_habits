@@ -1,0 +1,338 @@
+Running 'NeuspesnaPromena-KorIme_ne_postoji'
+03:39:19
+1.
+open on http://localhost/freshStart1/freshstart/promenalozinke.php OK
+03:39:19
+2.
+setWindowSize on 1200x783 OK
+03:39:22
+3.
+click on name=korIme OK
+03:39:25
+4.
+type on name=korIme with value iva OK
+03:39:28
+5.
+click on name=staraLoz OK
+03:39:31
+6.
+type on name=staraLoz with value sifra OK
+03:39:34
+7.
+click on name=novaLoz OK
+03:39:37
+8.
+type on name=novaLoz with value 123 OK
+03:39:40
+9.
+click on name=potvrda OK
+03:39:44
+10.
+type on name=potvrda with value 123 OK
+03:39:47
+11.
+click on name=Promeni OK
+03:39:50
+12.
+click on name=korIme OK
+03:39:53
+13.
+click on css=.col-md-offset-1 OK
+03:39:56
+14.
+assertText on css=b with value Korisnicko ime ne postoji! OK
+03:40:00
+15.
+close OK
+03:40:03
+'NeuspesnaPromena-KorIme_ne_postoji' completed successfully
+03:40:03
+--------------------------------------------------
+Running 'UspesnaPromena'
+03:40:35
+1.
+open on http://localhost/freshStart1/freshstart/promenalozinke.php OK
+03:40:35
+2.
+setWindowSize on 1200x783 OK
+03:40:38
+3.
+click on name=korIme OK
+03:40:41
+4.
+type on name=korIme with value kaca OK
+03:40:44
+5.
+click on name=staraLoz OK
+03:40:47
+6.
+type on name=staraLoz with value 123 OK
+03:40:50
+7.
+click on name=novaLoz OK
+03:40:54
+8.
+type on name=novaLoz with value sifra OK
+03:40:57
+9.
+click on name=potvrda OK
+03:41:00
+10.
+type on name=potvrda with value sifra OK
+03:41:03
+11.
+click on name=Promeni OK
+03:41:06
+12.
+close OK
+03:41:09
+'UspesnaPromena' completed successfully
+03:41:09
+--------------------------------------------------------------------
+Running 'NeuspesnaPromena-NekoPoljePrazno'
+03:42:55
+1.
+open on http://localhost/freshStart1/freshstart/promenalozinke.php OK
+03:42:55
+2.
+setWindowSize on 1200x783 OK
+03:42:58
+3.
+click on name=korIme OK
+03:43:01
+4.
+type on name=korIme with value kaca OK
+03:43:04
+5.
+click on name=novaLoz OK
+03:43:07
+6.
+click on css=body OK
+03:43:10
+7.
+type on name=korIme OK
+03:43:14
+8.
+click on name=staraLoz OK
+03:43:17
+9.
+type on name=staraLoz with value 123 OK
+03:43:20
+10.
+click on name=novaLoz OK
+03:43:23
+11.
+type on name=novaLoz with value 23 OK
+03:43:26
+12.
+click on name=potvrda OK
+03:43:30
+13.
+type on name=potvrda with value 23 OK
+03:43:33
+14.
+click on name=Promeni OK
+03:43:36
+15.
+click on css=center OK
+03:43:39
+16.
+assertText on css=b with value Niste uneli korisnicko ime! OK
+03:43:42
+17.
+click on name=korIme OK
+03:43:46
+18.
+type on name=korIme with value kaca OK
+03:43:49
+19.
+click on name=staraLoz OK
+03:43:52
+20.
+click on name=mojaforma OK
+03:43:55
+21.
+click on name=novaLoz OK
+03:43:58
+22.
+type on name=novaLoz with value 123 OK
+03:44:02
+23.
+click on name=potvrda OK
+03:44:05
+24.
+type on name=potvrda with value 123 OK
+03:44:08
+25.
+click on name=Promeni OK
+03:44:11
+26.
+click on css=center OK
+03:44:14
+27.
+assertText on css=b with value Niste uneli staru lozinku!! OK
+03:44:18
+28.
+click on name=korIme OK
+03:44:21
+29.
+type on name=korIme with value kaca OK
+03:44:24
+30.
+click on name=staraLoz OK
+03:44:27
+31.
+type on name=staraLoz with value sifra OK
+03:44:30
+32.
+click on name=novaLoz OK
+03:44:33
+33.
+click on name=potvrda OK
+03:44:37
+34.
+type on name=potvrda with value 123 OK
+03:44:40
+35.
+click on name=Promeni OK
+03:44:43
+36.
+click on css=center OK
+03:44:46
+37.
+assertText on css=b with value Niste uneli novu lozinku! OK
+03:44:49
+38.
+click on name=korIme OK
+03:44:53
+39.
+type on name=korIme with value kaca OK
+03:44:56
+40.
+click on name=staraLoz OK
+03:44:59
+41.
+type on name=staraLoz with value 123 OK
+03:45:02
+42.
+click on name=novaLoz OK
+03:45:05
+43.
+type on name=novaLoz with value sifra OK
+03:45:09
+44.
+click on name=Promeni OK
+03:45:12
+45.
+click on css=.col-md-offset-1 OK
+03:45:15
+46.
+click on css=.form-group:nth-child(1) OK
+03:45:18
+47.
+click on css=center OK
+03:45:21
+48.
+assertText on css=b with value Niste uneli potvrdu lozinke! OK
+03:45:25
+49.
+close OK
+03:45:28
+'NeuspesnaPromena-NekoPoljePrazno' completed successfully
+03:45:28
+------------------------------------------------------------------------
+Running 'NeuspesnaPromena-NijeIstaPonovljenaLozinka'
+03:46:25
+1.
+open on http://localhost/freshStart1/freshstart/promenalozinke.php OK
+03:46:25
+2.
+setWindowSize on 1200x783 OK
+03:46:28
+3.
+click on name=korIme OK
+03:46:31
+4.
+type on name=korIme with value kaca OK
+03:46:35
+5.
+click on name=staraLoz OK
+03:46:38
+6.
+type on name=staraLoz with value sifra OK
+03:46:41
+7.
+click on name=novaLoz OK
+03:46:44
+8.
+type on name=novaLoz with value 1234 OK
+03:46:47
+9.
+click on name=potvrda OK
+03:46:50
+10.
+type on name=potvrda with value 12 OK
+03:46:53
+11.
+click on name=Promeni OK
+03:46:57
+12.
+click on css=.col-md-offset-1 OK
+03:47:00
+13.
+assertText on css=b with value Potvrda nove lozinke se ne poklapa sa unetom novom lozinkom! OK
+03:47:03
+14.
+close OK
+03:47:06
+'NeuspesnaPromena-NijeIstaPonovljenaLozinka' completed successfully
+03:47:06
+-----------------------------------------------------------------------
+Running 'NeuspesnaPromena-staraLozinkaNijeDobra'
+03:47:52
+1.
+open on http://localhost/freshStart1/freshstart/promenalozinke.php OK
+03:47:52
+2.
+setWindowSize on 1200x783 OK
+03:47:55
+3.
+click on name=korIme OK
+03:47:58
+4.
+type on name=korIme with value kaca OK
+03:48:01
+5.
+click on name=mojaforma OK
+03:48:04
+6.
+click on name=staraLoz OK
+03:48:07
+7.
+type on name=staraLoz with value sif OK
+03:48:10
+8.
+click on name=novaLoz OK
+03:48:14
+9.
+type on name=novaLoz with value 123 OK
+03:48:17
+10.
+click on name=potvrda OK
+03:48:20
+11.
+type on name=potvrda with value 123 OK
+03:48:23
+12.
+click on name=Promeni OK
+03:48:26
+13.
+click on css=center OK
+03:48:29
+14.
+assertText on css=b with value Nije uneta dobra stara lozinka!! OK
+03:48:33
+15.
+close OK
+03:48:36
+'NeuspesnaPromena-staraLozinkaNijeDobra' completed successfully
