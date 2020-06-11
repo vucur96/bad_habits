@@ -32,13 +32,13 @@
 
             <div class="row form-group">
                 <div class="col-md-6">
-                    <input type="text" name="ime" class="form-control" placeholder="Vaše ime" >
+                    <input type="text" name="ime" class="form-control" value="<?= set_value('ime')?>" placeholder="Vaše ime" >
                 </div>
             </div>
 
             <div class="row form-group">
                 <div class="col-md-6">
-                    <input type="text" name="prezime" class="form-control" placeholder="Vaše prezime" >
+                    <input type="text" name="prezime" class="form-control" value="<?= set_value('prezime')?>" placeholder="Vaše prezime" >
                 </div>
             </div>
 
@@ -50,20 +50,20 @@
             
             <div class="row form-group">
                 <div class="col-md-4">
-                    <input type="number" name="visina" class="form-control" placeholder="Vaša visina(u cm)" min="100" max="250">
+                    <input type="number" name="visina" class="form-control" value="<?= set_value('visina')?>" placeholder="Vaša visina(u cm)" min="100" max="250">
                 </div>
             </div>
             
             <div class="row form-group">
                 <div class="col-md-4">
-                    <input type="number" name="tezina" class="form-control" placeholder="Vaša težina(u kg)" min="30" max="500">
+                    <input type="number" name="tezina" class="form-control" value="<?= set_value('tezina')?>" placeholder="Vaša težina(u kg)" min="30" max="500">
                 </div>
             </div>
             
             <div class="row form-group">
                 <div>
                     <p> Vaš cilj: </p>
-                    <textarea name="cilj" rows="5" cols="30"></textarea>
+                    <textarea name="cilj" rows="5" cols="30" value="<?= set_value('cilj')?>"></textarea>
                 </div>
             </div>
 

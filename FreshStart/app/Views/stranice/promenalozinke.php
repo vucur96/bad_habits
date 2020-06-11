@@ -31,7 +31,7 @@
 
                 <div class="row form-group">
                     <div class="col-md-6">
-                        <input type="text" name="korIme" class="form-control" placeholder="Korisnicko ime">
+                        <input type="text" name="korIme" class="form-control" <?= set_value('korIme')?> placeholder="Korisnicko ime">
                     </div>
                 </div>
 

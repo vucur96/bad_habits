@@ -28,10 +28,10 @@
         <br>
         <h2>PRIJAVA</h2>
 
-        <form name="login" action="<?php echo site_url('Gost/proveriPrijavu') ?>" method="POST">
+        <form name="login" action="<?= site_url('Gost/proveriPrijavu') ?>" method="POST">
             <div class="row form-group">
                 <div class="col-md-6">
-                    <input type="text" name="korIme" class="form-control" placeholder="Korisnicko ime">
+                    <input type="text" name="korIme" class="form-control" value="<?= set_value('korIme')?>" placeholder="Korisnicko ime">
                 </div>
             </div>
 

@@ -27,18 +27,18 @@
         <br>
         <h2>REGISTRACIJA SPONZORA </h2>
 
-        <form name='registracijaspon' action="<?php echo site_url('Gost/proveriRegSponzore')?>" method="POST">
+        <form name='registracijaspon' action="<?php echo site_url('Gost/proveriRegSponzor')?>" method="POST">
 	
             <div class="row form-group">
                 <div class="col-md-6">
-                    <input type="text" name="imefirme" class="form-control" placeholder="Ime Vaše firme" >
+                    <input type="text" name="imefirme" class="form-control" value="<?= set_value('imefirme')?>"placeholder="Ime Vaše firme" >
                 </div>
             </div>
             
             <div class="row form-group">
                 <div>
                     <p> Opis delatnosti firme: </p>
-                    <textarea name="opisdel" rows="5" cols="50"></textarea>
+                    <textarea name="opisdel" rows="5" value="<?= set_value('opisdel')?>"cols="50"></textarea>
                 </div>
             </div>
 

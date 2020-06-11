@@ -28,17 +28,17 @@
         <br>
 	<h2>REGISTRACIJA TRENERA</h2>
 
-        <form name='registracijatren' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+        <form name='registracijatren' action="<?php echo site_url('Gost/proveriRegTrener')?>" method="POST">
 
             <div class="row form-group">
                 <div class="col-md-6">
-                    <input type="text" name="ime" class="form-control" placeholder="Vaše ime" >
+                    <input type="text" name="ime" class="form-control" value="<?= set_value('ime')?>" placeholder="Vaše ime" >
                 </div>
             </div>
 
             <div class="row form-group">
                 <div class="col-md-6">
-                    <input type="text" name="prezime" class="form-control" placeholder="Vaše prezime">
+                    <input type="text" name="prezime" class="form-control" value="<?= set_value('prezime')?>" placeholder="Vaše prezime">
                 </div>
             </div>
                             
@@ -50,7 +50,7 @@
             
             <div class="row form-group">
                 <div class="col-md-6">
-                    <input type="text" name="kurs" class="form-control" placeholder="Kursevi za koji ste specijalizovani">
+                    <input type="text" name="kurs" class="form-control" value="<?= set_value('kurs')?>" placeholder="Kursevi za koji ste specijalizovani">
                 </div>
             </div>
                           

@@ -32,13 +32,13 @@
 	<form name='mojaforma' action="<?php echo site_url('Gost/proveriRegistraciju')?>" method="POST">
             <div class="row form-group">
                 <div class="col-md-6">
-                    <input type="text" name="korisnickoIme" class="form-control" placeholder="Korisnicko ime" >
+                    <input type="text" name="korisnickoIme" class="form-control" value="<?= set_value('korisnickoIme')?>" placeholder="Korisnicko ime" >
                 </div>
             </div>
 
             <div class="row form-group">
                 <div class="col-md-6">
-                    <input type="email" name="Email" class="form-control" placeholder="Your email address">
+                    <input type="email" name="Email" class="form-control" value="<?= set_value('Email')?>" placeholder="Your email address">
                 </div>
             </div>
 								
