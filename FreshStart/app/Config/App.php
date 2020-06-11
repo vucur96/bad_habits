@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://localhost/FreshStart/app/Controllers';
+	public $baseURL = 'http://localhost:8080';
 
 	/*
 	|--------------------------------------------------------------------------

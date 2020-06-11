@@ -15,7 +15,9 @@ class Gost extends BaseController{
     
     public function login()
     {
-            $this->poziv('login',[]);
+        echo view('sabloni/header_login');
+        echo view('stranice/login');
+        echo view('sabloni/footer');
     }
     
     public function proveriPrijavu($param) {
