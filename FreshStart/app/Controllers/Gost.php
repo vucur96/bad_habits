@@ -14,14 +14,23 @@ class Gost extends BaseController{
             $this->poziv('index',[]);
     }
     
-    public function login()
+    public function login($poruka=null)
     {
         echo view('sabloni/header_login');
-        echo view('stranice/login');
+        echo view('stranice/login',['poruka'=>$poruka]);
         echo view('sabloni/footer');
     }
     
     public function proveriPrijavu() {
+        if(!$this->validate(['korIme'=>'required','lozinka'=>'required'])){
+            return $this->poziv('login', ['errors'=>$this->validator->getErrors()]);
+        }
+        
+        return $this->login('Korisnik ne postoji!');
+        //nesto fali
+        $korisnik=null;
+        $this->session->set('korisnik',$korisnik);
+        return redirect()->to(site_url('Korisnik'));
         
     }
     
