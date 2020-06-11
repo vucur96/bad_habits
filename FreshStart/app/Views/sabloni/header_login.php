@@ -61,45 +61,42 @@
 			<nav class="colorlib-nav" role="navigation">
 				<div class="top-menu">
 					<div class="container">
-						<div class="row">
-							<div class="col-md-2">
-								<div id="colorlib-logo"><a href="<?php echo site_url('Gost/index')?>">FRESH START</a></div>
-							</div>
-							<div class="col-md-10 text-right menu-1">
-								<ul>
-									<li class="active"><a href="<?php echo site_url('Gost/index')?>">Početna</a></li>
-									<li class="has-dropdown">
-										<a href="<?php echo site_url('Gost/classes')?>">Treninzi</a>
-										<ul class="dropdown">
-											<li><a href="<?php echo site_url('Gost/classes-single')?>">Classes Single</a></li>
-											<li><a href="<?php echo site_url('Gost/cardio')?>">Cardio</a></li>
-											<li><a href="<?php echo site_url('Gost/funkcionalni')?>">Funkcionalni</a></li>
-											<li><a href="<?php echo site_url('Gost/yoga')?>">Yoga</a></li>
-											<li><a href="<?php echo site_url('Gost/aerobic')?>">Aerobic</a></li>
-											<li><a href="<?php echo site_url('Gost/karate')?>">Karate</a></li>
-											<li><a href="<?php echo site_url('Gost/body_pump')?>">Body Pump</a></li>
-											<li><a href="<?php echo site_url('Gost/snaga')?>">Snaga</a></li>
-										</ul>
-										
-									</li>
-									<li class="has-dropdown">
-										<a href="<?php echo site_url('Gost/schedule')?>">Raspored</a>
-										<ul class="dropdown">
-											<li><a href="grupni_treninzi.php">Grupni treninzi</a></li>
-											<li><a href="individualni_treninzi.php">Individualni treninzi</a></li>
-											
-										</ul>
-										
-										
-									</li>
-									
-									<li><a href="<?php echo site_url('Gost/o_trenerima')?>">Treneri</a></li>
-									<li><a href="<?php echo site_url('Gost/blog')?>">Blog</a></li>
-									<li><a href="<?php echo site_url('Gost/contact')?>">Kontakt</a></li>
-									<li class="btn-cta"><a href="<?php echo site_url('Gost/promenalozinke')?>"><span>Promeni lozinku</span></a></li>
-								</ul>
-							</div>
-						</div>
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                        <div id="colorlib-logo"><a href="<?php echo site_url('Gost/index')?>">FRESH START</a></div>
+                                                </div>
+                                                <div class="col-md-10 text-right menu-1">
+                                                    <ul>
+                                                        <li class="active"><a href="<?php echo site_url('Gost/index')?>">Početna</a></li>
+                                                        <li class="has-dropdown">
+                                                            <a href="<?php echo site_url('Gost/classes')?>">Treninzi</a>
+                                                            <ul class="dropdown">
+                                                                    <li><a href="<?php echo site_url('Gost/classesSingle')?>">Classes Single</a></li>
+                                                                    <li><a href="<?php echo site_url('Gost/cardio')?>">Cardio</a></li>
+                                                                    <li><a href="<?php echo site_url('Gost/funkcionalni')?>">Funkcionalni</a></li>
+                                                                    <li><a href="<?php echo site_url('Gost/yoga')?>">Yoga</a></li>
+                                                                    <li><a href="<?php echo site_url('Gost/aerobic')?>">Aerobic</a></li>
+                                                                    <li><a href="<?php echo site_url('Gost/karate')?>">Karate</a></li>
+                                                                    <li><a href="<?php echo site_url('Gost/body_pump')?>">Body Pump</a></li>
+                                                                    <li><a href="<?php echo site_url('Gost/snaga')?>">Snaga</a></li>
+                                                            </ul>
+
+                                                        </li>
+                                                        <li class="has-dropdown">
+                                                            <a href="<?php echo site_url('Gost/schedule')?>">Raspored</a>
+                                                            <ul class="dropdown">
+                                                                <li><a href="<?php echo site_url('Gost/grupni_treninzi')?>">Grupni treninzi</a></li>
+                                                                <li><a href="<?php echo site_url('Gost/individualni_treninzi')?>">Individualni treninzi</a></li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><a href="<?php echo site_url('Gost/o_trenerima')?>">Treneri</a></li>
+                                                        <li><a href="<?php echo site_url('Gost/blog')?>">Blog</a></li>
+                                                        <li><a href="<?php echo site_url('Gost/contact')?>">Kontakt</a></li>
+                                                        <li class="btn-cta"><a href="<?php echo site_url('Gost/promenalozinke')?>"><span>Promeni lozinku</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
 					</div>
 				</div>
 			</nav>

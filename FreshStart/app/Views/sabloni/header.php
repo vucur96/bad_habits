@@ -71,7 +71,7 @@
 									<li class="has-dropdown">
 										<a href="<?php echo site_url('Gost/classes')?>">Treninzi</a>
 										<ul class="dropdown">
-											<li><a href="<?php echo site_url('Gost/classes-single')?>">Classes Single</a></li>
+											<li><a href="<?php echo site_url('Gost/classesSingle')?>">Classes Single</a></li>
 											<li><a href="<?php echo site_url('Gost/cardio')?>">Cardio</a></li>
 											<li><a href="<?php echo site_url('Gost/funkcionalni')?>">Funkcionalni</a></li>
 											<li><a href="<?php echo site_url('Gost/yoga')?>">Yoga</a></li>
@@ -85,8 +85,8 @@
 									<li class="has-dropdown">
 										<a href="<?php echo site_url('Gost/schedule')?>">Raspored</a>
 										<ul class="dropdown">
-											<li><a href="grupni_treninzi.php">Grupni treninzi</a></li>
-											<li><a href="individualni_treninzi.php">Individualni treninzi</a></li>
+											<li><a href="<?php echo site_url('Gost/grupni_treninzi')?>">Grupni treninzi</a></li>
+											<li><a href="<?php echo site_url('Gost/individualni_treninzi')?>">Individualni treninzi</a></li>
 											
 										</ul>
 										

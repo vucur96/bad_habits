@@ -14,7 +14,7 @@
 				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 				   				<div class="slider-text-inner text-center">
 				   					<h1>Ima samo jedan način da stigneš na cilj pridruži nam se!</h1>
-									
+
 				   				</div>
 				   			</div>
 				   		</div>
@@ -27,7 +27,7 @@
 				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 				   				<div class="slider-text-inner text-center">
 				   					<h1>Jedine granice jesu one koje sami postavimo!</h1>
-				   					
+
 				   				</div>
 				   			</div>
 				   		</div>
@@ -40,7 +40,7 @@
 				   			<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 				   				<div class="slider-text-inner text-center">
 				   					<h1>Veruj da možeš i već si na pola puta!</h1>
-                                     
+
 				   				</div>
 				   			</div>
 				   		</div>
@@ -53,7 +53,7 @@
 				   			<div class="col-md-8 col-sm-12 col-md-offset-2 slider-text">
 				   				<div class="slider-text-inner text-center">
 				   					<h1>Uvek je prerano za odustajanje!</h1>
-				   					
+
 				   				</div>
 				   			</div>
 				   		</div>
@@ -105,8 +105,8 @@
 				</div>
 				<div class="row">
 					<div class='col-md-12'>
-						<h2> <a href="grupni_treninzi.php"> Raspored grupnih treninga </a></h2>
-						<h2> <a href="individualni_treninzi.php"> Raspored individualnih treninga </a></h2>
+						<h2> <a href="<?php echo site_url('Gost/grupni_treninzi') ?>"> Raspored grupnih treninga </a></h2>
+						<h2> <a href="<?php echo site_url('Gost/individualni_treninzi') ?>"> Raspored individualnih treninga </a></h2>
 
 					</div>
 					
@@ -233,9 +233,9 @@
 								
 							</div>
 							<div class="desc">
-								<h3><a href="<?php echo site_url('Gost/cardio')?>">Cardio</a></h3>
+								<h3><a href="<?php echo site_url('Gost/cardio') ?>">Cardio</a></h3>
 								
-								<p><a href="<?php echo site_url('Gost/cardio')?>" class="btn-learn">Saznajte više <i class="icon-arrow-right3"></i></a></p>
+								<p><a href="<?php echo site_url('Gost/cardio') ?>" class="btn-learn">Saznajte više <i class="icon-arrow-right3"></i></a></p>
 							</div>
 						</div>
 					</div>
@@ -245,9 +245,9 @@
 								
 							</div>
 							<div class="desc">
-								<h3><a href="<?php echo site_url('Gost/funkcionalni')?>">Funkcionalni trening</a></h3>
+								<h3><a href="<?php echo site_url('Gost/funkcionalni') ?>">Funkcionalni trening</a></h3>
 							
-								<p><a href="<?php echo site_url('Gost/funkcionalni')?>" class="btn-learn">Saznajte više <i class="icon-arrow-right3"></i></a></p>
+								<p><a href="<?php echo site_url('Gost/funkcionalni') ?>" class="btn-learn">Saznajte više <i class="icon-arrow-right3"></i></a></p>
 							</div>
 						</div>
 					</div>
@@ -257,9 +257,9 @@
 								
 							</div>
 							<div class="desc">
-								<h3><a href="<?php echo site_url('Gost/yoga')?>">Yoga</a></h3>
+								<h3><a href="<?php echo site_url('Gost/yoga') ?>">Yoga</a></h3>
 								
-								<p><a href="<?php echo site_url('Gost/yoga')?>" class="btn-learn">Saznajte više <i class="icon-arrow-right3"></i></a></p>
+								<p><a href="<?php echo site_url('Gost/yoga') ?>" class="btn-learn">Saznajte više <i class="icon-arrow-right3"></i></a></p>
 							</div>
 						</div>
 					</div>
@@ -279,36 +279,36 @@
 				<div class="row">
 					<div class="col-md-4 animate-box">
 						<article class="article-entry">
-							<a href="blog.php" class="blog-img" style="background-image: url(images/blog-1.jpg);">
+							<a href="<?php echo site_url('Gost/blog') ?>" class="blog-img" style="background-image: url(images/blog-1.jpg);">
 								<p class="meta"><span class="day">20</span><span class="month">Apr</span></p>
 							</a>
 							<div class="desc">
 								<p class="admin"><span>Objavio/la:</span> <span>Ana Mikić</span></p>
-								<h2><a href="<?php echo site_url('Gost/blog')?>">Potrebna vam je motivacija za vežbanje?</a></h2>
+								<h2><a href="<?php echo site_url('Gost/blog') ?>">Potrebna vam je motivacija za vežbanje?</a></h2>
 						
 							</div>
 						</article>
 					</div>
 					<div class="col-md-4 animate-box">
 						<article class="article-entry">
-							<a href="blog.php" class="blog-img" style="background-image: url(images/blog-2.jpg);">
+							<a href="<?php echo site_url('Gost/blog') ?>" class="blog-img" style="background-image: url(images/blog-2.jpg);">
 								<p class="meta"><span class="day">21</span><span class="month">Apr</span></p>
 							</a>
 							<div class="desc">
 								<p class="admin"><span>Objavio/la:</span> <span>Dragan Nikolić</span></p>
-								<h2><a href="<?php echo site_url('Gost/blog')?>">Kako se najbolje pripremiti za biciklijadu</a></h2>
+								<h2><a href="<?php echo site_url('Gost/blog') ?>">Kako se najbolje pripremiti za biciklijadu</a></h2>
 								
 							</div>
 						</article>
 					</div>
 					<div class="col-md-4 animate-box">
 						<article class="article-entry">
-							<a href="blog.html" class="blog-img" style="background-image: url(images/blog-3.jpg);">
+							<a href="<?php echo site_url('Gost/blog') ?>" class="blog-img" style="background-image: url(images/blog-3.jpg);">
 								<p class="meta"><span class="day">22</span><span class="month">Apr</span></p>
 							</a>
 							<div class="desc">
 								<p class="admin"><span>Objavio/la:</span> <span>Nikola Lazić</span></p>
-								<h2><a href="<?php echo site_url('Gost/blog')?>">Pravilan način vežbanja</a></h2>
+								<h2><a href="<?php echo site_url('Gost/blog') ?>">Pravilan način vežbanja</a></h2>
 								
 							</div>
 						</article>
@@ -316,7 +316,6 @@
 				</div>
 			</div>
 		</div>
-	
 	</body>
 </html>
 	
