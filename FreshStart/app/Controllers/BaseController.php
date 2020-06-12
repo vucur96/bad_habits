@@ -42,5 +42,85 @@ class BaseController extends Controller
 		// E.g.:
             $this->session = session();
 	}
+    
+    public function aerobic()
+    {
+            $this->poziv('aerobic',[]);
+    }
+    
+    public function body_pump()
+    {
+            $this->poziv('body_pump',[]);
+    }
+    
+    public function cardio()
+    {
+            $this->poziv('cardio',[]);
+    }
+    
+    public function classesSingle()
+    {
+            $this->poziv('classes-single',[]);
+    }
+    
+    public function classes()
+    {
+            $this->poziv('classes',[]);
+    }
+    
+    public function contact()
+    {
+            $this->poziv('contact',[]);
+    }
+    
+    public function funkcionalni()
+    {
+            $this->poziv('funkcionalni',[]);
+    }
+    
+    public function grupni_treninzi()
+    {
+            $this->poziv('grupni_treninzi',[]);
+    }
+    
+    public function individualni_treninzi()
+    {
+            $this->poziv('individualni_treninzi',[]);
+    }
+    
+    public function karate()
+    {
+            $this->poziv('karate',[]);
+    }
+    
+    public function snaga()
+    {
+            $this->poziv('snaga',[]);
+    }
+    
+    public function schedule()
+    {
+            $this->poziv('schedule',[]);
+    }
+    
+    public function yoga()
+    {
+            $this->poziv('yoga',[]);
+    }
+    
+    public function o_trenerima()
+    {
+            $this->poziv('o_trenerima',[]);
+    }
+    
+     public function o_sponzorima()
+    {
+            $this->poziv('o_sponzorima',[]);
+    }
+    
+    public function blog()
+    {
+            $this->poziv('blog',[]);
+    }
 
 }

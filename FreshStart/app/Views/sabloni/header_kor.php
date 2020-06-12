@@ -63,7 +63,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="index.php">FRESH START</a></div>
+							<div id="colorlib-logo"><a href="<?php echo site_url('Korisnik/index') ?>">FRESH START</a></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
@@ -77,12 +77,12 @@
 										<li><a href="<?php echo site_url('Korisnik/yoga') ?>">Yoga</a></li>
 										<li><a href="<?php echo site_url('Korisnik/aerobic') ?>">Aerobic</a></li>
 										<li><a href="<?php echo site_url('Korisnik/karate') ?>">Karate</a></li>
-										<li><a href="b<?php echo site_url('Korisnik/body_pump') ?>">Body Pump</a></li>
+										<li><a href="<?php echo site_url('Korisnik/body_pump') ?>">Body Pump</a></li>
 										<li><a href="<?php echo site_url('Korisnik/snaga') ?>">Snaga</a></li>
 									</ul>
 								</li>
 								<li class="has-dropdown">
-									<a href="schedule.php">Raspored</a>
+									<a href="<?php echo site_url('Korisnik/schedule') ?>">Raspored</a>
 									<ul class="dropdown">
 										<li><a href="<?php echo site_url('Korisnik/grupni_treninzi') ?>">Grupni treninzi</a></li>
 										<li><a href="<?php echo site_url('Korisnik/individualni_treninzi') ?>">Individualni treninzi</a></li>

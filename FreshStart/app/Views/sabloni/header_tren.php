@@ -63,7 +63,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="index.php">FRESH START</a></div>
+							<div id="colorlib-logo"><a href="<?php echo site_url('Trener/index') ?>">FRESH START</a></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
@@ -82,7 +82,7 @@
 									</ul>
 								</li>
 								<li class="has-dropdown">
-									<a href="schedule.php">Raspored</a>
+									<a href="<?php echo site_url('Trener/schedule') ?>">Raspored</a>
 									<ul class="dropdown">
 										<li><a href="<?php echo site_url('Trener/grupni_treninzi') ?>">Grupni treninzi</a></li>
 										<li><a href="<?php echo site_url('Trener/individualni_treninzi') ?>">Individualni treninzi</a></li>

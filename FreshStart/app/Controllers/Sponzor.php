@@ -1,22 +1,20 @@
 <?php namespace App\Controllers;
 
-
-class Korisnik extends BaseController{
+class Sponzor extends BaseController{
     
     protected function poziv($page,$data) {
-        $data['controller']='Korisnik';
-        echo view('sabloni/header_kor');
+        $data['controller']='Sponzor';
+        echo view('sabloni/header_spon');
         echo view("stranice/$page",$data);
         echo view('sabloni/footer');
     }
-    
+   
+     
     public function index(){
             $this->poziv('index',[]);
     }
-        
-        
-
-	//--------------------------------------------------------------------
-
+    
+    
 }
+
 

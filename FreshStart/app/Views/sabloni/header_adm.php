@@ -62,13 +62,13 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="index.php">FRESH START</a></div>
+							<div id="colorlib-logo"><a href="<?php echo site_url('Admin/admin-meni') ?>">FRESH START</a></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
 								<li><a href="<?php echo site_url('Admin/admin-meni') ?>">Početna</a></li>
 								<li class="has-dropdown">
-									<a href="classes.php">Treninzi</a>
+									<a href="<?php echo site_url('Admin/classes') ?>">Treninzi</a>
 									<ul class="dropdown">
 										<li><a href="<?php echo site_url('Admin/classesSingle') ?>">Classes Single</a></li>
 										<li><a href="<?php echo site_url('Admin/cardio') ?>">Cardio</a></li>
@@ -81,7 +81,7 @@
 									</ul>
 								</li>
 								<li class="has-dropdown">
-									<a href="schedule.php">Raspored</a>
+									<a href="<?php echo site_url('Admin/schedule') ?>">Raspored</a>
 									<ul class="dropdown">
 										<li><a href="<?php echo site_url('Admin/grupni_treninzi') ?>">Grupni treninzi</a></li>
 										<li><a href="<?php echo site_url('Admin/individualni_treninzi') ?>">Individualni treninzi</a></li>

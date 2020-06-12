@@ -1,5 +1,8 @@
 <?php namespace App\Controllers;
 
+use App\Models\KorisnikModel;
+use App\Models\ZahtevKorisnikModel;
+
 class Gost extends BaseController{
     
     protected function poziv($page,$data) {
@@ -9,8 +12,7 @@ class Gost extends BaseController{
         echo view('sabloni/footer');
     }
     
-    public function index()
-    {
+    public function index(){
             $this->poziv('index',[]);
     }
     
@@ -25,10 +27,15 @@ class Gost extends BaseController{
         if(!$this->validate(['korIme'=>'required','lozinka'=>'required'])){
             return $this->poziv('login', ['errors'=>$this->validator->getErrors()]);
         }
+        $korisnikModel=new KorisnikModel();
+        $korisnik=$korisnikModel->find($this->request->getVar('korIme'));
+        if($korisnik==null){
+            return $this->login('Korisnik ne postoji!');
+        }
+        if($korisnik->lozinka!=$this->request->getVar('lozinka')){
+            return $this->login('Pogresna lozinka!');
+        }
         
-        return $this->login('Korisnik ne postoji!');
-        //nesto fali
-        $korisnik=null;
         $this->session->set('korisnik',$korisnik);
         return redirect()->to(site_url('Korisnik'));
         
@@ -76,81 +83,6 @@ class Gost extends BaseController{
     }
     public function proveriRegTrener() {
         
-    }
-    
-    public function aerobic()
-    {
-            $this->poziv('aerobic',[]);
-    }
-    
-    public function body_pump()
-    {
-            $this->poziv('body_pump',[]);
-    }
-    
-    public function cardio()
-    {
-            $this->poziv('cardio',[]);
-    }
-    
-    public function classesSingle()
-    {
-            $this->poziv('classes-single',[]);
-    }
-    
-    public function classes()
-    {
-            $this->poziv('classes',[]);
-    }
-    
-    public function contact()
-    {
-            $this->poziv('contact',[]);
-    }
-    
-    public function funkcionalni()
-    {
-            $this->poziv('funkcionalni',[]);
-    }
-    
-    public function grupni_treninzi()
-    {
-            $this->poziv('grupni_treninzi',[]);
-    }
-    
-    public function individualni_treninzi()
-    {
-            $this->poziv('individualni_treninzi',[]);
-    }
-    
-    public function karate()
-    {
-            $this->poziv('karate',[]);
-    }
-    
-    public function snaga()
-    {
-            $this->poziv('snaga',[]);
-    }
-    
-    public function schedule()
-    {
-            $this->poziv('schedule',[]);
-    }
-    
-    public function yoga()
-    {
-            $this->poziv('yoga',[]);
-    }
-    
-    public function o_trenerima()
-    {
-            $this->poziv('o_trenerima',[]);
-    }
-    
-    public function blog()
-    {
-            $this->poziv('blog',[]);
     }
 	//--------------------------------------------------------------------
 
