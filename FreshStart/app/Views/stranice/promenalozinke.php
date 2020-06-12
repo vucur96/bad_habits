@@ -27,29 +27,34 @@
 
             <br>
             <h2>PROMENA LOZINKE</h2>
+            <?php if(isset($poruka)){ echo "<font color='red'>$poruka</font><br>";}?>
             <form name='mojaforma' action="<?php echo site_url('Gost/proveriPromenuLozinke') ?>" method="POST">
 
                 <div class="row form-group">
                     <div class="col-md-6">
-                        <input type="text" name="korIme" class="form-control" <?= set_value('korIme')?> placeholder="Korisnicko ime">
+                        <input type="text" name="korIme" class="form-control" value="<?= set_value('korIme')?>" placeholder="Korisnicko ime">
+                         <?php if(!empty($errors['korIme'])){ echo $errors['korIme']; }?>
                     </div>
                 </div>
 
                 <div class="row form-group">
                     <div class="col-md-6">
                         <input type="password" name="staraLoz" class="form-control" placeholder="Stara lozinka">
+                         <?php if(!empty($errors['staraLoz'])){ echo $errors['staraLoz']; }?>
                     </div>
                 </div>
 
                 <div class="row form-group">
                     <div class="col-md-6">
                         <input type="password" name="novaLoz" class="form-control" placeholder="Nova lozinka">
+                         <?php if(!empty($errors['novaLoz'])){ echo $errors['novaLoz']; }?>
                     </div>
                 </div>
 
                 <div class="row form-group">
                     <div class="col-md-6">
                         <input type="password" name="potvrda" class="form-control" placeholder="Potvrda nove lozinke">
+                         <?php if(!empty($errors['potvrda'])){ echo $errors['potvrda']; }?>
                     </div>
                 </div>
 

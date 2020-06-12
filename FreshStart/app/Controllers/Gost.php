@@ -37,49 +37,100 @@ class Gost extends BaseController{
         }
         
         $this->session->set('korisnik',$korisnik);
-        return redirect()->to(site_url('Korisnik'));
+        
+       if($korisnik->tip==1){
+           return redirect()->to(base_url('/Sponzor') );
+       }else{
+           if($korisnik->tip==2){
+                return redirect()->to(base_url('/Trener') );  
+           }else{
+                return redirect()->to(base_url('/Korisnik') );
+           }
+       }
         
     }
     
-    public function promenaLozinke()
+    public function promenaLozinke($poruka=null)
     {
-            $this->poziv('promenalozinke',[]);
+            $this->poziv('promenalozinke',['poruka'=>$poruka]);
     }
     
     public function proveriPromenuLozinke() {
+        if(!$this->validate(['korIme'=>'required','staraLoz'=>'required','novaLoz'=>'required','potvrda'=>'required'])){
+            return $this->poziv('promenalozinke', ['errors'=>$this->validator->getErrors()]);
+        }
+        $korisnikModel=new KorisnikModel();
+        $korisnik=$korisnikModel->find($this->request->getVar('korIme'));
+        if($korisnik==null){
+            return $this->promenaLozinke('Korisnik ne postoji!');
+        }
+        if($korisnik->lozinka!=$this->request->getVar('staraLoz')){
+            return $this->promenaLozinke('Pogresno uneta stara lozinka!');
+        }
+        if($this->request->getVar('novaLoz')!=$this->request->getVar('potvrda')){
+            return $this->promenaLozinke('Nova lozinka i ponovljena lozinka nisu iste!');
+        }
         
+       $korisnikModel->update($this->request->getVar('korIme'), ['lozinka'=>$this->request->getVar('novaLoz')]);
+        
+       return redirect()->to(base_url('/Gost') );  
     }
     
-    public function registracija()
+    public function registracija($poruka=null)
     {
-            $this->poziv('registracija',[]);
+            $this->poziv('registracija',['poruka'=>$poruka]);
     }
     
     public function proveriRegistraciju() {
+        if(!$this->validate(['korisnickoIme'=>'required','Email'=>'required','lozinka'=>'required','PonovoLoz'=>'required','tip'=>'required'])){
+            return $this->poziv('registracija', ['errors'=>$this->validator->getErrors()]);
+        }
         
+        $zahtevKorModel=new ZahtevKorisnikModel();
+        $korisnik=$zahtevKorModel->find($this->request->getVar('korisnickoIme'));
+        if($korisnik!=null){
+            return $this->registracija('Korisnik sa unetim korisnickim imenom vec postoji!');
+        }
+        
+        if($this->request->getVar('lozinka')!=$this->request->getVar('PonovoLoz')){
+            return $this->registracija('Lozinka i ponovljena lozinka nisu iste!');
+        }
+        
+        $zahtevKorModel->insert(['KorisnickoIme'=>$this->request->getVar('korisnickoIme'),'Email'=>$this->request->getVar('Email'),'lozinka'=>$this->request->getVar('lozinka'),'tip'=>$this->request->getVar('tip')]);
+        
+        if($this->request->getVar('tip')==1){
+           return redirect()->to(base_url('/Gost/registracijaSponzor') );
+       }else{
+           if($this->request->getVar('tip')==2){
+                return redirect()->to(base_url('/Gost/registracijaTrener') );  
+           }else{
+                return redirect()->to(base_url('/Gost/registracijaKorisnik') );
+           }
+       }
+
     }
 
-    public function registracijaKorisnik()
+    public function registracijaKorisnik($poruka=null)
     {
-            $this->poziv('korisnik',[]);
+            $this->poziv('korisnik',['poruka'=>$poruka]);
     }
     
     public function proveriRegKorisnik() {
         
     }
     
-    public function registracijaSponzor()
+    public function registracijaSponzor($poruka=null)
     {
-            $this->poziv('sponzor',[]);
+            $this->poziv('sponzor',['poruka'=>$poruka]);
     }
     
     public function proveriRegSponzor() {
         
     }
     
-    public function registracijaTrener()
+    public function registracijaTrener($poruka=null)
     {
-            $this->poziv('trener',[]);
+            $this->poziv('trener',['poruka'=>$poruka]);
     }
     public function proveriRegTrener() {
         
