@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
-
-
+    
+use App\Models\KorisnikModel;
+    
 class Korisnik extends BaseController{
     
     protected function poziv($page,$data) {
@@ -11,6 +12,7 @@ class Korisnik extends BaseController{
     }
     
     public function index(){
+        
             $this->poziv('index',[]);
     }
         

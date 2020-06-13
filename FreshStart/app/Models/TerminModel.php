@@ -5,11 +5,11 @@
     
 class TerminModel extends Model{
     protected $table      = 'termin';
-    protected $primaryKey = 'TerID,TreID';
+    protected $primaryKey = 'TerID';
     
     protected $returnType     = 'object';
     
-    protected $allowedFields = ['TerID','TreID','dan','pocetak','kraj', 'brojkolikovezbaca'];
+    protected $allowedFields = ['TerID','dan','pocetak','kraj', 'KorisnickoIme','kurs'];
     
 }
     
