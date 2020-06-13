@@ -14,6 +14,8 @@ namespace App\Controllers;
  * @package CodeIgniter
  */
 
+use App\Models\BlogModel;
+
 use CodeIgniter\Controller;
 
 class BaseController extends Controller
@@ -120,7 +122,9 @@ class BaseController extends Controller
     
     public function blog()
     {
-            $this->poziv('blog',[]);
+            $blogModel= new BlogModel();
+            $blogovi= $blogModel->findAll();
+            $this->poziv('blog',['blog'=>$blogovi]);
     }
 
 }

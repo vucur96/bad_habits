@@ -28,35 +28,40 @@
         <br>
         <h2>REGISTRACIJA KORISNIKA</h2>
 
-        <form name="registracijakor" action="<?php echo site_url('Gost/proveriRegKorisnika')?>" method="POST">
+        <form name="registracijakor" action="<?php echo site_url('Gost/proveriRegKorisnik')?>" method="POST">
 
             <div class="row form-group">
                 <div class="col-md-6">
                     <input type="text" name="ime" class="form-control" value="<?= set_value('ime')?>" placeholder="Vaše ime" >
+                    <?php if(!empty($errors['ime'])){ echo $errors['ime']; }?>
                 </div>
             </div>
 
             <div class="row form-group">
                 <div class="col-md-6">
                     <input type="text" name="prezime" class="form-control" value="<?= set_value('prezime')?>" placeholder="Vaše prezime" >
+                    <?php if(!empty($errors['prezime'])){ echo $errors['prezime']; }?>
                 </div>
             </div>
 
             <div class="row form-group">
                 <div class="col-md-6">
                     <input type="date" name="datumrodj" class="form-control" placeholder="Datum rodjenja" min="1930-01-01">
+                    <?php if(!empty($errors['datumrodj'])){ echo $errors['datumrodj']; }?>
                 </div>
             </div>
             
             <div class="row form-group">
                 <div class="col-md-4">
                     <input type="number" name="visina" class="form-control" value="<?= set_value('visina')?>" placeholder="Vaša visina(u cm)" min="100" max="250">
+                    <?php if(!empty($errors['visina'])){ echo $errors['visina']; }?>
                 </div>
             </div>
             
             <div class="row form-group">
                 <div class="col-md-4">
                     <input type="number" name="tezina" class="form-control" value="<?= set_value('tezina')?>" placeholder="Vaša težina(u kg)" min="30" max="500">
+                    <?php if(!empty($errors['tezina'])){ echo $errors['tezina']; }?>
                 </div>
             </div>
             
@@ -64,6 +69,7 @@
                 <div>
                     <p> Vaš cilj: </p>
                     <textarea name="cilj" rows="5" cols="30" value="<?= set_value('cilj')?>"></textarea>
+                    <?php if(!empty($errors['cilj'])){ echo $errors['cilj']; }?>
                 </div>
             </div>
 

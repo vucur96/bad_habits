@@ -1,4 +1,8 @@
 <?php namespace App\Controllers;
+use App\Models\ZahtevKorisnikModel;
+use App\Models\ZahtevBlogModel;
+use App\Models\KorisnikModel;
+use App\Models\BlogModel;
 
 class Admin extends BaseController
 {
@@ -13,6 +17,15 @@ class Admin extends BaseController
             $this->poziv('admin_meni',[]);
     }
     
+    public function logout() {
+        $this->session->destroy();
+        return redirect()->to(site_url('/'));
+    }
+    
+      public function admin_meni(){
+            $this->poziv('admin_meni',[]);
+    }
+    
     public function promenastatusa(){
             $this->poziv('promenastatusa',[]);
     }    
@@ -22,7 +35,9 @@ class Admin extends BaseController
     }
     
     public function zahtevikorisnika(){
-            $this->poziv('zahtevikorisnika',[]);
+            $zahtevKorModel = new ZahtevKorisnikModel();
+            $zahtevKorisnici = $zahtevKorModel->findAll();
+            $this->poziv('zahtevikorisnika',['zahtevikorisnika' => $zahtevKorisnici]);
     }
     
     public function zahtevizablog(){
@@ -31,7 +46,7 @@ class Admin extends BaseController
     
     public function adminblog()
     {
-            $this->poziv('pisanjebloga_tr',[]);
+            $this->poziv('adminblog',[]);
     }
          
     public function ispisi_korisnike(){}

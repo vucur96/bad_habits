@@ -21,29 +21,29 @@
 	<meta name="twitter:card" content="" />
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="../../../css/animate.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>css/animate.css" >
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="../../../css/icomoon.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>css/icommon.css" >
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="../../../css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.css">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="../../../css/magnific-popup.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>css/magnific-popup.css">
 
 	<!-- Flexslider  -->
-	<link rel="stylesheet" href="../../../css/flexslider.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>css/flexslider.css">
 
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="../../../css/owl.carousel.min.css">
-	<link rel="stylesheet" href="../../../css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>css/owl.carousel.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>css/owl.theme.default.min.css">
 	
 	<!-- Flaticons  -->
 	<link rel="stylesheet" href="../../../fonts/flaticon/font/flaticon.css">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="../../../css/style.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
 
 	<!-- Modernizr JS -->
 	<script src="../../../js/modernizr-2.6.2.min.js"></script>
