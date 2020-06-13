@@ -2,6 +2,7 @@
 
 use App\Models\KorisnikModel;
 use App\Models\ZahtevKorisnikModel;
+use App\Models\AdminModel;
 
 class Gost extends BaseController{
     
@@ -92,13 +93,25 @@ class Gost extends BaseController{
             return $this->registracija('Korisnik sa unetim korisnickim imenom vec postoji!');
         }
         
+        $KorModel=new KorisnikModel();
+        $korisnik=$KorModel->find($this->request->getVar('korisnickoIme'));
+        if($korisnik!=null){
+            return $this->registracija('Korisnik sa unetim korisnickim imenom vec postoji!');
+        }
+        
+        $adminModel=new AdminModel();
+        $korisnik=$adminModel->find($this->request->getVar('korisnickoIme'));
+        if($korisnik!=null){
+            return $this->registracija('Korisnik sa unetim korisnickim imenom vec postoji!');
+        }
+        
         if($this->request->getVar('lozinka')!=$this->request->getVar('PonovoLoz')){
             return $this->registracija('Lozinka i ponovljena lozinka nisu iste!');
         }
         
         $zahtevKorModel->insert(['KorisnickoIme'=>$this->request->getVar('korisnickoIme'),'email'=>$this->request->getVar('Email'),'lozinka'=>$this->request->getVar('lozinka'),'tip'=>$this->request->getVar('tip')]);
         
-        $this->session->set('KorisnickoIme',$korisnik);
+        $this->session->set('KorisnickoIme',$this->request->getVar('korisnickoIme'));
         
         if($this->request->getVar('tip')==1){
            return redirect()->to(base_url('/Gost/registracijaSponzor') );
@@ -127,6 +140,8 @@ class Gost extends BaseController{
         $korisnik=$this->session->get('KorisnickoIme');
         $zahtevKorModel->update($korisnik,['ime'=>$this->request->getVar('ime'),'prezime'=>$this->request->getVar('prezime'),'datumrodj'=>$this->request->getVar('datumrodj'),'visina'=>$this->request->getVar('visina'),'tezina'=>$this->request->getVar('tezina'),'cilj'=>$this->request->getVar('cilj')]);
         
+        $this->session->destroy();
+        
         return redirect()->to(base_url('/Gost'));
     }
     
@@ -136,7 +151,19 @@ class Gost extends BaseController{
     }
     
     public function proveriRegSponzor() {
+        if(!$this->validate(['imefirme'=>'required','opisdel'=>'required','vrstarek'=>'required'])){
+            return $this->poziv('sponzor', ['errors'=>$this->validator->getErrors()]);
+        }
         
+        $zahtevKorModel=new ZahtevKorisnikModel();
+        
+        $korisnik=$this->session->get('KorisnickoIme');
+        $zahtevKorModel->update($korisnik,['imefirme'=>$this->request->getVar('imefirme'),'opisdel'=>$this->request->getVar('opisdel'),'vrstarek'=>$this->request->getVar('vrstarek')]);
+        
+        $this->session->destroy();
+        
+        return redirect()->to(base_url('/Gost'));
+       
     }
     
     public function registracijaTrener($poruka=null)
@@ -144,7 +171,18 @@ class Gost extends BaseController{
             $this->poziv('trener',['poruka'=>$poruka]);
     }
     public function proveriRegTrener() {
+        if(!$this->validate(['ime'=>'required','prezime'=>'required','datumrodj'=>'required','kurs'=>'required'])){
+            return $this->poziv('trener', ['errors'=>$this->validator->getErrors()]);
+        }
         
+        $zahtevKorModel=new ZahtevKorisnikModel();
+        
+        $korisnik=$this->session->get('KorisnickoIme');
+        $zahtevKorModel->update($korisnik,['ime'=>$this->request->getVar('ime'),'prezime'=>$this->request->getVar('prezime'),'datumrodj'=>$this->request->getVar('datumrodj'),'kurs'=>$this->request->getVar('kurs')]);
+        
+        $this->session->destroy();
+        
+        return redirect()->to(base_url('/Gost'));
     }
 	//--------------------------------------------------------------------
 

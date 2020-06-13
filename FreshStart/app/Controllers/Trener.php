@@ -16,6 +16,11 @@ class Trener extends BaseController{
     {
             $this->poziv('index',[]);
     }
+    
+    public function logout() {
+        $this->session->destroy();
+        return redirect()->to(site_url('/'));
+    }
      
     public function pisanjebloga_tr()
     {

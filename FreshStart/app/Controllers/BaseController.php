@@ -15,6 +15,7 @@ namespace App\Controllers;
  */
 
 use App\Models\BlogModel;
+use App\Models\KorisnikModel;
 
 use CodeIgniter\Controller;
 
@@ -110,9 +111,11 @@ class BaseController extends Controller
             $this->poziv('yoga',[]);
     }
     
-    public function o_trenerima()
+   public function o_trenerima()
     {
-            $this->poziv('o_trenerima',[]);
+        $trenerModel=new KorisnikModel();
+        $treneri = $trenerModel->where('tip', 2)->findAll();
+        $this->poziv('o_trenerima',['treneri'=>$treneri]);
     }
     
      public function o_sponzorima()
@@ -124,7 +127,7 @@ class BaseController extends Controller
     {
             $blogModel= new BlogModel();
             $blogovi= $blogModel->findAll();
-            $this->poziv('blog',['blog'=>$blogovi]);
+            $this->poziv('blog',['blogovi'=>$blogovi]);
     }
 
 }

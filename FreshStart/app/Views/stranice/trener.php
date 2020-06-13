@@ -33,24 +33,28 @@
             <div class="row form-group">
                 <div class="col-md-6">
                     <input type="text" name="ime" class="form-control" value="<?= set_value('ime')?>" placeholder="Vaše ime" >
+                    <?php if(!empty($errors['ime'])){ echo $errors['ime']; }?>
                 </div>
             </div>
 
             <div class="row form-group">
                 <div class="col-md-6">
                     <input type="text" name="prezime" class="form-control" value="<?= set_value('prezime')?>" placeholder="Vaše prezime">
+                    <?php if(!empty($errors['prezime'])){ echo $errors['prezime']; }?>
                 </div>
             </div>
                             
             <div class="row form-group">
                 <div class="col-md-6">
                     <input type="date" name="datumrodj" class="form-control" placeholder="Datum rodjenja" min="1930-01-01" max="2003-01-01">
+                    <?php if(!empty($errors['datumrodj'])){ echo $errors['datumrodj']; }?>
                 </div>
             </div>
             
             <div class="row form-group">
                 <div class="col-md-6">
                     <input type="text" name="kurs" class="form-control" value="<?= set_value('kurs')?>" placeholder="Kursevi za koji ste specijalizovani">
+                    <?php if(!empty($errors['kurs'])){ echo $errors['kurs']; }?>
                 </div>
             </div>
                           

@@ -21,34 +21,24 @@
 </ul>
 </div>
 </aside>
-
 <div class="colorlib-blog">
 <div class="container">
 <div class="row">
     
- <table>
-    <tr><th>Naslov</th><th>Tekst</th> <th>Autor</th>  
+    
+ <table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
+    <tr><th>Autor</th><th>Naslov</th><th>Tekst</th> 
 <?php
 foreach ($blogovi as $blog) {
-    echo "<tr><td>".$blog->naslov."</td><td>".$blog->KorisnickoIme. "</td><td>".$blog->tekst. "</td>";
+    echo "<tr><td>{$blog->KorisnickoIme}</td><td>{$blog->naslov}</td><td>{$blog->tekst}</td>";
+   
 }
 ?>
-
 </table>
 
-					
-					
-</div>
 
-<div id="menu">
-<div align="center">
-
-</div>
 </div>
 
 <div>
 </body>
 </html>
-	
-	
-		

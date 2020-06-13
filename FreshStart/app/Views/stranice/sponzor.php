@@ -32,6 +32,7 @@
             <div class="row form-group">
                 <div class="col-md-6">
                     <input type="text" name="imefirme" class="form-control" value="<?= set_value('imefirme')?>"placeholder="Ime Vaše firme" >
+                    <?php if(!empty($errors['imefirme'])){ echo $errors['imefirme']; }?>
                 </div>
             </div>
             
@@ -39,6 +40,7 @@
                 <div>
                     <p> Opis delatnosti firme: </p>
                     <textarea name="opisdel" rows="5" value="<?= set_value('opisdel')?>"cols="50"></textarea>
+                    <?php if(!empty($errors['opisdel'])){ echo $errors['opisdel']; }?>
                 </div>
             </div>
 
@@ -47,6 +49,7 @@
                 <p> <input type='checkbox' name='vrstarek' value='proizvod'>Reklamiranje Vašeg proizovda u teretani</p>
                 <p> <input type='checkbox' name='vrstarek' value='poster'>Reklamiranje Vaše firme u vidu postera</p>
                 <p> <input type='checkbox' name='vrstarek' value='flajer'>Reklamiranje Vaših flajera</p>
+                <?php if(!empty($errors['vrstarek'])){ echo $errors['vrstarek']; }?>
             </div>
             
             <div class="form-group">
