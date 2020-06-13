@@ -25,43 +25,20 @@
 <div class="colorlib-blog">
 <div class="container">
 <div class="row">
-<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="<?php echo site_url('blog') ?>" class="blog-img" style="background-image: url(images/blog-1.jpg);">
-								<p class="meta"><span class="day">20</span><span class="month">Apr</span></p>
-							</a>
-							<div class="desc">
-								<p class="admin"><span>Objavio/la:</span> <span>Ana Mikić</span></p>
-								<h2><a href="<?php echo site_url('blog') ?>">Potrebna vam je motivacija za vežbanje?</a></h2>
-								
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="<?php echo site_url('blog') ?>" class="blog-img" style="background-image: url(images/blog-2.jpg);">
-								<p class="meta"><span class="day">21</span><span class="month">Apr</span></p>
-							</a>
-							<div class="desc">
-								<p class="admin"><span>Objavio/la:</span> <span>Dragan Nikolić</span></p>
-								<h2><a href="<?php echo site_url('blog') ?>">Učešće na biciklijadi</a></h2>
-								
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="<?php echo site_url('blog') ?>" class="blog-img" style="background-image: url(images/blog-3.jpg);">
-								<p class="meta"><span class="day">22</span><span class="month">Apr</span></p>
-							</a>
-							<div class="desc">
-								<p class="admin"><span>Objavio/la:</span> <span>Nikola Lazić</span></p>
-								<h2><a href="<?php echo site_url('blog') ?>">Pravilan način ishrane</a></h2>
-							
-							</div>
-						</article>
-					</div>
-				</div>
+    
+ <table>
+    <tr><th>Naslov</th><th>Tekst</th> <th>Autor</th>  
+<?php
+foreach ($blogovi as $blog) {
+    echo "<tr><td>".$blog->naslov."</td><td>".$blog->KorisnickoIme. "</td><td>".$blog->tekst. "</td>";
+}
+?>
+
+</table>
+
+					
+					
+</div>
 
 <div id="menu">
 <div align="center">

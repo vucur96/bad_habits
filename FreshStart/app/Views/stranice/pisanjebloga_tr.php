@@ -14,7 +14,7 @@
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
 <h1>Pisanje BLOGA</h1>
-<h2><span><a href="<?php echo site_url('Trener/index')?>">Pocetna</a></span></h2>
+<h2><span><a href="<?php echo site_url('Trener/index')?>">Pocetna</a> | Pisanje bloga</span></h2>
 </div>
 </div>
 </div>
@@ -58,8 +58,6 @@
 						</form>		
 					</div>
                 
-
-<?php require('footer.php') ?>
 </body>
 </html>
 		

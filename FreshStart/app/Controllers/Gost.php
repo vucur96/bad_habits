@@ -36,7 +36,7 @@ class Gost extends BaseController{
             return $this->login('Pogresna lozinka!');
         }
         
-        $this->session->set('korisnik',$korisnik);
+        $this->session->set('KorisnickoIme',$korisnik);
         
        if($korisnik->tip==1){
            return redirect()->to(base_url('/Sponzor') );
@@ -96,7 +96,9 @@ class Gost extends BaseController{
             return $this->registracija('Lozinka i ponovljena lozinka nisu iste!');
         }
         
-        $zahtevKorModel->insert(['KorisnickoIme'=>$this->request->getVar('korisnickoIme'),'Email'=>$this->request->getVar('Email'),'lozinka'=>$this->request->getVar('lozinka'),'tip'=>$this->request->getVar('tip')]);
+        $zahtevKorModel->insert(['KorisnickoIme'=>$this->request->getVar('korisnickoIme'),'email'=>$this->request->getVar('Email'),'lozinka'=>$this->request->getVar('lozinka'),'tip'=>$this->request->getVar('tip')]);
+        
+        $this->session->set('KorisnickoIme',$korisnik);
         
         if($this->request->getVar('tip')==1){
            return redirect()->to(base_url('/Gost/registracijaSponzor') );
@@ -111,12 +113,21 @@ class Gost extends BaseController{
     }
 
     public function registracijaKorisnik($poruka=null)
-    {
+    {       
             $this->poziv('korisnik',['poruka'=>$poruka]);
     }
     
     public function proveriRegKorisnik() {
+        if(!$this->validate(['ime'=>'required','prezime'=>'required','datumrodj'=>'required','visina'=>'required','tezina'=>'required','cilj'=>'required'])){
+            return $this->poziv('korisnik', ['errors'=>$this->validator->getErrors()]);
+        }
         
+        $zahtevKorModel=new ZahtevKorisnikModel();
+        
+        $korisnik=$this->session->get('KorisnickoIme');
+        $zahtevKorModel->update($korisnik,['ime'=>$this->request->getVar('ime'),'prezime'=>$this->request->getVar('prezime'),'datumrodj'=>$this->request->getVar('datumrodj'),'visina'=>$this->request->getVar('visina'),'tezina'=>$this->request->getVar('tezina'),'cilj'=>$this->request->getVar('cilj')]);
+        
+        return redirect()->to(base_url('/Gost'));
     }
     
     public function registracijaSponzor($poruka=null)
