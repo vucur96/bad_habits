@@ -39,7 +39,7 @@
 
             <div class="row form-group">
                 <div class="col-md-6">
-                    <input type="email" name="Email" class="form-control" value="<?= set_value('Email')?>" placeholder="Your email address">
+                    <input type="email" name="Email" class="form-control" value="<?= set_value('Email')?>" placeholder="Email adresa">
                     <?php if(!empty($errors['Email'])){ echo $errors['Email']; }?>
                 </div>
             </div>

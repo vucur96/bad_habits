@@ -33,11 +33,15 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class='col-md-12'>
-						<h2> <a href="<?php echo site_url('grupni_treninzi') ?>"> Raspored grupnih treninga </a></h2>
-						<h2> <a href="<?php echo site_url('individualni_treninzi') ?>"> Raspored individualnih treninga </a></h2>
-
-					</div>
+					<table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
+    <tr><th>Datum</th><th>Vreme pocetka</th><th>Vreme kraja</th><th>Trener</th><th>Trening</th>    
+<?php
+foreach ($termini as $termin) {
+    echo "<tr><td>{$termin->dan}</td><td>{$termin->pocetak}</td><td>{$termin->kraj}</td><td>{$termin->KorisnickoIme}</td><td>{$termin->kurs}</td>";
+    
+}
+?>
+</table>
 					
 					</div>
 				</div>

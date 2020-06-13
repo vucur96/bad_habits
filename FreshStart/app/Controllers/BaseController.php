@@ -16,6 +16,7 @@ namespace App\Controllers;
 
 use App\Models\BlogModel;
 use App\Models\KorisnikModel;
+use App\Models\TerminModel;
 
 use CodeIgniter\Controller;
 
@@ -101,9 +102,11 @@ class BaseController extends Controller
             $this->poziv('snaga',[]);
     }
     
-    public function schedule()
+   public function schedule()
     {
-            $this->poziv('schedule',[]);
+            $terminModel= new TerminModel();
+            $termini= $terminModel->findAll();
+            $this->poziv('schedule',['termini'=>$termini]);
     }
     
     public function yoga()

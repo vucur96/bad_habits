@@ -54,11 +54,12 @@
 					</div>
 				</div>
 				<div class="row">
+                                                                      <div align="center">
 				 <table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
-    <tr><th>Ime</th><th>Prezime</th><th>Trening</th> 
+    <tr><th>Ime</th><th>Prezime</th><th>Korisnicko ime</th> <th>Trening</th> 
 <?php
 foreach ($treneri as $trener) {
-    echo "<tr><td>{$trener->ime}</td><td>{$trener->prezime}</td><td>{$trener->kurs}</td>";
+    echo "<tr><td>{$trener->ime}</td><td>{$trener->prezime}</td><td>{$trener->KorisnickoIme}</td><td>{$trener->kurs}</td>";
     
 }
 ?>
