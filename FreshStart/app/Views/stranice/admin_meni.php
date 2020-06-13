@@ -8,16 +8,16 @@
 							
                 
         <div class="form-group" >
-	<input type="submit" value="Zahtevi korisnika" onclick="window.location.href='zahtevikorisnika.php'" class="btn btn-primary" > 
+	<a  class="btn btn-primary" href="<?php echo site_url('Admin/zahtevikorisnika') ?>">Zahtevi korisnika</a>        
         </div>
         <div class="form-group">
-	<button  onclick="window.location.href='brisanjekorisnika.php'" class="btn btn-primary" > Brisanje korisnika </button>
+	<a class="btn btn-primary"  href="<?php echo site_url('Admin/brisanjekorisnika') ?>">Brisanje korisnika</a>
         </div>
         <div class="form-group">
-        <button  onclick="window.location.href='promenastatusa.php'" class="btn btn-primary" > Promena statusa </button>
+                  <a class="btn btn-primary"  href="<?php echo site_url('Admin/promenastatusa') ?>">Promena statusa</a>
         </div>
         <div class="form-group">
-        <button  onclick="window.location.href='adminblog.php'" class="btn btn-primary" > Blog </button>
+                 <a class="btn btn-primary"  href="<?php echo site_url('Admin/adminblog') ?>">Blog</a>
         </div>
 				
 						

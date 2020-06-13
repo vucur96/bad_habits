@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>fresh start</title>
+<title>Fresh start</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="" />
 <meta name="keywords" content="" />
@@ -62,11 +62,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="<?php echo site_url('Admin/admin-meni') ?>">FRESH START</a></div>
+							<div id="colorlib-logo"><a href="<?php echo site_url('Admin/admin_meni') ?>">FRESH START</a></div>
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
-								<li><a href="<?php echo site_url('Admin/admin-meni') ?>">Početna</a></li>
+								<li><a href="<?php echo site_url('Admin/index') ?>">Početna</a></li>
 								<li class="has-dropdown">
 									<a href="<?php echo site_url('Admin/classes') ?>">Treninzi</a>
 									<ul class="dropdown">
@@ -91,7 +91,7 @@
 									
 								</li>
 								<li><a href="<?php echo site_url('Admin/o_trenerima') ?>">Treneri</a></li>
-                                <li><a href="<?php echo site_url('Admin/o_sponzorima') ?>">Sponzori</a></li>
+                                                                                                                                                <li><a href="<?php echo site_url('Admin/o_sponzorima') ?>">Sponzori</a></li>
 								<li><a href="<?php echo site_url('Admin/blog') ?>">Blog</a></li>
 								<li><a href="<?php echo site_url('Admin/contact') ?>">Kontakt</a></li>
 								<li class="btn btn-cta"><a href="<?php echo site_url('Admin/logout') ?>"><span>Izloguj me</span></a></li>
@@ -110,7 +110,7 @@
 <div class="row">
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
-<a href="admin_meni.php"><h1>ADMIN MENI</h1></a>
+<a href="<?php echo site_url('Admin/admin_meni') ?>"><h1>ADMIN MENI</h1></a>
 </div>
 </div>
 </div>

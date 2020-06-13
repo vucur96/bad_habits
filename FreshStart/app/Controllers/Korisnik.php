@@ -14,6 +14,10 @@ class Korisnik extends BaseController{
             $this->poziv('index',[]);
     }
         
+     public function logout() {
+        $this->session->destroy();
+        return redirect()->to(site_url('/'));
+    }
         
 
 	//--------------------------------------------------------------------

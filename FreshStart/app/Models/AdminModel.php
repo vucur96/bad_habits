@@ -9,7 +9,7 @@ class AdminModel extends Model{
     
     protected $returnType     = 'object';
     
-    protected $allowedFields = ['KorisnickoIme','lozinka'];
+    // protected $allowedFields = ['KorisnickoIme','lozinka'];
 
 }
     
