@@ -67,34 +67,35 @@
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
-								<li><a href="index.php">Početna</a></li>
+								<li><a href="<?php echo site_url('Trener/index') ?>">Početna</a></li>
 								<li class="has-dropdown">
-									<a href="classes.php">Treninzi</a>
+									<a href="<?php echo site_url('Trener/classes') ?>">Treninzi</a>
 									<ul class="dropdown">
-										<li><a href="classes-single.php">Classes Single</a></li>
-										<li><a href="cardio.php">Cardio</a></li>
-										<li><a href="funkcionalni.php">Funkcionalni</a></li>
-										<li><a href="yoga.php">Yoga</a></li>
-										<li><a href="aerobic.php">Aerobic</a></li>
-										<li><a href="karate.php">Karate</a></li>
-										<li><a href="body_pump.php">Body Pump</a></li>
-										<li><a href="snaga.php">Snaga</a></li>
+										<li><a href="<?php echo site_url('Trener/classes-single') ?>">Classes Single</a></li>
+										<li><a href="<?php echo site_url('Trener/cardio') ?>">Cardio</a></li>
+										<li><a href="<?php echo site_url('Trener/funkcionalni') ?>">Funkcionalni</a></li>
+										<li><a href="<?php echo site_url('Trener/yoga') ?>">Yoga</a></li>
+										<li><a href="<?php echo site_url('Trener/aerobic') ?>">Aerobic</a></li>
+										<li><a href="<?php echo site_url('Trener/karate') ?>">Karate</a></li>
+										<li><a href="<?php echo site_url('Trener/body_pump') ?>">Body Pump</a></li>
+										<li><a href="<?php echo site_url('Trener/snaga') ?>">Snaga</a></li>
 									</ul>
 								</li>
 								<li class="has-dropdown">
 									<a href="schedule.php">Raspored</a>
 									<ul class="dropdown">
-										<li><a href="grupni_treninzi.php">Grupni treninzi</a></li>
-										<li><a href="individualni_treninzi.php">Individualni treninzi</a></li>
+										<li><a href="<?php echo site_url('Trener/grupni_treninzi') ?>">Grupni treninzi</a></li>
+										<li><a href="<?php echo site_url('Trener/individualni_treninzi') ?>">Individualni treninzi</a></li>
 										
 									</ul>
 
 								</li>
-								<li><a href="o_trenerima.php">Treneri</a></li>
-								<li><a href="blog.php">Blog</a></li>
-                                <li><a href="pisanjebloga_tr.php">Pisanje Teksta</a></li>
-								<li><a href="contact.php">Kontakt</a></li>
-								<li class="btn btn-cta"><a href="logout.php"><span>Izloguj me</span></a></li>
+								<li><a href="<?php echo site_url('Trener/o_trenerima') ?>">Treneri</a></li>
+                                <li><a href="<?php echo site_url('Trener/o_sponzorima') ?>">Sponzori</a></li>
+								<li><a href="<?php echo site_url('Trener/blog') ?>">Blog</a></li>
+                                <li><a href="<?php echo site_url('Trener/pisanjebloga_tr') ?>">Pisanje Teksta</a></li>
+								<li><a href="<?php echo site_url('Trener/contact') ?>">Kontakt</a></li>
+								<li class="btn btn-cta"><a href="<?php echo site_url('Trener/logout') ?>"><span>Izloguj me</span></a></li>
 							</ul>
 						</div>
 					</div>

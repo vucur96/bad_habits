@@ -67,34 +67,35 @@
 						</div>
 						<div class="col-md-10 text-right menu-1">
 							<ul>
-								<li><a href="index.php">Početna</a></li>
+								<li><a href="<?php echo site_url('Korisnik/index') ?>">Početna</a></li>
 								<li class="has-dropdown">
-									<a href="classes.php">Treninzi</a>
+									<a href="<?php echo site_url('Korisnik/classes') ?>">Treninzi</a>
 									<ul class="dropdown">
-										<li><a href="classes-single.php">Classes Single</a></li>
-										<li><a href="cardio.php">Cardio</a></li>
-										<li><a href="funkcionalni.php">Funkcionalni</a></li>
-										<li><a href="yoga.php">Yoga</a></li>
-										<li><a href="aerobic.php">Aerobic</a></li>
-										<li><a href="karate.php">Karate</a></li>
-										<li><a href="body_pump.php">Body Pump</a></li>
-										<li><a href="snaga.php">Snaga</a></li>
+										<li><a href="<?php echo site_url('Korisnik/classes-single') ?>">Classes Single</a></li>
+										<li><a href="<?php echo site_url('Korisnik/cardio') ?>">Cardio</a></li>
+										<li><a href="<?php echo site_url('Korisnik/funkcionalni') ?>">Funkcionalni</a></li>
+										<li><a href="<?php echo site_url('Korisnik/yoga') ?>">Yoga</a></li>
+										<li><a href="<?php echo site_url('Korisnik/aerobic') ?>">Aerobic</a></li>
+										<li><a href="<?php echo site_url('Korisnik/karate') ?>">Karate</a></li>
+										<li><a href="b<?php echo site_url('Korisnik/body_pump') ?>">Body Pump</a></li>
+										<li><a href="<?php echo site_url('Korisnik/snaga') ?>">Snaga</a></li>
 									</ul>
 								</li>
 								<li class="has-dropdown">
 									<a href="schedule.php">Raspored</a>
 									<ul class="dropdown">
-										<li><a href="grupni_treninzi.php">Grupni treninzi</a></li>
-										<li><a href="individualni_treninzi.php">Individualni treninzi</a></li>
+										<li><a href="<?php echo site_url('Korisnik/grupni_treninzi') ?>">Grupni treninzi</a></li>
+										<li><a href="<?php echo site_url('Korisnik/individualni_treninzi') ?>">Individualni treninzi</a></li>
 										
 									</ul>
 									
 									
 								</li>
-								<li><a href="o_trenerima.php">Treneri</a></li>
-								<li><a href="blog.php">Blog</a></li>
-								<li><a href="contact.php">Kontakt</a></li>
-								<li class="btn btn-cta"><a href="logout.php"><span>Izloguj me</span></a></li>
+								<li><a href="<?php echo site_url('Korisnik/o_trenerima) ?>">Treneri</a></li>
+                                <li><a href="<?php echo site_url('Korisnik/o_sponzorima) ?>">Sponzori</a></li>
+								<li><a href="<?php echo site_url('Korisnik/blog') ?>">Blog</a></li>
+								<li><a href="<?php echo site_url('Korisnik/contact') ?>">Kontakt</a></li>
+								<li class="btn btn-cta"><a href="<?php echo site_url('Korisnik/logout') ?>"><span>Izloguj me</span></a></li>
 							</ul>
 						</div>
 					</div>

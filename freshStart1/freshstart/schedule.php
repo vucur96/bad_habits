@@ -1,34 +1,9 @@
-<?php 
-	session_start();
-?>
+
 <html>
 <head>
 </head>
 <body>
-<?php 
-	if(!isset($_SESSION['KorisnickoIme'])){
-		require('header.php');
-	}else{
-		require("konekcija.php");
-		$upit2 = "SELECT * FROM korisnik WHERE KorisnickoIme='".$_SESSION['KorisnickoIme']."'";
-		$rezultat2 = mysqli_query($konekcija, $upit2) or die("Greska kod upita za proveru šifre!" . mysqli_error($konekcija));
-		if (mysqli_num_rows($rezultat2) == 1){
-			$red = mysqli_fetch_array($rezultat2);
-			$tip = $red['tip'];
-			
-			if($tip==2){
-				require('header_tren.php');
-			}else{
-				if ($tip==3){
-					require('header_kor.php');
-				}
-			}
-		}else{
-			require('header_adm.php');
-		}
-		mysqli_close($konekcija);
-	}
-?>
+
 <aside id="colorlib-hero">
 <div class="flexslider">
 <ul class="slides">
@@ -39,7 +14,7 @@
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
 <h1>Raspored</h1>
-<h2><span><a href="index.php">Početna</a> | Raspored</span></h2>
+<h2><span><a href="<?php echo site_url('index') ?>">Početna</a> | Raspored</span></h2>
 </div>
 </div>
 </div>
@@ -59,8 +34,8 @@
 				</div>
 				<div class="row">
 					<div class='col-md-12'>
-						<h2> <a href="grupni_treninzi.php"> Raspored grupnih treninga </a></h2>
-						<h2> <a href="individualni_treninzi.php"> Raspored individualnih treninga </a></h2>
+						<h2> <a href="<?php echo site_url('grupni_treninzi') ?>"> Raspored grupnih treninga </a></h2>
+						<h2> <a href="<?php echo site_url('individualni_treninzi') ?>"> Raspored individualnih treninga </a></h2>
 
 					</div>
 					
