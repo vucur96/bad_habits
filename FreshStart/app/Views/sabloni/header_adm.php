@@ -82,11 +82,6 @@
 								</li>
 								<li class="has-dropdown">
 									<a href="<?php echo site_url('Admin/schedule') ?>">Raspored</a>
-									<ul class="dropdown">
-										<li><a href="<?php echo site_url('Admin/grupni_treninzi') ?>">Grupni treninzi</a></li>
-										<li><a href="<?php echo site_url('Admin/individualni_treninzi') ?>">Individualni treninzi</a></li>
-										
-									</ul>
 									
 									
 								</li>

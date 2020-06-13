@@ -83,17 +83,14 @@
 								</li>
 								<li class="has-dropdown">
 									<a href="<?php echo site_url('Trener/schedule') ?>">Raspored</a>
-									<ul class="dropdown">
-										<li><a href="<?php echo site_url('Trener/grupni_treninzi') ?>">Grupni treninzi</a></li>
-										<li><a href="<?php echo site_url('Trener/individualni_treninzi') ?>">Individualni treninzi</a></li>
-										
-									</ul>
+									
 
 								</li>
 								<li><a href="<?php echo site_url('Trener/o_trenerima') ?>">Treneri</a></li>
                                 <li><a href="<?php echo site_url('Trener/o_sponzorima') ?>">Sponzori</a></li>
 								<li><a href="<?php echo site_url('Trener/blog') ?>">Blog</a></li>
                                 <li><a href="<?php echo site_url('Trener/pisanjebloga_tr') ?>">Pisanje Teksta</a></li>
+                                <li><a href="<?php echo site_url('Trener/zakazivanjetermina') ?>">Zakazi teremin</a></li>
 								<li><a href="<?php echo site_url('Trener/contact') ?>">Kontakt</a></li>
 								<li class="btn btn-cta"><a href="<?php echo site_url('Trener/logout') ?>"><span>Izloguj me</span></a></li>
 							</ul>

@@ -54,45 +54,21 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3 col-sm-3 animate-box">
-						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-1.jpg)"></div>
-							<div class="desc">
-								<h3>Pera Perić</h3>
-								<span>Trener</span>
-							</div>
-						</div>
-					</div>
+ <table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
+    <tr><th>Ime firme</th><th>Delatnost</th> 
+<?php
+foreach ($sponzori as $sponzor) {
+    echo "<tr><td>{$sponzor->imefirme}</td><td>{$sponzor->opisdel}</td>";
+    
+}
+?>
+</table>	
 
-					<div class="col-md-3 col-sm-3 animate-box">
-						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-2.jpg)"></div>
-							<div class="desc">
-								<h3>Ana Mirić</h3>
-								<span>Trener</span>
-							</div>
-						</div>
-					</div>
+					
 
-					<div class="col-md-3 col-sm-3 animate-box">
-						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-3.jpg)"></div>
-							<div class="desc">
-								<h3>Nina Rakić</h3>
-								<span>Trener</span>
-							</div>
-						</div>
-					</div>
+					
 
-					<div class="col-md-3 col-sm-3 animate-box">
-						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-4.jpg)"></div>
-							<div class="desc">
-								<h3>Nikola Nidzić</h3>
-								<span>Trener</span>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>

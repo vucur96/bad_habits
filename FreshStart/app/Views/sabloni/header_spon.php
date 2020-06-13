@@ -83,7 +83,7 @@
 								</li>
 									
 								<li><a href="<?php echo site_url('Sponzor/o_trenerima') ?>">Treneri</a></li>
-                                <li><a href="<?php echo site_url('Sponzor/o_sponzorima') ?>">Sponzori</a></li>
+                                                                <li><a href="<?php echo site_url('Sponzor/o_sponzorima') ?>">Sponzori</a></li>
 								<li><a href="<?php echo site_url('Sponzor/blog') ?>">Blog</a></li>
 								<li><a href="<?php echo site_url('Sponzor/contact') ?>">Kontakt</a></li>
 								<li class="btn btn-cta"><a href="<?php echo site_url('Sponzor/logout') ?>"><span>Izloguj me</span></a></li>

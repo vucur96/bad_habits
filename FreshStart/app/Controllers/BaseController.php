@@ -118,9 +118,11 @@ class BaseController extends Controller
         $this->poziv('o_trenerima',['treneri'=>$treneri]);
     }
     
-     public function o_sponzorima()
+    public function o_sponzorima()
     {
-            $this->poziv('o_sponzorima',[]);
+        $sponzorModel=new KorisnikModel();
+        $sponzori = $sponzorModel->where('tip', 1)->findAll();
+        $this->poziv('o_sponzorima',['sponzori'=>$sponzori]);
     }
     
     public function blog()
