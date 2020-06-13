@@ -2,30 +2,6 @@
 <head>
 </head>
 <body>
-<?php 
-	if(!isset($_SESSION['KorisnickoIme'])){
-		require('header.php');
-	}else{
-		require("konekcija.php");
-		$upit2 = "SELECT * FROM korisnik WHERE KorisnickoIme='".$_SESSION['KorisnickoIme']."'";
-		$rezultat2 = mysqli_query($konekcija, $upit2) or die("Greska kod upita za proveru šifre!" . mysqli_error($konekcija));
-		if (mysqli_num_rows($rezultat2) == 1){
-			$red = mysqli_fetch_array($rezultat2);
-			$tip = $red['tip'];
-			
-			if($tip==2){
-				require('header_tren.php');
-			}else{
-				if ($tip==3){
-					require('header_kor.php');
-				}
-			}
-		}else{
-			require('header_adm.php');
-		}
-		mysqli_close($konekcija);
-	}
-?>
 
 <aside id="colorlib-hero">
 <div class="flexslider">
@@ -37,7 +13,7 @@
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
 <h1>Raspored</h1>
-<h2><span><a href="index.php">Početna</a> | Raspored | Individualni treninzi</span></h2>
+<h2><span><a href="<?php echo site_url('Gost/index') ?>">Početna</a> | Raspored | Individualni treninzi</span></h2>
 </div>
 </div>
 </div>

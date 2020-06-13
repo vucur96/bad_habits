@@ -1,36 +1,9 @@
-<?php
-	session_start();
-?>
+
 <html>
 <head>
 </head>
 <body>
-<?php 
-	if(!isset($_SESSION['KorisnickoIme'])){
-		require('header.php');
-	}else{
-		require("konekcija.php");
-		$upit2 = "SELECT * FROM korisnik WHERE KorisnickoIme='".$_SESSION['KorisnickoIme']."'";
-		$rezultat2 = mysqli_query($konekcija, $upit2) or die("Greska kod upita za proveru šifre!" . mysqli_error($konekcija));
-		if (mysqli_num_rows($rezultat2) == 1){
-			$red = mysqli_fetch_array($rezultat2);
-			$tip = $red['tip'];
-			
-			if($tip==1){
-				require('header_spon.php');
-			}else{
-				if ($tip==2){
-					require('header_tren.php');
-				}else{
-					require('header_kor.php');
-				}
-			}
-		}else{
-			require('header_adm.php');
-		}
-		mysqli_close($konekcija);
-	}
-?>
+
 
 <aside id="colorlib-hero">
 <div class="flexslider">
@@ -42,7 +15,7 @@
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
 <h1>Treninzi</h1>
-<h2><span><a href="index.php">Početna</a> | <a href="classes.php">Treninzi</a> | Karate</span></h2>
+<h2><span><a href="<?php echo site_url('index') ?>">Početna</a> | <a href="<?php echo site_url('classes') ?>">Treninzi</a> | Karate</span></h2>
 </div>
 </div>
 </div>
@@ -59,7 +32,7 @@
 <div class="classes">
 							<div class="classes-img classes-img-single" style="background-image: url(images/karate.jpg);"></div>
 							<div class="desc">
-                                                            <h3><a href="karate.php">KARATE</a></h3>
+                                                            <h3>KARATE</h3>
 								
 									<p>
 										Karate mogu da treniraju svi od 6-90 godina života. Najbolje je trenirati u karate školi, ili bar započeti, da uvidite neke osnove tehnike, stavova, držanja, način izvođenja udaraca, blokada, poluga. Kada steknete neko znanje možete da nastavite i sa samostalnim treniranjem. Važno je znati tehnike, blokade, vrste udaraca, kretanje i stavove. Kate su takođe važni elementi bez kojih ne možete napredovati. Kao i kod svake borilačke veštine važno je i disanje kao i koncentracija, kondicija, što se stiče treningom. Početak je uvek zagrevanje. Trčanje, skokovi, čučnjevi sa kombinacijom izvođenja nekih elemenata tehnike, razgibavanje, sklekovi, trbušnjaci. Zatim kreće učenje ili ponavljanje već naučenih elemenata tehnike individualno, pa uvežbavanje i izvođenje kata. Neki se obično i dele prema interesovanju za određeni deo karatea suspenzor, tako da jedan treninga se posvećuje vežbanju kumite (sparinga) i kata.
