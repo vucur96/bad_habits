@@ -49,7 +49,7 @@ class Trener extends BaseController{
         }
         $termin=new TerminModel();
         
-        $termin->insert(['TerID'=>$termin->getInsertID(), 'dan'=>$this->request->getVar('dan'), 'pocetak'=>$this->request->getVar('pocetak'),'kraj'=>$this->request->getVar('kraj'), 'KorisnickoIme'=>$this->session->get('KorisnickoIme')->KorisnickoIme], 'kurs'=>$this->session->get('kurs')->kurs]);
+        $termin->insert(['TerID'=>$termin->getInsertID(), 'dan'=>$this->request->getVar('dan'), 'pocetak'=>$this->request->getVar('pocetak'),'kraj'=>$this->request->getVar('kraj'),'kurs'=>$this->request->getVar('kurs'), 'KorisnickoIme'=>$this->session->get('KorisnickoIme')->KorisnickoIme]);
         
          return redirect()->to(base_url('/Trener'));
     }
