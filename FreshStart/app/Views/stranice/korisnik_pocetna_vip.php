@@ -28,13 +28,13 @@
                         
                         </h2>
 
-						<form name='vip' action="<?php echo site_url('Gost/proveriVip') ?>" method="POST">
+						<form name='vip' action="<?php echo site_url('Korisnik/proveriVip') ?>" method="POST">
 						
-							<input type='checkbox' name='pogo' value='masaza'>
+							<input type='checkbox' name='pogodnosti' value='masaza'>
 							Besplatna masaža<br>
-                            <input type='checkbox' name='pogo' value='trening'>
+                            <input type='checkbox' name='pogodnosti' value='trening'>
                             Besplatan trening<br>
-                            <input type='checkbox' name='pogo' value='popust'>
+                            <input type='checkbox' name='pogodnosti' value='popust'>
                            Popust na mesecnu clanarinu<br>
                             
                         <div class="form-group">
