@@ -31,13 +31,22 @@ class Gost extends BaseController{
         $korisnikModel=new KorisnikModel();
         $korisnik=$korisnikModel->find($this->request->getVar('korIme'));
         if($korisnik==null){
+            $adminModel=new AdminModel();
+            $korisnik=$adminModel->find($this->request->getVar('korIme'));
+        }
+        if($korisnik==null){
             return $this->login('Korisnik ne postoji!');
         }
+        
         if($korisnik->lozinka!=$this->request->getVar('lozinka')){
             return $this->login('Pogresna lozinka!');
         }
         
         $this->session->set('KorisnickoIme',$korisnik);
+        
+        if($korisnik->KorisnickoIme=='nikoleta'){
+             return redirect()->to(base_url('/Admin') );
+        }
         
        if($korisnik->tip==1){
            return redirect()->to(base_url('/Sponzor') );
