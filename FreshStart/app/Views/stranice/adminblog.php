@@ -13,9 +13,9 @@
                             <p class="formfield">
                             <label for="textarea"> Naslov </label>    
                             <textarea  name="naslov" rows="1" cols="92" value="<?= set_value('naslov')?>"></textarea>
-		<?php if(!empty($errors['naslov'])){ echo $errors['naslov']; }?>
+                            <?php if(!empty($errors['naslov'])){ echo $errors['naslov']; }?>
 						
-                            <input type="button" value="Zahtevi" class="btn btn-cta1" onclick="window.location.href='Admin/zahtevizablog'">
+                            <input type="button" value="Zahtevi" class="btn btn-cta1" onclick="window.location.href='zahtevizablog'">
                             <br><br>
                             <textarea id="tekst" name="tekstbloga" rows="15" cols="100" value="<?= set_value('tekst')?>" required> </textarea>
                              <?php if(!empty($errors['tekst'])){ echo $errors['tekst']; }?>
@@ -28,7 +28,7 @@
                             <input type="submit" value="Objavi" name="objavi" class="btn btn-primary1" > 
 								 
                             </p>
-                            </div>
+ </div>
                 
 	
 
