@@ -1,6 +1,6 @@
 <?php namespace App\Controllers;
 
-use App\Models\ZahtevKorisnikModel;
+use App\Models\KorisnikModel;
     
 class Korisnik extends BaseController{
     
@@ -12,9 +12,10 @@ class Korisnik extends BaseController{
     }
     
     public function index(){
-        $korisnik= new KorisnikModel;
-        $korIme= $korisnik->find();
-        if($korisnik->where("KorisnickoIme", $korIme)->where('VIP',1)){
+        $korisnikModel= new KorisnikModel();
+        $korIme=$this->session->get('KorisnickoIme')->KorisnickoIme;
+        $korisnik=$korisnikModel->find($korIme);
+        if(($korisnik->VIP==1) && ($korisnik->pogodnosti==NULL)){
             $this->poziv('korisnik_pocetna_vip',[]);
         }
         else{
@@ -23,17 +24,16 @@ class Korisnik extends BaseController{
     }
     
     public function proveriVip(){
-        if(!$this->validate(['pogo'=>'required'])){
+        if(!$this->validate(['pogodnosti'=>'required'])){
             return $this->poziv('korisnik_pocetna_vip',['errors'=>$this->validator->getErrors()]);
         }
         $kor=new KorisnikModel();
         
-        $korisnik=$this->session->get('KorisnickoIme');
+        $korisnik=$this->session->get('KorisnickoIme')->KorisnickoIme;
         $kor->update($korisnik,['pogodnosti'=>$this->request->getVar('pogodnosti')]);
+    
         
-        $this->session->destroy();
-        
-        return redirect()->to(base_url('/Korisnik'));
+        return redirect()->to(base_url('/Korisnik') );
         
     }
      public function logout() {

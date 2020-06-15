@@ -84,9 +84,9 @@ class Admin extends BaseController
     }
     
     public function obrisi(){
-        $korisnik = new KorisnikModel();
-        $korIme = $korisnik->find();
-         $korisnik->where("KorisnickoIme", $korIme)->delete();
+        $kormod = new KorisnikModel();
+        $korIme=$this->session->get('KorisnickoIme');
+         $kormod->where('KorisnickoIme', $korIme)->delete();
     }
     
     
@@ -96,6 +96,18 @@ class Admin extends BaseController
     
     public function adminblog() {
             $this->poziv('adminblog',[]);
+    }
+    
+    public function proveriBlog(){
+        if(!$this->validate(['naslov'=>'required','tekstbloga'=>'required'])){
+            return $this->poziv('pisanjebloga_tr',['errors'=>$this->validator->getErrors()]);
+        }
+        $noviblog= new BlogModel();
+       
+        
+        $noviblog->insert(['BlogId'=>$noviblog->getInsertID(), 'naslov'=>$this->request->getVar('naslov'),'tekst'=>$this->request->getVar('tekstbloga')]);
+    
+        return redirect()->to(base_url('/Admin'));
     }
          
     public function ispisi_korisnike(){}
