@@ -4,6 +4,7 @@ use App\Models\ZahtevBlogModel;
 use App\Models\KorisnikModel;
 use App\Models\BlogModel;
 
+
 class Admin extends BaseController
 {
     protected function poziv($page,$data) {
@@ -101,7 +102,39 @@ class Admin extends BaseController
     
     
     public function zahtevizablog(){
-            $this->poziv('zahtevizablog',[]);
+            $blogModel = new ZahtevBlogModel();
+            $zahteviBlog = $blogModel->findAll();
+            $this->poziv('zahtevizablog',['zahteviBlog' => $zahteviBlog]);
+    }
+    
+    public function textzahtev($id){
+        $blogModel=new ZahtevBlogModel();
+        $blog=$blogModel->find($id);
+        $this->poziv('tekstzahtev',['blog'=>$blog]);
+        
+    } 
+    
+    public function prihvatiIliOdbiBlog($id) {
+        
+        if($this->request->getVar('prihvati')==null){
+            obrisiBlog($id);
+        }else{
+            prihvatiBlog($id);
+        }
+    }
+    
+    public function obrisiBlog($id) {
+        $blogModel=new ZahtevBlogModel();
+        $blogModel->delete($id);
+        return redirect()->to(base_url('/Admin/zahtevizablog') );
+    }
+    
+    public function prihvatiBlog($id) {
+        $blogModel=new ZahtevBlogModel();
+        $noviBlog=new BlogModel();
+        $noviblog->insert(['BlogId'=>$id, 'naslov'=>'','tekst'=>'', 'KorisnickoIme'=>'']);
+        $blogModel->delete($id);
+        return redirect()->to(base_url('/Admin/zahtevizablog') );
     }
     
     public function adminblog() {

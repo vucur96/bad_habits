@@ -9,7 +9,7 @@ class ZahtevBlogModel extends Model{
     
     protected $returnType     = 'object';
     
-    protected $allowedFields = ['naslov', 'tekst','KorisnickoIme'];
+    protected $allowedFields = ['BlogID','naslov', 'tekst','KorisnickoIme'];
 
 }
     
