@@ -8,7 +8,7 @@
    
              <div align="center">
   
-  	<form name='form_status' method="post" action="<?= site_url("$controller/promenastatusa") ?>">
+  	<form name='form_status' method="post" action="<?= site_url("Admin/promenastatusa") ?>">
   <?php
             if($statusi)  {
                 echo   "<table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
@@ -19,8 +19,8 @@
                             <td width='25%'></td>
                         </tr>";
                         
-             foreach ($statusi as $status) {
-            echo "<tr><td>{$status->KorisnickoIme}</td><td>{$status->ime}</td><td>{$status->prezime}</td>";
+             foreach ($statusi as $korisnik) {
+            echo "<tr><td>{$korisnik->KorisnickoIme}</td><td>{$korisnik->ime}</td><td>{$korisnik->prezime}</td>";
             echo "<td><input type='submit' class='btn btn-cta' name='promeni' value=' Promeni u VIP'></td></tr>";
             
             }

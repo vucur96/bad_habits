@@ -31,7 +31,7 @@ class Admin extends BaseController
     }
     
     
-    public function prihvati(){
+  /*  public function prihvati(){
             $zahtevKorModel = new ZahtevKorisnikModel();
             $KorModel = new KorisnikModel();
             $zahtev=$zahtevKorModel->where("KorisnickoIme", $korIme)->where("email", $email)->where("loznika", $loz)->
@@ -63,7 +63,7 @@ class Admin extends BaseController
    public function odbij(){
          $zahtevKorModel = new ZahtevKorisnikModel();
          $zahtevKorModel->where("KorisnickoIme", $korIme)->delete();
-    }
+    }*/
     
       public function admin_meni(){
             $this->poziv('admin_meni',[]);
@@ -71,9 +71,18 @@ class Admin extends BaseController
     
    public function promenastatusa(){
          $promenaModel = new KorisnikModel();
-            $statusi = $promenaModel->where( 'tip',3 )->where( 'VIP',0 )->findAll();
+            $statusi = $promenaModel->where( 'tip',3 )->where( 'VIP',NULL)->findAll();
         $this->poziv('promenastatusa',['statusi' => $statusi]);
+        
+        $this->promena();       
     }   
+    
+    public function promena(){
+        $kor=new KorisnikModel();
+        $korisnik=$this->request->find('KorisnickoIme');
+        $kor->insert($korisnik,['VIP'=>$this->request->getVar('1')]);
+        return redirect()->to(base_url('/promenastatusa'));
+    }
     
     
     
@@ -83,10 +92,11 @@ class Admin extends BaseController
             $this->poziv('brisanjekorisnika',['korisnici' => $korisnici]);
     }
     
-    public function obrisi(){
+    public function obrisi($korIme){
         $kormod = new KorisnikModel();
-        $korIme=$this->session->get('KorisnickoIme');
+        $korIme=$kormod->find($korIme);
          $kormod->where('KorisnickoIme', $korIme)->delete();
+         
     }
     
     
@@ -100,12 +110,12 @@ class Admin extends BaseController
     
     public function proveriBlog(){
         if(!$this->validate(['naslov'=>'required','tekstbloga'=>'required'])){
-            return $this->poziv('pisanjebloga_tr',['errors'=>$this->validator->getErrors()]);
+            return $this->poziv('adminblog',['errors'=>$this->validator->getErrors()]);
         }
         $noviblog= new BlogModel();
        
         
-        $noviblog->insert(['BlogId'=>$noviblog->getInsertID(), 'naslov'=>$this->request->getVar('naslov'),'tekst'=>$this->request->getVar('tekstbloga')]);
+        $noviblog->insert(['BlogId'=>$noviblog->getInsertID(), 'naslov'=>$this->request->getVar('naslov'),'tekst'=>$this->request->getVar('tekstbloga'),'KorisnickoIme'=>$this->session->get('KorisnickoIme')->KorisnickoIme]);
     
         return redirect()->to(base_url('/Admin'));
     }
