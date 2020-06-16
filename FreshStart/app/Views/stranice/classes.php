@@ -7,7 +7,7 @@
 <aside id="colorlib-hero">
 <div class="flexslider">
 <ul class="slides">
-<li style="background-image: url(images/img_bg_2.jpg);">
+<li style="background-image: url(/New folder/images/img_bg_2.jpg);">
 <div class="overlay"></div>
 <div class="container-fluid">
 <div class="row">
@@ -29,7 +29,7 @@
 				<div class="row">
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/cardio.jpg);">
+							<div class="classes-img" style="background-image: url(/New folder/images/cardio.jpg);">
 								
 							</div>
 							<div class="desc">
@@ -41,7 +41,7 @@
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/funkcionalni.jpg);">
+							<div class="classes-img" style="background-image: url(/New folder/images/funkcionalni.jpg);">
 								
 							</div>
 							<div class="desc">
@@ -53,7 +53,7 @@
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/aerobic.jpeg);">
+							<div class="classes-img" style="background-image: url(/New folder/images/aerobic.jpeg);">
 								
 							</div>
 							<div class="desc">
@@ -67,7 +67,7 @@
 				<div class="row">
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/bodyPump.jpg);">
+							<div class="classes-img" style="background-image: url(/New folder/images/bodyPump.jpg);">
 								
 							</div>
 							<div class="desc">
@@ -79,7 +79,7 @@
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/yoga.jpg);">
+							<div class="classes-img" style="background-image: url(/New folder/images/yoga.jpg);">
 								
 							</div>
 							<div class="desc">
@@ -91,7 +91,7 @@
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/karate.jpg);">
+							<div class="classes-img" style="background-image: url(/New folder/images/karate.jpg);">
 								
 							</div>
 							<div class="desc">
@@ -105,7 +105,7 @@
 				<div class="row">
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/snaga.jpg);">
+							<div class="classes-img" style="background-image: url(/New folder/images/snaga.jpg);">
 							
 							</div>
 							<div class="desc">

@@ -9,7 +9,7 @@
 	<form name='form_requests'  action="<?= site_url($controller."/obrisi")?>"  method="POST">
   <?php
             if($korisnici){
-                        echo   "<table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
+                        echo   "<table border='0px' cellpadding='5px' style='width:70%;text-align:center;'>
                         <tr>
                             <td width='20%'><b>Korisnicko ime</b></td>
                             <td width='20%'><b>Ime</b></td>

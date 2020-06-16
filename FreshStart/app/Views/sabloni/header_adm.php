@@ -23,30 +23,30 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900" rel="stylesheet">
 
 <!-- Animate.css -->
-<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="/New folder/css/animate.css">
 <!-- Icomoon Icon Fonts-->
-<link rel="stylesheet" href="css/icomoon.css">
+<link rel="stylesheet" href="/New folder/css/icomoon.css">
 <!-- Bootstrap  -->
-<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="/New folder/css/bootstrap.css">
 
 <!-- Magnific Popup -->
-<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="/New folder/css/magnific-popup.css">
 
 <!-- Flexslider  -->
-<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="/New folder/css/flexslider.css">
 
 <!-- Owl Carousel -->
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="/New folder/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/New folder/css/owl.theme.default.min.css">
 
 <!-- Flaticons  -->
-<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="/New folder/fonts/flaticon/font/flaticon.css">
 
 <!-- Theme style  -->
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="/New folder/css/style.css">
 
 <!-- Modernizr JS -->
-<script src="js/modernizr-2.6.2.min.js"></script>
+<script src="/New folder/js/modernizr-2.6.2.min.js"></script>
 <!-- FOR IE9 below -->
 <!--[if lt IE 9]>
 <script src="js/respond.min.js"></script>
@@ -99,7 +99,7 @@
             <aside id="colorlib-hero">
 <div class="flexslider">
 <ul class="slides">
-<li style="background-image: url(images/img_bg_2.jpg);">
+<li style="background-image: url(/New folder/images/img_bg_2.jpg);">
 <div class="overlay"></div>
 <div class="container-fluid">
 <div class="row">

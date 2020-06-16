@@ -7,7 +7,7 @@
 <aside id="colorlib-hero">
 <div class="flexslider">
 <ul class="slides">
-<li style="background-image: url(images/img_bg_2.jpg);">
+<li style="background-image: url(/New folder/images/img_bg_2.jpg);">
 <div class="overlay"></div>
 <div class="container-fluid">
 <div class="row">
@@ -58,7 +58,7 @@
 
 								
 								
-								<input type="submit" value="Objavi" name="objavi" class="btn btn-primary1" > 
+								<input type="submit" value="Objavi" name="objavi" class="btn btn-primary" > 
 								 
 								</p>
 								</div>

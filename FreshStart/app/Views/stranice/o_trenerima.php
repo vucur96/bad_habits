@@ -29,10 +29,7 @@
 <div class="row">
 <div class="col-md-8 col-md-offset-2 row-pb-md animate-box">
 
-						<div class="video colorlib-video" style="background-image: url(images/img_bg_1.jpg);">
-							<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-play3"></i></a>
-							<div class="overlay"></div>
-						</div>
+						
 
 					<div class="col-md-10 col-md-offset-1 text-center animate-box">
 						<div class="about-wrap">
@@ -55,15 +52,16 @@
 				</div>
 				<div class="row">
                                                                       <div align="center">
-				 <table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
-    <tr><th>Ime</th><th>Prezime</th><th>Korisnicko ime</th> <th>Trening</th> 
+				 <table border='2px' cellpadding='5px' style='width:70%;text-align:center;'>
+                                     <tr><td width="25%"><b>Ime</b></td><td width="25%"><b>Prezime</b></td><td width="25%"><b>Korisnicko ime</b></td> <td width="25%"><b>Trening</b></td></tr> 
 <?php
 foreach ($treneri as $trener) {
-    echo "<tr><td>{$trener->ime}</td><td>{$trener->prezime}</td><td>{$trener->KorisnickoIme}</td><td>{$trener->kurs}</td>";
+    echo "<tr><td>{$trener->ime}</td><td>{$trener->prezime}</td><td>{$trener->KorisnickoIme}</td><td>{$trener->kurs}</td></tr>";
     
 }
 ?>
 </table>	
+                                                                          <br><br>
 
 					
 

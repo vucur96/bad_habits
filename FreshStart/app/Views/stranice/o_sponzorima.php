@@ -29,10 +29,6 @@
 <div class="row">
 <div class="col-md-8 col-md-offset-2 row-pb-md animate-box">
 
-						<div class="video colorlib-video" style="background-image: url(images/img_bg_1.jpg);">
-							<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-play3"></i></a>
-							<div class="overlay"></div>
-						</div>
 
 					<div class="col-md-10 col-md-offset-1 text-center animate-box">
 						<div class="about-wrap">
@@ -54,16 +50,17 @@
 					</div>
 				</div>
 				<div class="row">
- <table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
-    <tr><th>Ime firme</th><th>Delatnost</th> 
+                                                        <div align="center">
+ <table border='0px' cellpadding='4px' style='width:70%;text-align:center;'>
+     <tr><td width="50%"><b>Ime firme</b></td><td width="50%"><b>Delatnost</b></td></tr> 
 <?php
 foreach ($sponzori as $sponzor) {
-    echo "<tr><td>{$sponzor->imefirme}</td><td>{$sponzor->opisdel}</td>";
+    echo "<tr><td>{$sponzor->imefirme}</td><td>{$sponzor->opisdel}</td></tr>";
     
 }
 ?>
 </table>	
-
+                                                        </div>
 					
 
 					
