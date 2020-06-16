@@ -73,6 +73,7 @@ class Admin extends BaseController
          $promenaModel = new KorisnikModel();
             $statusi = $promenaModel->where( 'tip',3 )->where( 'VIP',0 )->findAll();
         $this->poziv('promenastatusa',['statusi' => $statusi]);
+       
     }   
     
     
