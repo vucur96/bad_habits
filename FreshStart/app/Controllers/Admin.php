@@ -76,16 +76,16 @@ class Admin extends BaseController
         $this->poziv('promenastatusa',['statusi' => $statusi]);
 
         
-        $this->promena();       
+     //   $this->promena();       
 
     }   
     
-    public function promena(){
+  /*  public function promena(){
         $kor=new KorisnikModel();
         $korisnik=$this->request->find('KorisnickoIme');
         $kor->insert($korisnik,['VIP'=>$this->request->getVar('1')]);
         return redirect()->to(base_url('/promenastatusa'));
-    }
+    }*/
     
     
     
@@ -111,14 +111,14 @@ class Admin extends BaseController
             $this->poziv('zahtevizablog',['zahteviBlog' => $zahteviBlog]);
     }
     
-    public function textzahtev($id){
+    public function tekstzahtev($id){
         $blogModel=new ZahtevBlogModel();
         $blog=$blogModel->find($id);
         $this->poziv('tekstzahtev',['blog'=>$blog]);
         
     } 
     
-    public function prihvatiIliOdbiBlog($id) {
+    public function prihvatiOdbijBlog($id) {
         
         if($this->request->getVar('prihvati')==null){
             obrisiBlog($id);
@@ -130,7 +130,6 @@ class Admin extends BaseController
     public function obrisiBlog($id) {
         $blogModel=new ZahtevBlogModel();
         $blogModel->delete($id);
-        return redirect()->to(base_url('/Admin/zahtevizablog') );
     }
     
     public function prihvatiBlog($id) {
@@ -138,7 +137,6 @@ class Admin extends BaseController
         $noviBlog=new BlogModel();
         $noviblog->insert(['BlogId'=>$id, 'naslov'=>'','tekst'=>'', 'KorisnickoIme'=>'']);
         $blogModel->delete($id);
-        return redirect()->to(base_url('/Admin/zahtevizablog') );
     }
     
     public function adminblog() {

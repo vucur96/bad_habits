@@ -7,14 +7,14 @@
 <aside id="colorlib-hero">
 <div class="flexslider">
 <ul class="slides">
-<li style="background-image: url(images/img_bg_2.jpg);">
+<li style="background-image: url('/New folder/images/img_bg_2.jpg');">
 <div class="overlay"></div>
 <div class="container-fluid">
 <div class="row">
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
 <h1>Treninzi</h1>
-<h2><span><a href="<?php echo site_url('index') ?>">Početna</a> | <a href="<?php echo site_url('index') ?>">Treninzi</a> | Yoga</span></h2>
+<h2><span><a href="<?php echo site_url('index') ?>">Početna</a> | <a href="<?php echo site_url('Gost/classes') ?>">Treninzi</a> | Yoga</span></h2>
 </div>
 </div>
 </div>
@@ -29,7 +29,7 @@
 <div class="row">
 <div class="col-md-8 animate-box">
 <div class="classes">
-							<div class="classes-img classes-img-single" style="background-image: url(images/yoga.jpg);"></div>
+							<div class="classes-img classes-img-single" style="background-image: url('/New folder/images/yoga.jpg');"></div>
 							<div class="desc">
                                                             <h3>Yoga</h3>
 								
@@ -75,7 +75,7 @@
 								<div class="col-md-12">
 									<h2 class="colorlib-heading-2">23 Komentara</h2>
 									<div class="review">
-							   		<div class="user-img" style="background-image: url(images/person1.jpg)"></div>
+							   		<div class="user-img" style="background-image: url('/New folder/images/person1.jpg')"></div>
 							   		<div class="desc">
 							   			<h4>
 							   				<span class="text-left">Marko Marković</span>
@@ -88,7 +88,7 @@
 							   		</div>
 							   	</div>
 							   	<div class="review">
-							   		<div class="user-img" style="background-image: url(images/person2.jpg)"></div>
+							   		<div class="user-img" style="background-image: url('/New folder/images/person2.jpg')"></div>
 							   		<div class="desc">
 							   			<h4>
 							   				<span class="text-left">Janko Radičević</span>
@@ -101,7 +101,7 @@
 							   		</div>
 							   	</div>
 							   	<div class="review">
-							   		<div class="user-img" style="background-image: url(images/person3.jpg)"></div>
+							   		<div class="user-img" style="background-image: url('/New folder/images/person3.jpg')"></div>
 							   		<div class="desc">
 							   			<h4>
 							   				<span class="text-left">Zoran Perić</span>

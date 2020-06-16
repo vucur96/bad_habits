@@ -67,7 +67,7 @@
                                                 </div>
                                                 <div class="col-md-10 text-right menu-1">
                                                     <ul>
-                                                        <li class="active"><a href="<?php echo site_url('Gost/index')?>">Početna</a></li>
+                                                        <li ><a href="<?php echo site_url('Gost/index')?>">Početna</a></li>
                                                         <li class="has-dropdown">
                                                             <a href="<?php echo site_url('Gost/classes')?>">Treninzi</a>
                                                             <ul class="dropdown">

@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta charset="UTF-8">
 <title> Pisanje bloga </title>
 </head>
 <body>
@@ -7,7 +8,7 @@
 <aside id="colorlib-hero">
 <div class="flexslider">
 <ul class="slides">
-<li style="background-image: url(images/img_bg_2.jpg);">
+<li style="background-image: url('/New folder/images/img_bg_2.jpg');">
 <div class="overlay"></div>
 <div class="container-fluid">
 <div class="row">
@@ -23,6 +24,9 @@
 </ul>
 </div>
 </aside>
+        <div id="colorlib-about">
+<div class="container">
+    
 
 
 
@@ -35,14 +39,14 @@
                 <p class="formfield">
                  <label for="textarea"> Naslov </label>
 
-               <textarea  name="naslov" rows="1" cols="92" value="<?= set_value('naslov')?>"></textarea>
+               <textarea  name="naslov" rows="1" cols="104" value="<?= set_value('naslov')?>"></textarea>
 				 <?php if(!empty($errors['naslov'])){ echo $errors['naslov']; }?>
 						
 						<br><br>
 						
 
 
-	<textarea id="tekst" name="tekstbloga" rows="15" cols="100" value="<?= set_value('tekst')?>"> </textarea>
+	<textarea id="tekst" name="tekstbloga" rows="15" cols="112" value="<?= set_value('tekst')?>"> </textarea>
                            <?php if(!empty($errors['tekstbloga'])){ echo $errors['tekstbloga']; }?>
 												
 	</p>
@@ -54,8 +58,9 @@
 								 
 	</p>
 </div>
-  </form>		
+  	
 </div>
+        </div>
                 
 </body>
 </html>

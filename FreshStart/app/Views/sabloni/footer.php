@@ -12,7 +12,7 @@
 								<li><a href="#"><i class="icon-linkedin"></i></a></li>
 								<li><a href="#"><i class="icon-dribbble"></i></a></li>
 							</ul>
-						</p>
+						
 					</div>
 					<div class="col-md-3 colorlib-widget">
 						<h4>Prečice</h4>
@@ -25,13 +25,13 @@
 								<li><a href="blog.php"><i class="icon-check"></i> Blog</a></li>
 								<li><a href="contact.php"><i class="icon-check"></i> Kontakt</a></li>
 							</ul>
-						</p>
+						
 					</div>
 
 					<div class="col-md-3 colorlib-widget">
 						<h4>Najnovije objave</h4>
 						<div class="f-blog">
-							<a href="blog.php" class="blog-img" style="background-image: url(images/blog-1.jpg);">
+							<a href="blog.php" class="blog-img" style="background-image: url('/New folder/images/blog-1.jpg');">
 							</a>
 							<div class="desc">
 								<h2><a href="blog.php">Saveti za dobar fizički izgled</a></h2>
@@ -39,7 +39,7 @@
 							</div>
 						</div>
 						<div class="f-blog">
-							<a href="blog.php" class="blog-img" style="background-image: url(images/blog-2.jpg);">
+							<a href="blog.php" class="blog-img" style="background-image: url('/New folder/images/blog-2.jpg');">
 							</a>
 							<div class="desc">
 								<h2><a href="blog.php">Učešće na biciklijadi</a></h2>
@@ -47,7 +47,7 @@
 							</div>
 						</div>
 						<div class="f-blog">
-							<a href="blog.php" class="blog-img" style="background-image: url(images/blog-3.jpg);">
+							<a href="blog.php" class="blog-img" style="background-image: url('/New folder/images/blog-3.jpg');">
 							</a>
 							<div class="desc">
 								<h2><a href="blog.php">Pravilan način vežbanja</a></h2>
@@ -92,7 +92,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<!-- jQuery Easing -->
 	<script src="/New folder/js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="/New folder/js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
 	<script src="/New folder/js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->

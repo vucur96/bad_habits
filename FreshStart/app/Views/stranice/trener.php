@@ -7,7 +7,7 @@
     <aside id="colorlib-hero">
         <div class="flexslider">
             <ul class="slides">
-                <li style="background-image: url(images/img_bg_2.jpg);">
+                <li style="background-image: url('/New folder/images/img_bg_2.jpg');">
                     <div class="overlay"></div>
                     <div class="container-fluid">
                         <div class="row">
@@ -23,6 +23,8 @@
             </ul>
         </div>
     </aside>
+    <div id="colorlib-about">
+<div class="container">
     <div class="col-md-10 col-md-offset-1 animate-box">
         
         <br>
@@ -66,6 +68,8 @@
             
         </form>
         
+    </div>
+    </div>
     </div>
 </body>
 </html>

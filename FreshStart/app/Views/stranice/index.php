@@ -7,7 +7,7 @@
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url(images/img_bg_2.jpg);">
+			   	<li style="background-image: url('/New folder/images/img_bg_2.jpg');">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -20,7 +20,7 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url(images/img_bg_1.jpg);">
+			   	<li style="background-image: url('/New folder/images/img_bg_1.jpg');">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -33,7 +33,7 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url(images/img_bg_3.jpg);">
+			   	<li style="background-image: url('/New folder/images/img_bg_3.jpg');">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -46,7 +46,7 @@
 				   		</div>
 			   		</div>
 			   	</li>
-			   	<li style="background-image: url(images/img_bg_4.jpg);">
+			   	<li style="background-image: url('/New folder/images/img_bg_4.jpg');">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -68,21 +68,21 @@
 				<div class="row">
 					<div class="col-md-12 intro-wrap animate-box">
 						<div class="intro-flex">
-							<div class="one-third intro-img" style="background-image: url(images/intro-img-1.jpg)">
+							<div class="one-third intro-img" style="background-image: url('/New folder/images/intro-img-1.jpg')">
 								<div class="desc">
 									<h3>Body Pump</h3>
 									<p>Body Pump je planski i trajni proces hipertrofije, definicije mišićnog sistema i telesne simetrije.</p>
 									<span class="price text-center">2500rsd<br><small>/mesečno</small></span>
 								</div>
 							</div>
-							<div class="one-third intro-img" style="background-image: url(images/intro-img-2.jpg)">
+							<div class="one-third intro-img" style="background-image: url('/New folder/images/intro-img-2.jpg')">
 								<div class="desc">
 									<h3>Yoga </h3>
 									<p>Yoga je drevna metoda samorazvoja poreklom iz Indije , koja podrazumeva upotrebu tehnika: fizičkih položaja, vežbi upravljanja energijom putem disanja, relaksaciono-meditativnih vežbi, koncentracije, meditacije i samorealizacije.</p>
 									<span class="price text-center">2500rsd<br><small>/mesečno</small></span>
 								</div>
 							</div>
-							<div class="one-third intro-img" style="background-image: url(images/intro-img-3.jpg)">
+							<div class="one-third intro-img" style="background-image: url('/New folder/images/intro-img-3.jpg')">
 								<div class="desc">
 									<h3>Aerobic</h3>
 									<p>Aerobik je oblik fizičkog vežbanja koji kombinuje ritmičku aerobnu vežbu sa treningom istezanja i treningom snage sa ciljem poboljšanja svih elemenata fitnesa (fleksibilnost, mišićnu snagu i kardiovaskularni fitnes).</p>
@@ -107,7 +107,7 @@
 			</div>
 		</div>
 
-		<div id="colorlib-testimony" class="testimony-img" style="background-image: url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+		<div id="colorlib-testimony" class="testimony-img" style="background-image: url('/New folder/images/img_bg_2.jpg');" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -127,7 +127,7 @@
 												<span>Sofija Ivković</span>
 												<p>Počela sam da se bavim aerobikom u teretani FreshStart jer mi je delovalo zanimljivo.Moja dostignuća u samo dva meseca su me iznenadila,osećam se mnogo srećnije i smršala sam čak 5kg.</p>
 											</blockquote>
-											<div class="figure-img" style="background-image: url(images/person1.jpg);"></div>
+											<div class="figure-img" style="background-image: url('/New folder/images/person1.jpg');"></div>
 										</div>
 									</div>
 								</div>
@@ -138,7 +138,7 @@
 												<span>Luka Filipović</span>
 												<p>Zbog svog posla koji zahteva mnogo sedenja za računarom odlučio sam da svoje slobodno vreme trošim aktivno. Izabrao sam FreshStart zbog izvanredne kombinacije različitih tipova treninga. Uspeo sam da postignem željenu formu i da imam mnogo vise snage i volje nego pre.</p>
 											</blockquote>
-											<div class="figure-img" style="background-image: url(images/person2.jpg);"></div>
+											<div class="figure-img" style="background-image: url('/New folder/images/person2.jpg');"></div>
 										</div>
 									</div>
 								</div>
@@ -149,7 +149,7 @@
 												<span>Dragan Jović</span>
 												<p>Kada sam prešao 50 mislio sam da to znači da se moram osećati starije,umornije ali uz redovne treninge i sjajne trenere koji mi omogućavaju program adekvatan mojim sposobnostima uspevam idalje da budem pun energije kao da imam 30.</p>
 											</blockquote>
-											<div class="figure-img" style="background-image: url(images/person3.jpg);"></div>
+											<div class="figure-img" style="background-image: url('/New folder/images/person3.jpg');"></div>
 										</div>
 									</div>
 								</div>
@@ -171,7 +171,7 @@
 				<div class="row">
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/cardio.jpg);">
+							<div class="classes-img" style="background-image: url('/New folder/images/cardio.jpg');">
 								
 							</div>
 							<div class="desc">
@@ -183,7 +183,7 @@
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/funkcionalni.jpg);">
+							<div class="classes-img" style="background-image: url('/New folder/images/funkcionalni.jpg');">
 								
 							</div>
 							<div class="desc">
@@ -195,7 +195,7 @@
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="classes">
-							<div class="classes-img" style="background-image: url(images/yoga.jpg);">
+							<div class="classes-img" style="background-image: url('/New folder/images/yoga.jpg');">
 								
 							</div>
 							<div class="desc">

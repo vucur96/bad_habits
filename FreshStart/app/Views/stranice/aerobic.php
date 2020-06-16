@@ -5,14 +5,14 @@
 <aside id="colorlib-hero">
 <div class="flexslider">
 <ul class="slides">
-<li style="background-image: url(images/img_bg_2.jpg);">
+<li style="background-image: url('/New folder/images/img_bg_2.jpg');">
 <div class="overlay"></div>
 <div class="container-fluid">
 <div class="row">
 <div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
 <div class="slider-text-inner text-center">
 <h1>Treninzi</h1>
-<h2><span><a href="index.php">Početna</a> | Treninzi</a> | Aerobic</span></h2>
+<h2><span><a href="index.php">Početna</a><a href="<?php echo site_url('Gost/classes') ?>"> | Treninzi</a> | Aerobic</span></h2>
 </div>
 </div>
 </div>
@@ -27,7 +27,7 @@
 <div class="row">
 <div class="col-md-8 animate-box">
 <div class="classes">
-<div class="classes-img classes-img-single" style="background-image: url(images/aerobic.jpeg);"></div>
+<div class="classes-img classes-img-single" style="background-image: url('/New folder/images/aerobic.jpeg');"></div>
 							<div class="desc">
 								<h3>Aerobic</a></h3>
 								<p>Aerobik je izuzetno energičan i zabavan fitnes program koji je prilagođen kako vežbačima koji imaju iskustvo sa grupnim treninzima tako i početnicima. Trening podrazumeva sklop aerobno-kardio dela koji karakterišu lako pamtljivi pokreti koji su povezani u smislenu celinu i koji su različitog inteziteta prilagođenog grupi koja se trenira. Veliku pažnju poklanjamo parternom delu, koji je usmeren na preoblikovanje celog tela sa akcentom na najkritičnije delove koji muče 90% ženske populacije. Program je idealan za povećanje kondicije i izdržljivosti, sagorevanje kalorija i masnih naslaga, jačanje svih mišićnih grupa, a namenjen je svim nivoima kondicije.
@@ -66,7 +66,7 @@
 								<div class="col-md-12">
 									<h2 class="colorlib-heading-2">23 Komentara</h2>
 									<div class="review">
-							   		<div class="user-img" style="background-image: url(images/person1.jpg)"></div>
+							   		<div class="user-img" style="background-image: url('/New folder/images/person1.jpg')"></div>
 							   		<div class="desc">
 							   			<h4>
 							   				<span class="text-left">Marko Marković</span>
@@ -79,7 +79,7 @@
 							   		</div>
 							   	</div>
 							   	<div class="review">
-							   		<div class="user-img" style="background-image: url(images/person2.jpg)"></div>
+							   		<div class="user-img" style="background-image: url('/New folder/images/person2.jpg')"></div>
 							   		<div class="desc">
 							   			<h4>
 							   				<span class="text-left">Janko Radičević</span>
@@ -92,7 +92,7 @@
 							   		</div>
 							   	</div>
 							   	<div class="review">
-							   		<div class="user-img" style="background-image: url(images/person3.jpg)"></div>
+							   		<div class="user-img" style="background-image: url('/New folder/images/person3.jpg')"></div>
 							   		<div class="desc">
 							   			<h4>
 							   				<span class="text-left">Zoran Perić</span>

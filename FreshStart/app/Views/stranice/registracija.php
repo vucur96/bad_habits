@@ -7,7 +7,7 @@
 	<aside id="colorlib-hero">
             <div class="flexslider">
                 <ul class="slides">
-                    <li style="background-image: url(/New folder/images/img_bg_2.jpg);">
+                    <li style="background-image: url('/New folder/images/img_bg_2.jpg');">
                         <div class="overlay"></div>
                         <div class="container-fluid">
                             <div class="row">
@@ -23,6 +23,8 @@
                 </ul>
             </div>
         </aside>
+    <div id="colorlib-about">
+<div class="container">
         <div class="col-md-10 col-md-offset-1 animate-box">
 	
 	<br>
@@ -32,7 +34,7 @@
 	<form name='mojaforma' action="<?php echo site_url('Gost/proveriRegistraciju')?>" method="POST">
             <div class="row form-group">
                 <div class="col-md-6">
-                    <input type="text" name="korisnickoIme" class="form-control" value="<?= set_value('korisnickoIme')?>" placeholder="Korisnicko ime" >
+                    <input  type="text" name="korisnickoIme" class="form-control" value="<?= set_value('korisnickoIme')?>" placeholder="Korisnicko ime" >
                     <?php if(!empty($errors['korisnickoIme'])){ echo $errors['korisnickoIme']; }?>
                 </div>
             </div>
@@ -58,7 +60,7 @@
                 </div>
             </div>
 		
-            <div class="row form-group">
+            <div  class="row form-group">
                     <input type='radio' id="sponzor" name='tip' value='1' > <label for="sponzor">Sponzor</label>
                     <input type='radio' id="trener" name='tip' value='2' > <label for="trener">Trener</label>
 
@@ -71,7 +73,8 @@
             </div>
 		
 	</form>	
-
-
+    </div>
+    </div>
+    </div>
 </body>
 </html>

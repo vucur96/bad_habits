@@ -6,7 +6,7 @@
     <aside id="colorlib-hero">
         <div class="flexslider">
             <ul class="slides">
-                <li style="background-image: url(images/img_bg_2.jpg);">
+                <li style="background-image: url('/New folder/images/img_bg_2.jpg');">
                     <div class="overlay"></div>
                     <div class="container-fluid">
                         <div class="row">
@@ -22,6 +22,8 @@
             </ul>
         </div>
     </aside>
+    <div id="colorlib-about">
+<div class="container">
     <div class="col-md-10 col-md-offset-1 animate-box">
         
         <br>
@@ -39,7 +41,7 @@
             <div class="row form-group">
                 <div>
                     <p> Opis delatnosti firme: </p>
-                    <textarea name="opisdel" rows="5" value="<?= set_value('opisdel')?>"cols="50"></textarea>
+                    <textarea name="opisdel" rows="5" value="<?= set_value('opisdel')?>"cols="55"></textarea>
                     <?php if(!empty($errors['opisdel'])){ echo $errors['opisdel']; }?>
                 </div>
             </div>
@@ -58,6 +60,7 @@
             
 	</form>		
     </div>
-
-</body>
+</div>
+    </div>
+    </body>
 </html>

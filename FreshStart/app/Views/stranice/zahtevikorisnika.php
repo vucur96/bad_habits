@@ -30,6 +30,25 @@ if (isset($_POST['odbij'])){
         <title>Zahtevi</title>
         	
     </head>
+    
+    <aside id="colorlib-hero">
+<div class="flexslider">
+<ul class="slides">
+<li style="background-image: url('/New folder/images/img_bg_2.jpg');">
+<div class="overlay"></div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6 col-sm-12 col-md-offset-3 slider-text">
+<div class="slider-text-inner text-center">
+<a href="<?php echo site_url('Admin/admin_meni') ?>"><h1>ADMIN MENI</h1></a>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</aside>
 
              <div align="center">
                 
@@ -53,6 +72,7 @@ if (isset($_POST['odbij'])){
             echo "<td><input type='submit'  class='btn btn-cta'  name='prihvati' value='Prihvati' ></td><td><input type='submit' class='btn btn-primary' name='odbij' value=' Odbij ' ></td></tr>";
             }
             echo "</table></form>";
+                                    echo "</br></br></br>";
             
         }
             else {
@@ -80,6 +100,7 @@ if (isset($_POST['odbij'])){
                          echo "<td><input type='submit' class='btn btn-cta' name='prihvati' value=' Prihvati '></td><td><input type='submit' class='btn btn-primary' name='odbij' value=' Odbij '></td></tr>";
                         }
                         echo "</table></form>";
+                                                echo "</br></br></br>";
                         
            }
             else {
