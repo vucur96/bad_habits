@@ -23,28 +23,20 @@
 </ul>
 </div>
 </aside>
-					<div class="col-md-10 col-md-offset-1 animate-box">
-						<h2>Odabir pogodnosti za tekući mesec
-                        
-                        </h2>
+    <div class="col-md-10 col-md-offset-1 animate-box">
+        <h2>Odabir pogodnosti za tekući mesec</h2>
 
-						<form name='vip' action="<?php echo site_url('Korisnik/proveriVip') ?>" method="POST">
-						
-							<input type='checkbox' name='pogodnosti' value='masaza'>
-							Besplatna masaža<br>
-                            <input type='checkbox' name='pogodnosti' value='trening'>
-                            Besplatan trening<br>
-                            <input type='checkbox' name='pogodnosti' value='popust'>
-                           Popust na mesecnu clanarinu<br>
-                            
-                        <div class="form-group">
-                        <input type="submit" value="Nastavi" name ="nastavi" class="btn btn-primary">
-                        </div>
-							
-						</form>		
-					</div>
+        <form name='vip' action="<?php echo site_url('Korisnik/proveriVip') ?>" method="POST">			
+            <input type='checkbox' name='pogodnosti' value='masaza'>Besplatna masaža<br>
+            <input type='checkbox' name='pogodnosti' value='trening'>Besplatan trening<br>
+            <input type='checkbox' name='pogodnosti' value='popust'>Popust na mesecnu clanarinu<br>
+           <?php if(!empty($errors['pogodnosti'])){ echo $errors['pogodnosti']; }?>
 
-		   <?php require('footer.php') ?>
+            <div class="form-group">
+            <input type="submit" value="Nastavi" name ="nastavi" class="btn btn-primary">
+            </div>
+        </form>		
+    </div>
 
 </body>
 </html>

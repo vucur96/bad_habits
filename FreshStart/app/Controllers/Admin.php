@@ -4,6 +4,7 @@ use App\Models\ZahtevBlogModel;
 use App\Models\KorisnikModel;
 use App\Models\BlogModel;
 
+
 class Admin extends BaseController
 {
     protected function poziv($page,$data) {
@@ -31,7 +32,7 @@ class Admin extends BaseController
     }
     
     
-    public function prihvati(){
+  /*  public function prihvati(){
             $zahtevKorModel = new ZahtevKorisnikModel();
             $KorModel = new KorisnikModel();
             $zahtev=$zahtevKorModel->where("KorisnickoIme", $korIme)->where("email", $email)->where("loznika", $loz)->
@@ -63,7 +64,7 @@ class Admin extends BaseController
    public function odbij(){
          $zahtevKorModel = new ZahtevKorisnikModel();
          $zahtevKorModel->where("KorisnickoIme", $korIme)->delete();
-    }
+    }*/
     
       public function admin_meni(){
             $this->poziv('admin_meni',[]);
@@ -71,10 +72,22 @@ class Admin extends BaseController
     
    public function promenastatusa(){
          $promenaModel = new KorisnikModel();
-            $statusi = $promenaModel->where( 'tip',3 )->where( 'VIP',0 )->findAll();
+            $statusi = $promenaModel->where( 'tip',3 )->where( 'VIP',NULL)->findAll();
         $this->poziv('promenastatusa',['statusi' => $statusi]);
+<<<<<<< HEAD
        
+=======
+        
+        $this->promena();       
+>>>>>>> 05a6fe2a75583d634a309fe06d2eab37bbfbd7af
     }   
+    
+    public function promena(){
+        $kor=new KorisnikModel();
+        $korisnik=$this->request->find('KorisnickoIme');
+        $kor->insert($korisnik,['VIP'=>$this->request->getVar('1')]);
+        return redirect()->to(base_url('/promenastatusa'));
+    }
     
     
     
@@ -84,19 +97,64 @@ class Admin extends BaseController
             $this->poziv('brisanjekorisnika',['korisnici' => $korisnici]);
     }
     
-    public function obrisi(){
-        $korisnik = new KorisnikModel();
-        $korIme = $korisnik->find();
-         $korisnik->where("KorisnickoIme", $korIme)->delete();
+    public function obrisi($korIme){
+        $kormod = new KorisnikModel();
+        $korIme=$kormod->find($korIme);
+         $kormod->where('KorisnickoIme', $korIme)->delete();
+         
     }
     
     
     public function zahtevizablog(){
-            $this->poziv('zahtevizablog',[]);
+            $blogModel = new ZahtevBlogModel();
+            $zahteviBlog = $blogModel->findAll();
+            $this->poziv('zahtevizablog',['zahteviBlog' => $zahteviBlog]);
+    }
+    
+    public function textzahtev($id){
+        $blogModel=new ZahtevBlogModel();
+        $blog=$blogModel->find($id);
+        $this->poziv('tekstzahtev',['blog'=>$blog]);
+        
+    } 
+    
+    public function prihvatiIliOdbiBlog($id) {
+        
+        if($this->request->getVar('prihvati')==null){
+            obrisiBlog($id);
+        }else{
+            prihvatiBlog($id);
+        }
+    }
+    
+    public function obrisiBlog($id) {
+        $blogModel=new ZahtevBlogModel();
+        $blogModel->delete($id);
+        return redirect()->to(base_url('/Admin/zahtevizablog') );
+    }
+    
+    public function prihvatiBlog($id) {
+        $blogModel=new ZahtevBlogModel();
+        $noviBlog=new BlogModel();
+        $noviblog->insert(['BlogId'=>$id, 'naslov'=>'','tekst'=>'', 'KorisnickoIme'=>'']);
+        $blogModel->delete($id);
+        return redirect()->to(base_url('/Admin/zahtevizablog') );
     }
     
     public function adminblog() {
             $this->poziv('adminblog',[]);
+    }
+    
+    public function proveriBlog(){
+        if(!$this->validate(['naslov'=>'required','tekstbloga'=>'required'])){
+            return $this->poziv('adminblog',['errors'=>$this->validator->getErrors()]);
+        }
+        $noviblog= new BlogModel();
+       
+        
+        $noviblog->insert(['BlogId'=>$noviblog->getInsertID(), 'naslov'=>$this->request->getVar('naslov'),'tekst'=>$this->request->getVar('tekstbloga'),'KorisnickoIme'=>$this->session->get('KorisnickoIme')->KorisnickoIme]);
+    
+        return redirect()->to(base_url('/Admin'));
     }
          
     public function ispisi_korisnike(){}

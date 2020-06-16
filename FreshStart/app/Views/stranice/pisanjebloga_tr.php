@@ -42,21 +42,20 @@
 						
 
 
-						<textarea id="tekst" name="tekstbloga" rows="15" cols="100" value="<?= set_value('tekst')?>"required> </textarea>
+	<textarea id="tekst" name="tekstbloga" rows="15" cols="100" value="<?= set_value('tekst')?>"> </textarea>
                            <?php if(!empty($errors['tekst'])){ echo $errors['tekst']; }?>
 												
-						</p>
-								<p>
+	</p>
+	<p>
 								
-								<button class="btn btn-cta"> Dodaj sliku </button>
+	<button class="btn btn-cta"> Dodaj sliku </button>
 								
-								<input type="submit" value="Objavi" name="objavi" class="btn btn-primary1" > 
+	<input type="submit" value="Objavi" name="objavi" class="btn btn-primary1" > 
 								 
-								</p>
-								</div>
-                
-						</form>		
-					</div>
+	</p>
+</div>
+  </form>		
+</div>
                 
 </body>
 </html>

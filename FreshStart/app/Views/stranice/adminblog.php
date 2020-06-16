@@ -7,18 +7,19 @@
 						  
                 <input type='hidden' name='idbloga' value="<?php echo 'BlogID'; ?>">
                 
-                    <form name='mojaforma' action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                <form name='mojaforma' action="<?= site_url('Admin/proveriBlog') ?>" method="POST">
 						
                             <br>
                             <p class="formfield">
                             <label for="textarea"> Naslov </label>    
-                            <textarea  name="naslov" rows="1" cols="92"></textarea>
-				
+                            <textarea  name="naslov" rows="1" cols="92" value="<?= set_value('naslov')?>"></textarea>
+                            <?php if(!empty($errors['naslov'])){ echo $errors['naslov']; }?>
 						
-                            <input type="button" value="Zahtevi" class="btn btn-cta1" onclick="window.location.href='zahtevizablog.php'">;
+                            <input type="button" value="Zahtevi" class="btn btn-cta1" onclick="window.location.href='zahtevizablog'">
                             <br><br>
-                            <textarea id="tekst" name="tekstbloga" rows="15" cols="100" required> </textarea>
-
+                            <textarea id="tekst" name="tekstbloga" rows="15" cols="100" value="<?= set_value('tekst')?>" required> </textarea>
+                             <?php if(!empty($errors['tekst'])){ echo $errors['tekst']; }?>
+                            
                             </p>
                             <p>
 								
@@ -27,8 +28,8 @@
                             <input type="submit" value="Objavi" name="objavi" class="btn btn-primary1" > 
 								 
                             </p>
-                            </div>
-                
-	</form>		
  </div>
+                
+	
+
 
