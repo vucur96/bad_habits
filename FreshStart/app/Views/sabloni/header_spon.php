@@ -73,7 +73,7 @@
 									<ul class="dropdown">
 										<li><a href="<?php echo site_url('Sponzor/classesSingle') ?>">Classes Single</a></li>
 										<li><a href="<?php echo site_url('Sponzor/cardio') ?>">Cardio</a></li>
-										<li><a href="<?php echo site_url('Sponzor/funckionalni') ?>">Funkcionalni</a></li>
+										<li><a href="<?php echo site_url('Sponzor/funkcionalni') ?>">Funkcionalni</a></li>
 										<li><a href="<?php echo site_url('Sponzor/yoga') ?>">Yoga</a></li>
 										<li><a href="<?php echo site_url('Sponzor/aerobic') ?>">Aerobic</a></li>
 										<li><a href="<?php echo site_url('Sponzor/karate') ?>">Karate</a></li>

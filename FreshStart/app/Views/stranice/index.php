@@ -103,14 +103,7 @@
 						<p>Pronadjite najbolju kombinaciju treninga za sebe. Uz naš jednostavan raspored lako možete organizovati treninge u skaldu sa svojim mogućnostima i slobodnim vremenom. Ako imate bilo kakvih pitanja kontaktirajte nas telefonom ili putem emaila. </p>
 					</div>
 				</div>
-				<div class="row">
-					<div class='col-md-12'>
-						<h2> <a href="<?php echo site_url('Gost/grupni_treninzi') ?>"> Raspored grupnih treninga </a></h2>
-						<h2> <a href="<?php echo site_url('Gost/individualni_treninzi') ?>"> Raspored individualnih treninga </a></h2>
-
-					</div>
-					
-				</div>
+				
 			</div>
 		</div>
 
@@ -166,58 +159,7 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="colorlib-trainers">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Naši treneri</h2>
-						<p>Naša teretana poseduje tim izuzetnih stručnjaka koji su tu da vam pomognu da dostignete svoj cilj.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3 col-sm-3 animate-box">
-						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-1.jpg)"></div>
-							<div class="desc">
-								<h3>Pera Perić</h3>
-								<span>trener</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-3 col-sm-3 animate-box">
-						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-2.jpg)"></div>
-							<div class="desc">
-								<h3>Ana Mirić</h3>
-								<span>Trener</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-3 col-sm-3 animate-box">
-						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-3.jpg)"></div>
-							<div class="desc">
-								<h3>Nina Rakić</h3>
-								<span>Trener</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-3 col-sm-3 animate-box">
-						<div class="trainers-entry">
-							<div class="trainer-img" style="background-image: url(images/trainer-4.jpg)"></div>
-							<div class="desc">
-								<h3>Nikola Nidzić</h3>
-								<span>Trener</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            
 		<div class="colorlib-classes colorlib-light-grey">
 			<div class="container">
 				<div class="row">
@@ -267,55 +209,6 @@
 			</div>	
 		</div>
 
-		
-		<div class="colorlib-blog colorlib-light-grey">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
-						<h2>Blog</h2>
-						
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="<?php echo site_url('Gost/blog') ?>" class="blog-img" style="background-image: url(images/blog-1.jpg);">
-								<p class="meta"><span class="day">20</span><span class="month">Apr</span></p>
-							</a>
-							<div class="desc">
-								<p class="admin"><span>Objavio/la:</span> <span>Ana Mikić</span></p>
-								<h2><a href="<?php echo site_url('Gost/blog') ?>">Potrebna vam je motivacija za vežbanje?</a></h2>
-						
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="<?php echo site_url('Gost/blog') ?>" class="blog-img" style="background-image: url(images/blog-2.jpg);">
-								<p class="meta"><span class="day">21</span><span class="month">Apr</span></p>
-							</a>
-							<div class="desc">
-								<p class="admin"><span>Objavio/la:</span> <span>Dragan Nikolić</span></p>
-								<h2><a href="<?php echo site_url('Gost/blog') ?>">Kako se najbolje pripremiti za biciklijadu</a></h2>
-								
-							</div>
-						</article>
-					</div>
-					<div class="col-md-4 animate-box">
-						<article class="article-entry">
-							<a href="<?php echo site_url('Gost/blog') ?>" class="blog-img" style="background-image: url(images/blog-3.jpg);">
-								<p class="meta"><span class="day">22</span><span class="month">Apr</span></p>
-							</a>
-							<div class="desc">
-								<p class="admin"><span>Objavio/la:</span> <span>Nikola Lazić</span></p>
-								<h2><a href="<?php echo site_url('Gost/blog') ?>">Pravilan način vežbanja</a></h2>
-								
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>
-		</div>
 	</body>
 </html>
 	
