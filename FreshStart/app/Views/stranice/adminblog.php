@@ -17,8 +17,8 @@
 						
                             <input type="button" value="Zahtevi" class="btn btn-cta1" onclick="window.location.href='zahtevizablog'">
                             <br><br>
-                            <textarea id="tekst" name="tekstbloga" rows="15" cols="100" value="<?= set_value('tekst')?>" required> </textarea>
-                             <?php if(!empty($errors['tekst'])){ echo $errors['tekst']; }?>
+                            <textarea id="tekst" name="tekstbloga" rows="15" cols="100" value="<?= set_value('tekst')?>" > </textarea>
+                             <?php if(!empty($errors['tekstbloga'])){ echo $errors['tekstbloga']; }?>
                             
                             </p>
                             <p>

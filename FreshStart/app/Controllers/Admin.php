@@ -95,11 +95,13 @@ class Admin extends BaseController
             $this->poziv('brisanjekorisnika',['korisnici' => $korisnici]);
     }
     
-    public function obrisi($korIme){
-        $kormod = new KorisnikModel();
+    public function obrisi(){
+        /*$kormod = new KorisnikModel();
         $korIme=$kormod->find($korIme);
-         $kormod->where('KorisnickoIme', $korIme)->delete();
-         
+         $kormod->where('KorisnickoIme', $korIme)->delete();*/
+         $korisnik = new KorisnikModel();
+         $korisnici = $korisnik->findAll();
+         $this->poziv('brisanjekorisnika',['korisnici' => $korisnici]);
     }
     
     

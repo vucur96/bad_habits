@@ -43,7 +43,7 @@
 
 
 	<textarea id="tekst" name="tekstbloga" rows="15" cols="100" value="<?= set_value('tekst')?>"> </textarea>
-                           <?php if(!empty($errors['tekst'])){ echo $errors['tekst']; }?>
+                           <?php if(!empty($errors['tekstbloga'])){ echo $errors['tekstbloga']; }?>
 												
 	</p>
 	<p>

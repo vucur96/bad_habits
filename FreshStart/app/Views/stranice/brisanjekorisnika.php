@@ -6,7 +6,7 @@
  
         <div align="center">
                  
-	<form name='form_requests'  action="<?= site_url($controller."/obrisi/{$korisnik->KorisnickoIme}")?>"  method="POST">
+	<form name='form_requests'  action="<?= site_url($controller."/obrisi")?>"  method="POST">
   <?php
             if($korisnici){
                         echo   "<table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>

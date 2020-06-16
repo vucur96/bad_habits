@@ -72,17 +72,29 @@ class Gost extends BaseController{
         $korisnikModel=new KorisnikModel();
         $korisnik=$korisnikModel->find($this->request->getVar('korIme'));
         if($korisnik==null){
-            return $this->promenaLozinke('Korisnik ne postoji!');
+            $adminModel=new AdminModel();
+            $admin=$adminModel->find($this->request->getVar('korIme'));
+            if($admin==null){
+                return $this->promenaLozinke('Korisnik ne postoji!');
+            }
+            if($admin->lozinka!=$this->request->getVar('staraLoz')){
+                return $this->promenaLozinke('Pogresno uneta stara lozinka!');
+            }
+            if($this->request->getVar('novaLoz')!=$this->request->getVar('potvrda')){
+                return $this->promenaLozinke('Nova lozinka i ponovljena lozinka nisu iste!');
+            }
+
+           $adminModel->update($this->request->getVar('korIme'), ['lozinka'=>$this->request->getVar('novaLoz')]);
+        }else{
+            if($korisnik->lozinka!=$this->request->getVar('staraLoz')){
+                return $this->promenaLozinke('Pogresno uneta stara lozinka!');
+            }
+            if($this->request->getVar('novaLoz')!=$this->request->getVar('potvrda')){
+                return $this->promenaLozinke('Nova lozinka i ponovljena lozinka nisu iste!');
+            }
+
+           $korisnikModel->update($this->request->getVar('korIme'), ['lozinka'=>$this->request->getVar('novaLoz')]);
         }
-        if($korisnik->lozinka!=$this->request->getVar('staraLoz')){
-            return $this->promenaLozinke('Pogresno uneta stara lozinka!');
-        }
-        if($this->request->getVar('novaLoz')!=$this->request->getVar('potvrda')){
-            return $this->promenaLozinke('Nova lozinka i ponovljena lozinka nisu iste!');
-        }
-        
-       $korisnikModel->update($this->request->getVar('korIme'), ['lozinka'=>$this->request->getVar('novaLoz')]);
-        
        return redirect()->to(base_url('/Gost') );  
     }
     
