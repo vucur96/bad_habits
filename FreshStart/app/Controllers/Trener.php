@@ -44,12 +44,12 @@ class Trener extends BaseController{
         $this->poziv('zakazivanjetermina',[]);
     }
     public function proveriTermin(){
-        if(!$this->validate(['dan'=>'required','pocetak'=>'required','kraj'=>'required'])){
+        if(!$this->validate(['dan'=>'required','pocetak'=>'required','kraj'=>'required', 'kurs'=>'required'])){
             return $this->poziv('zakazivanjetermina',['errors'=>$this->validator->getErrors()]);
         }
         $termin=new TerminModel();
         
-        $termin->insert(['TerID'=>$termin->getInsertID(), 'dan'=>$this->request->getVar('dan'), 'pocetak'=>$this->request->getVar('pocetak'),'kraj'=>$this->request->getVar('kraj'), 'KorisnickoIme'=>$this->session->get('KorisnickoIme')->KorisnickoIme]);
+        $termin->insert(['TerID'=>$termin->getInsertID(), 'dan'=>$this->request->getVar('dan'), 'pocetak'=>$this->request->getVar('pocetak'),'kraj'=>$this->request->getVar('kurs'),'kurs'=>$this->request->getVar('kurs'), 'KorisnickoIme'=>$this->session->get('KorisnickoIme')->KorisnickoIme]);
         
          return redirect()->to(base_url('/Trener'));
     }

@@ -49,6 +49,12 @@
                         <?php if(!empty($errors['kraj'])){ echo $errors['kraj']; }?>
                     </div>
                     </div>
+                    <div class="row form-group">
+                    <div class="col-md-4">
+<input type="text" name="kurs" class="form-control" value="<?= set_value('kurs')?>" placeholder="Kurs koji cete drzati:">
+                    <?php if(!empty($errors['kurs'])){ echo $errors['kurs']; }?>
+                    </div>
+                    </div>
 
 								
 								
