@@ -23,7 +23,8 @@
 </ul>
 </div>
 </aside>
-
+ <div id="colorlib-about">
+<div class="container">
 
 
         <div class="col-md-10 col-md-offset-1 animate-box">
@@ -63,7 +64,8 @@
 								
 								</div>
                 
-							
+</div>
+ </div>
 					
 
 </body>

@@ -32,13 +32,12 @@ class Admin extends BaseController
     }
     
     
-  /*  public function prihvati(){
+   public function prihvati($korIme,$email,$loz,$tip,$vip,$pogodnost,
+           $ime,$prezime,$datum,$visina,$tezina,$imefirme,$del,$rek,$cilj,$kurs){
+       $db=db_connect();
             $zahtevKorModel = new ZahtevKorisnikModel();
             $KorModel = new KorisnikModel();
-            $zahtev=$zahtevKorModel->where("KorisnickoIme", $korIme)->where("email", $email)->where("loznika", $loz)->
-                    where("tip", $tip)->where("VIP", $vip)->where("pogodnosti", $pogodnost)->where("ime", $ime)->where("prezime", $prezime)->
-                    where("datumrodj", $datum)->where("visina", $visina)->where("tezina", $tezina)->where("imefirme",$imefirme)->where("opisdel", $del)->
-                    where("vrstarek", $rek)->where("cilj", $cilj)->where("kurs", $kurs);
+             $db->transStart();
             $KorModel->insert([
                 "KorisnickoIme"=>$korIme,
                 "email" => $email,
@@ -58,13 +57,15 @@ class Admin extends BaseController
                 "kurs" => $kurs
             ]);
             $zahtevKorModel->where("KorisnickoIme", $korIme)->delete();
+            
+             $db->transComplete();
     }
     
     
    public function odbij(){
          $zahtevKorModel = new ZahtevKorisnikModel();
          $zahtevKorModel->where("KorisnickoIme", $korIme)->delete();
-    }*/
+    }
     
       public function admin_meni(){
             $this->poziv('admin_meni',[]);
@@ -95,13 +96,13 @@ class Admin extends BaseController
             $this->poziv('brisanjekorisnika',['korisnici' => $korisnici]);
     }
     
-    public function obrisi(){
-        /*$kormod = new KorisnikModel();
-        $korIme=$kormod->find($korIme);
-         $kormod->where('KorisnickoIme', $korIme)->delete();*/
-         $korisnik = new KorisnikModel();
+    public function obrisi($korIme){
+       $kormod = new KorisnikModel();
+       $kor=$kormod->find($korIme);
+         $kormod->where('KorisnickoIme', $kor)->delete();
+       /*  $korisnik = new KorisnikModel();
          $korisnici = $korisnik->findAll();
-         $this->poziv('brisanjekorisnika',['korisnici' => $korisnici]);
+         $this->poziv('brisanjekorisnika',['korisnici' => $korisnici]);*/
     }
     
     
@@ -120,16 +121,17 @@ class Admin extends BaseController
     
     public function prihvatiOdbijBlog($id) {
         
-        if($this->request->getVar('prihvati')==null){
-            obrisiBlog($id);
-        }else{
+        if($this->request->getVar('prihvati')){
             prihvatiBlog($id);
+        }else{
+            odbijBlog($id);
         }
     }
     
-    public function obrisiBlog($id) {
+    public function odbijBlog($id) {
         $blogModel=new ZahtevBlogModel();
-        $blogModel->delete($id);
+        $blogModel->where('BlogId',$id)->delete();
+        return redirect()->to(site_url("Admin/zahtevizablog"));
     }
     
     public function prihvatiBlog($id) {
@@ -152,17 +154,13 @@ class Admin extends BaseController
         
         $noviblog->insert(['BlogId'=>$noviblog->getInsertID(), 'naslov'=>$this->request->getVar('naslov'),'tekst'=>$this->request->getVar('tekstbloga'),'KorisnickoIme'=>$this->session->get('KorisnickoIme')->KorisnickoIme]);
     
-        return redirect()->to(base_url('/Admin'));
+        return redirect()->to(site_url("Admin/adminblog"));
     }
-         
-    public function ispisi_korisnike(){}
-    public function promeni_status(){}
-    public function ispisi_blogove(){}    
+           
         
         
         
         
 
-	//--------------------------------------------------------------------
 
 }

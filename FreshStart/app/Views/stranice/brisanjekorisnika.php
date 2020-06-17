@@ -24,10 +24,13 @@
  
         <div align="center">
                  
-	<form name='form_requests'  action="<?= site_url($controller."/obrisi")?>"  method="POST">
-  <?php
-            if($korisnici){
-                        echo   "<table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
+            
+  <?php 
+                if($korisnici){
+  
+                        echo "<form name='form_requests'   method='POST' action='obrisi/{$korisnik->KorisnickoIme}'>
+            
+                        <table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
                         <tr>
                             <td width='20%'><b>Korisnicko ime</b></td>
                             <td width='20%'><b>Ime</b></td>
@@ -37,10 +40,10 @@
                         </tr>";
                      
             foreach ($korisnici as $korisnik) {
-            echo "<tr><td>{$korisnik->KorisnickoIme}</td><td>{$korisnik->ime}</td><td>{$korisnik->prezime}</td><td>{$korisnik->tip}</td>";
-            echo "<td><input type='submit'  class='btn btn-primary'  name='obrisi' value='Obrisi' ></td>";
+           echo "<tr><td>{$korisnik->KorisnickoIme}</td><td>{$korisnik->ime}</td><td>{$korisnik->prezime}</td><td>{$korisnik->tip}</td>
+            <td><input type='submit'  class='btn btn-primary'   name='obrisi' value='Obrisi' ></td></tr>";
             }
-            echo "</table>";
+            echo "</table></form>";
             
         }
            
@@ -50,5 +53,5 @@
             }
      ?>
 
-        </form>
+        
         </div>
