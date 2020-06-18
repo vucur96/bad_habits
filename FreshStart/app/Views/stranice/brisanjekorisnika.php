@@ -28,7 +28,7 @@
   <?php 
                 if($korisnici){
   
-                        echo "<form name='form_requests'   method='POST' action='obrisi/{$korisnik->KorisnickoIme}'>
+                        echo "<form name='form_requests'   method='POST' action='Admin/obrisi/'>
             
                         <table border='0px' cellpadding='1px' style='width:70%;text-align:center;'>
                         <tr>

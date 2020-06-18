@@ -1,4 +1,5 @@
 <?php namespace App\Controllers;
+use CodeIgniter\Controller;
 use App\Models\ZahtevKorisnikModel;
 use App\Models\ZahtevBlogModel;
 use App\Models\KorisnikModel;
@@ -32,7 +33,7 @@ class Admin extends BaseController
     }
     
     
-   public function prihvati($korIme,$email,$loz,$tip,$vip,$pogodnost,
+  /* public function prihvati($korIme,$email,$loz,$tip,$vip,$pogodnost,
            $ime,$prezime,$datum,$visina,$tezina,$imefirme,$del,$rek,$cilj,$kurs){
        $db=db_connect();
             $zahtevKorModel = new ZahtevKorisnikModel();
@@ -59,6 +60,43 @@ class Admin extends BaseController
             $zahtevKorModel->where("KorisnickoIme", $korIme)->delete();
             
              $db->transComplete();
+    }*/
+    
+    public function prihvati(){
+        helper(['form', 'url']);
+         
+        $db= \Config\Database::connect();
+        $builder =$this-> $db->table('zahtevkorisnik');
+        $builder2 = $this->$db->table('korisnik');
+        
+        $data = [
+            'KorisnickoIme'=>$this->request->getVar('KorisnickoIme'),
+            'email' => $this->request->getVar('email'),
+            'loznika' => $this->request->getVar('lozinka'),
+            'tip' => $this->request->getVar('tip'),
+            'VIP' => $this->request->getVar('VIP'),
+            'pogodnosti' => $this->request->getVar('pogodnost'),
+            'ime' =>  $this->request->getVar('ime'),
+            'prezime' => $this->request->getVar('prezime'),
+            'datumrodj' =>  $this->request->getVar('datumrodj'),
+            'visina' =>  $this->request->getVar('visina'),
+            'tezina' =>  $this->request->getVar('tezina'),
+            'imefirme' => $this->request->getVar('imefirme'),
+            'opisdel' => $this->request->getVar('opisdel'),
+            'vrstarek' => $this->request->getVar('vrstarek'),
+            'cilj' =>  $this->request->getVar('cilj'),
+            'kurs' => $this->request->getVar('kurs'),
+            ];
+        $save = $builder2->insert($data);
+        
+        
+        $data = [
+            'success' => true,
+            'data' => $save
+        ];
+        
+        return $this->response->setJSON($data);
+    
     }
     
     
@@ -96,9 +134,9 @@ class Admin extends BaseController
             $this->poziv('brisanjekorisnika',['korisnici' => $korisnici]);
     }
     
-    public function obrisi($korIme){
+    public function obrisi(){
        $kormod = new KorisnikModel();
-       $kor=$kormod->find($korIme);
+       $kor=$kormod->find();
          $kormod->where('KorisnickoIme', $kor)->delete();
        /*  $korisnik = new KorisnikModel();
          $korisnici = $korisnik->findAll();
@@ -122,22 +160,22 @@ class Admin extends BaseController
     public function prihvatiOdbijBlog($id) {
         
         if($this->request->getVar('prihvati')){
-            prihvatiBlog($id);
+            $this->prihvatiBlog($id);
         }else{
-            odbijBlog($id);
+            $this->odbijBlog($id);
         }
     }
     
     public function odbijBlog($id) {
         $blogModel=new ZahtevBlogModel();
-        $blogModel->where('BlogId',$id)->delete();
+        $blogModel->where('BlogID',$id)->delete();
         return redirect()->to(site_url("Admin/zahtevizablog"));
     }
     
     public function prihvatiBlog($id) {
         $blogModel=new ZahtevBlogModel();
         $noviBlog=new BlogModel();
-        $noviblog->insert(['BlogId'=>$id, 'naslov'=>'','tekst'=>'', 'KorisnickoIme'=>'']);
+        $noviblog->insert(['BlogID'=>$id, 'naslov'=>$this->request->getVar('naslov'),'tekst'=>$this->request->getVar('tekst'), 'KorisnickoIme'=>$this->request->getVar('korisnickoIme')]);
         $blogModel->delete($id);
     }
     

@@ -1,6 +1,7 @@
 <?php
     namespace App\Models;
     
+use CodeIgniter\Database\ConnectionInterface;
     use CodeIgniter\Model;
     
 class KorisnikModel extends Model{
